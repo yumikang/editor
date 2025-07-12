@@ -1,6 +1,16 @@
-# Welcome to Remix!
+# Website Editor
 
-- 📖 [Remix docs](https://remix.run/docs)
+Template-based website editor with advanced font management system.
+
+## Features
+
+- 3-field text input system (Korean, English, Applied)
+- Real-time preview with auto-save and manual save separation
+- Version management with timestamp-based saves and restore
+- Section toggle buttons for granular editing control
+- Template-specific font management system
+- Style guide with webfont code direct input
+- Automatic theme initialization
 
 ## Development
 
@@ -23,18 +33,3 @@ Then run the app in production mode:
 ```sh
 npm start
 ```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
