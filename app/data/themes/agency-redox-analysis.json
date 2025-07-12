@@ -1,0 +1,2239 @@
+{
+  "themeId": "agency-redox",
+  "themeName": "Agency Redox",
+  "analyzedAt": "2025-07-12T06:10:22.012Z",
+  "elements": {
+    "global": {
+      "text_text_1752300621976_0": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Contact US",
+        "editable": true
+      },
+      "text_text_1752300621988_0": {
+        "type": "text",
+        "selector": "a > span:nth-child(1)",
+        "content": "Let's Talk\n              Let's Talk",
+        "editable": true
+      },
+      "text_text_1752300621989_1": {
+        "type": "text",
+        "selector": "span > span:nth-child(1)",
+        "content": "Let's Talk",
+        "editable": true
+      },
+      "text_text_1752300621989_2": {
+        "type": "text",
+        "selector": "span > span:nth-child(2)",
+        "content": "Let's Talk",
+        "editable": true
+      },
+      "text_text_1752300621989_4": {
+        "type": "text",
+        "selector": "div > span:nth-child(2)",
+        "content": "3891 Ranchview Dr. Richardson",
+        "editable": true
+      },
+      "text_text_1752300621989_6": {
+        "type": "text",
+        "selector": "div > span:nth-child(2)",
+        "content": "hello@redoxagency.com",
+        "editable": true
+      },
+      "text_text_1752300621990_8": {
+        "type": "text",
+        "selector": "div > span:nth-child(2)",
+        "content": "(505) 555-0125",
+        "editable": true
+      },
+      "image_image_1752300622001_0": {
+        "type": "image",
+        "selector": "a > img:nth-child(1)",
+        "content": "assets/imgs/logo/logo.png",
+        "attributes": {
+          "alt": "site logo",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "link_link_1752300622005_1": {
+        "type": "link",
+        "selector": "div > a:nth-child(1)",
+        "content": "Let's Talk\n              Let's Talk",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622005_2": {
+        "type": "link",
+        "selector": "span > a:nth-child(1)",
+        "content": "hello@redoxagency.com",
+        "attributes": {
+          "href": "mailto:hello@redoxagency.com"
+        },
+        "editable": true
+      },
+      "link_link_1752300622005_3": {
+        "type": "link",
+        "selector": "span > a:nth-child(1)",
+        "content": "(505) 555-0125",
+        "attributes": {
+          "href": "tel:(505)555-0125"
+        },
+        "editable": true
+      }
+    },
+    "section-title": {
+      "text_text_1752300621977_1": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Let’s sharpen\n                        your brand\n                        withquality\n                        work",
+        "editable": true
+      },
+      "text_text_1752300621978_3": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Redox",
+        "editable": true
+      },
+      "text_text_1752300621981_11": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Featured Work",
+        "editable": true
+      },
+      "text_text_1752300621981_12": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Complex \n                      proficiency",
+        "editable": true
+      },
+      "text_text_1752300621981_13": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Perfect \n                      —activity",
+        "editable": true
+      },
+      "text_text_1752300621981_14": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Client: Helping brands\n                      to grow\n                      and say their success stories to\n                      the world.",
+        "editable": true
+      },
+      "text_text_1752300621982_15": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Let’s\n                          Work",
+        "editable": true
+      },
+      "text_text_1752300621982_16": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "It’s all about the \n                      unique thinking with\n                      creativity and quality for\n                      complex solution in \n                      easy way",
+        "editable": true
+      },
+      "text_text_1752300621996_43": {
+        "type": "text",
+        "selector": "h2 > span:nth-child(1)",
+        "content": "Client:",
+        "editable": true
+      },
+      "text_text_1752300621996_58": {
+        "type": "text",
+        "selector": "h2 > span:nth-child(2)",
+        "content": "thinking",
+        "editable": true
+      },
+      "text_text_1752300621996_59": {
+        "type": "text",
+        "selector": "h2 > span:nth-child(3)",
+        "content": "creativity",
+        "editable": true
+      },
+      "text_text_1752300621996_60": {
+        "type": "text",
+        "selector": "h2 > span:nth-child(4)",
+        "content": "quality",
+        "editable": true
+      },
+      "image_image_1752300622001_4": {
+        "type": "image",
+        "selector": ".title-shape-1.fade-anim",
+        "content": "assets/imgs/shape/shape-1.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_84": {
+        "type": "link",
+        "selector": "h2 > a:nth-child(1)",
+        "content": "Let’s\n                          Work",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      }
+    },
+    "hero-area-inner": {
+      "text_text_1752300621978_2": {
+        "type": "text",
+        "selector": ".big-text",
+        "content": "Redox",
+        "editable": true
+      }
+    },
+    "work-area": {
+      "text_text_1752300621978_4": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Featured work",
+        "editable": true
+      },
+      "text_text_1752300621979_5": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Featured work",
+        "editable": true
+      },
+      "text_text_1752300621979_6": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Featured work",
+        "editable": true
+      },
+      "text_text_1752300621980_7": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Featured work",
+        "editable": true
+      },
+      "text_text_1752300621980_8": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Featured work",
+        "editable": true
+      },
+      "text_text_1752300621980_9": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Featured work",
+        "editable": true
+      },
+      "text_text_1752300621980_10": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Featured work",
+        "editable": true
+      },
+      "text_text_1752300621983_0": {
+        "type": "text",
+        "selector": "div > h3:nth-child(1)",
+        "content": "Panda Automap",
+        "editable": true
+      },
+      "text_text_1752300621983_1": {
+        "type": "text",
+        "selector": "div > h3:nth-child(1)",
+        "content": "Saudi Venture Capital",
+        "editable": true
+      },
+      "text_text_1752300621983_2": {
+        "type": "text",
+        "selector": "div > h3:nth-child(1)",
+        "content": "Rebrand Lawberry",
+        "editable": true
+      },
+      "text_text_1752300621983_3": {
+        "type": "text",
+        "selector": "div > h3:nth-child(1)",
+        "content": "Selicon Cloud Cave",
+        "editable": true
+      },
+      "text_text_1752300621984_4": {
+        "type": "text",
+        "selector": "div > h3:nth-child(1)",
+        "content": "Mountain Upwork",
+        "editable": true
+      },
+      "text_text_1752300621984_5": {
+        "type": "text",
+        "selector": "div > h3:nth-child(1)",
+        "content": "Blacky Motorola",
+        "editable": true
+      },
+      "text_text_1752300621992_19": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "Development",
+        "editable": true
+      },
+      "text_text_1752300621992_20": {
+        "type": "text",
+        "selector": "div > span:nth-child(2)",
+        "content": "2025",
+        "editable": true
+      },
+      "text_text_1752300621992_21": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "Graphics",
+        "editable": true
+      },
+      "text_text_1752300621992_22": {
+        "type": "text",
+        "selector": "div > span:nth-child(2)",
+        "content": "2025",
+        "editable": true
+      },
+      "text_text_1752300621992_23": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "Motion, Design",
+        "editable": true
+      },
+      "text_text_1752300621993_24": {
+        "type": "text",
+        "selector": "div > span:nth-child(2)",
+        "content": "2025",
+        "editable": true
+      },
+      "text_text_1752300621993_25": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "UI Design",
+        "editable": true
+      },
+      "text_text_1752300621993_26": {
+        "type": "text",
+        "selector": "div > span:nth-child(2)",
+        "content": "2025",
+        "editable": true
+      },
+      "text_text_1752300621993_27": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "Branding",
+        "editable": true
+      },
+      "text_text_1752300621993_28": {
+        "type": "text",
+        "selector": "div > span:nth-child(2)",
+        "content": "2025",
+        "editable": true
+      },
+      "text_text_1752300621993_29": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "UI Design",
+        "editable": true
+      },
+      "text_text_1752300621994_30": {
+        "type": "text",
+        "selector": "div > span:nth-child(2)",
+        "content": "2025",
+        "editable": true
+      },
+      "text_text_1752300621994_31": {
+        "type": "text",
+        "selector": "a > span:nth-child(1)",
+        "content": "View All Work\n                    View All Work",
+        "editable": true
+      },
+      "text_text_1752300621994_32": {
+        "type": "text",
+        "selector": "span > span:nth-child(1)",
+        "content": "View All Work",
+        "editable": true
+      },
+      "text_text_1752300621994_33": {
+        "type": "text",
+        "selector": "span > span:nth-child(2)",
+        "content": "View All Work",
+        "editable": true
+      },
+      "image_image_1752300622002_5": {
+        "type": "image",
+        "selector": "a > img:nth-child(1)",
+        "content": "assets/imgs/project/image-1.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622002_6": {
+        "type": "image",
+        "selector": "a > img:nth-child(1)",
+        "content": "assets/imgs/project/image-2.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622002_7": {
+        "type": "image",
+        "selector": "a > img:nth-child(1)",
+        "content": "assets/imgs/project/image-3.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622002_8": {
+        "type": "image",
+        "selector": "a > img:nth-child(1)",
+        "content": "assets/imgs/project/image-4.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622002_9": {
+        "type": "image",
+        "selector": "a > img:nth-child(1)",
+        "content": "assets/imgs/project/image-5.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622002_10": {
+        "type": "image",
+        "selector": "a > img:nth-child(1)",
+        "content": "assets/imgs/project/image-6.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_48": {
+        "type": "link",
+        "selector": "h3 > a:nth-child(1)",
+        "content": "Panda Automap",
+        "attributes": {
+          "href": "portfolio-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_50": {
+        "type": "link",
+        "selector": "h3 > a:nth-child(1)",
+        "content": "Saudi Venture Capital",
+        "attributes": {
+          "href": "portfolio-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_52": {
+        "type": "link",
+        "selector": "h3 > a:nth-child(1)",
+        "content": "Rebrand Lawberry",
+        "attributes": {
+          "href": "portfolio-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_54": {
+        "type": "link",
+        "selector": "h3 > a:nth-child(1)",
+        "content": "Selicon Cloud Cave",
+        "attributes": {
+          "href": "portfolio-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_56": {
+        "type": "link",
+        "selector": "h3 > a:nth-child(1)",
+        "content": "Mountain Upwork",
+        "attributes": {
+          "href": "portfolio-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_58": {
+        "type": "link",
+        "selector": "h3 > a:nth-child(1)",
+        "content": "Blacky Motorola",
+        "attributes": {
+          "href": "portfolio-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_59": {
+        "type": "link",
+        "selector": ".rr-btn.btn-border.hover-bg-theme",
+        "content": "View All Work\n                    View All Work",
+        "attributes": {
+          "href": "portfolio.html"
+        },
+        "editable": true
+      }
+    },
+    "footer-area": {
+      "text_text_1752300621982_17": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Company",
+        "editable": true
+      },
+      "text_text_1752300621982_18": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Social",
+        "editable": true
+      },
+      "text_text_1752300621983_19": {
+        "type": "text",
+        "selector": "div > h2:nth-child(1)",
+        "content": "Office",
+        "editable": true
+      },
+      "text_text_1752300621987_25": {
+        "type": "text",
+        "selector": "div > p:nth-child(1)",
+        "content": "Redox is a startup digital agency of design, development and marketing that works\n                  friendly with global client",
+        "editable": true
+      },
+      "text_text_1752300621987_26": {
+        "type": "text",
+        "selector": "div > p:nth-child(1)",
+        "content": "By subscribing you agree with our\n                      Privacy Policy",
+        "editable": true
+      },
+      "text_text_1752300621987_27": {
+        "type": "text",
+        "selector": "div > p:nth-child(1)",
+        "content": "© 2025 RavexTheme. All right\n                reserved",
+        "editable": true
+      },
+      "text_text_1752300622000_60": {
+        "type": "text",
+        "selector": "ul > li:nth-child(1)",
+        "content": "agency",
+        "editable": true
+      },
+      "text_text_1752300622000_61": {
+        "type": "text",
+        "selector": "ul > li:nth-child(2)",
+        "content": "Solutions",
+        "editable": true
+      },
+      "text_text_1752300622000_62": {
+        "type": "text",
+        "selector": "ul > li:nth-child(3)",
+        "content": "Community",
+        "editable": true
+      },
+      "text_text_1752300622000_63": {
+        "type": "text",
+        "selector": "ul > li:nth-child(4)",
+        "content": "Work",
+        "editable": true
+      },
+      "text_text_1752300622000_64": {
+        "type": "text",
+        "selector": "ul > li:nth-child(5)",
+        "content": "Contact",
+        "editable": true
+      },
+      "text_text_1752300622000_65": {
+        "type": "text",
+        "selector": "ul > li:nth-child(1)",
+        "content": "Facebook",
+        "editable": true
+      },
+      "text_text_1752300622000_66": {
+        "type": "text",
+        "selector": "ul > li:nth-child(2)",
+        "content": "Twitter",
+        "editable": true
+      },
+      "text_text_1752300622000_67": {
+        "type": "text",
+        "selector": "ul > li:nth-child(3)",
+        "content": "Dribbble",
+        "editable": true
+      },
+      "text_text_1752300622000_68": {
+        "type": "text",
+        "selector": "ul > li:nth-child(4)",
+        "content": "Instagram",
+        "editable": true
+      },
+      "text_text_1752300622000_69": {
+        "type": "text",
+        "selector": "ul > li:nth-child(5)",
+        "content": "Awwwards",
+        "editable": true
+      },
+      "text_text_1752300622000_70": {
+        "type": "text",
+        "selector": "ul > li:nth-child(6)",
+        "content": "YouTube",
+        "editable": true
+      },
+      "text_text_1752300622000_71": {
+        "type": "text",
+        "selector": "ul > li:nth-child(1)",
+        "content": "New York",
+        "editable": true
+      },
+      "text_text_1752300622000_72": {
+        "type": "text",
+        "selector": "ul > li:nth-child(2)",
+        "content": "Toronto",
+        "editable": true
+      },
+      "text_text_1752300622000_73": {
+        "type": "text",
+        "selector": "ul > li:nth-child(3)",
+        "content": "Berlin",
+        "editable": true
+      },
+      "text_text_1752300622000_74": {
+        "type": "text",
+        "selector": "ul > li:nth-child(4)",
+        "content": "London",
+        "editable": true
+      },
+      "image_image_1752300622004_30": {
+        "type": "image",
+        "selector": "a > img:nth-child(1)",
+        "content": "assets/imgs/logo/logo-2.png",
+        "attributes": {
+          "alt": "site-logo",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622004_31": {
+        "type": "image",
+        "selector": "button > img:nth-child(1)",
+        "content": "assets/imgs/icon/icon-1.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_86": {
+        "type": "link",
+        "selector": "div > a:nth-child(1)",
+        "content": "info@redox.com",
+        "attributes": {
+          "href": "mailto:info@redox.com"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_87": {
+        "type": "link",
+        "selector": "p > a:nth-child(1)",
+        "content": "Privacy Policy",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_88": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "agency",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_89": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Solutions",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_90": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Community",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_91": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Work",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_92": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Contact",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_93": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Facebook",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_94": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Twitter",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_95": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Dribbble",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_96": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Instagram",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_97": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Awwwards",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_98": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "YouTube",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_99": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "New York",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_100": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Toronto",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_101": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Berlin",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_102": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "London",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622010_103": {
+        "type": "link",
+        "selector": "p > a:nth-child(1)",
+        "content": "RavexTheme.",
+        "attributes": {
+          "href": "https://themeforest.net/user/ravextheme"
+        },
+        "editable": true
+      }
+    },
+    "service-area-inner": {
+      "text_text_1752300621984_6": {
+        "type": "text",
+        "selector": "div > h3:nth-child(1)",
+        "content": "Branding",
+        "editable": true
+      },
+      "text_text_1752300621984_7": {
+        "type": "text",
+        "selector": "div > h3:nth-child(1)",
+        "content": "UI-UX Design",
+        "editable": true
+      },
+      "text_text_1752300621984_8": {
+        "type": "text",
+        "selector": "div > h3:nth-child(1)",
+        "content": "Development",
+        "editable": true
+      },
+      "text_text_1752300621984_9": {
+        "type": "text",
+        "selector": "div > h3:nth-child(1)",
+        "content": "Digital Marketing",
+        "editable": true
+      },
+      "text_text_1752300621994_34": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "(01)",
+        "editable": true
+      },
+      "text_text_1752300621994_35": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "(02)",
+        "editable": true
+      },
+      "text_text_1752300621995_36": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "(03)",
+        "editable": true
+      },
+      "text_text_1752300621995_37": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "(04)",
+        "editable": true
+      },
+      "text_text_1752300621999_40": {
+        "type": "text",
+        "selector": "ul > li:nth-child(1)",
+        "content": "Creative Direction",
+        "editable": true
+      },
+      "text_text_1752300621999_41": {
+        "type": "text",
+        "selector": "ul > li:nth-child(2)",
+        "content": "Brand Identity",
+        "editable": true
+      },
+      "text_text_1752300621999_42": {
+        "type": "text",
+        "selector": "ul > li:nth-child(3)",
+        "content": "Branding Strategy",
+        "editable": true
+      },
+      "text_text_1752300621999_43": {
+        "type": "text",
+        "selector": "ul > li:nth-child(4)",
+        "content": "Graphic Design",
+        "editable": true
+      },
+      "text_text_1752300621999_44": {
+        "type": "text",
+        "selector": "ul > li:nth-child(5)",
+        "content": "Startup",
+        "editable": true
+      },
+      "text_text_1752300621999_45": {
+        "type": "text",
+        "selector": "ul > li:nth-child(1)",
+        "content": "UI UX Consulting",
+        "editable": true
+      },
+      "text_text_1752300621999_46": {
+        "type": "text",
+        "selector": "ul > li:nth-child(2)",
+        "content": "UX Research",
+        "editable": true
+      },
+      "text_text_1752300621999_47": {
+        "type": "text",
+        "selector": "ul > li:nth-child(3)",
+        "content": "Usability Testing",
+        "editable": true
+      },
+      "text_text_1752300621999_48": {
+        "type": "text",
+        "selector": "ul > li:nth-child(4)",
+        "content": "Wireframing",
+        "editable": true
+      },
+      "text_text_1752300621999_49": {
+        "type": "text",
+        "selector": "ul > li:nth-child(5)",
+        "content": "Prototyping",
+        "editable": true
+      },
+      "text_text_1752300621999_50": {
+        "type": "text",
+        "selector": "ul > li:nth-child(1)",
+        "content": "WordPress",
+        "editable": true
+      },
+      "text_text_1752300621999_51": {
+        "type": "text",
+        "selector": "ul > li:nth-child(2)",
+        "content": "Webflow",
+        "editable": true
+      },
+      "text_text_1752300621999_52": {
+        "type": "text",
+        "selector": "ul > li:nth-child(3)",
+        "content": "Laravel Framework",
+        "editable": true
+      },
+      "text_text_1752300621999_53": {
+        "type": "text",
+        "selector": "ul > li:nth-child(4)",
+        "content": "React & Flutter",
+        "editable": true
+      },
+      "text_text_1752300621999_54": {
+        "type": "text",
+        "selector": "ul > li:nth-child(5)",
+        "content": "Design System",
+        "editable": true
+      },
+      "text_text_1752300621999_55": {
+        "type": "text",
+        "selector": "ul > li:nth-child(1)",
+        "content": "Online Marketing",
+        "editable": true
+      },
+      "text_text_1752300621999_56": {
+        "type": "text",
+        "selector": "ul > li:nth-child(2)",
+        "content": "SEO-Marketing",
+        "editable": true
+      },
+      "text_text_1752300622000_57": {
+        "type": "text",
+        "selector": "ul > li:nth-child(3)",
+        "content": "Strategy",
+        "editable": true
+      },
+      "text_text_1752300622000_58": {
+        "type": "text",
+        "selector": "ul > li:nth-child(4)",
+        "content": "Market Research",
+        "editable": true
+      },
+      "text_text_1752300622000_59": {
+        "type": "text",
+        "selector": "ul > li:nth-child(5)",
+        "content": "Social Reform",
+        "editable": true
+      },
+      "image_image_1752300622002_11": {
+        "type": "image",
+        "selector": "div > img:nth-child(1)",
+        "content": "assets/imgs/gallery/image-3.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_12": {
+        "type": "image",
+        "selector": "div > img:nth-child(1)",
+        "content": "assets/imgs/gallery/image-4.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_13": {
+        "type": "image",
+        "selector": "div > img:nth-child(1)",
+        "content": "assets/imgs/gallery/image-5.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_14": {
+        "type": "image",
+        "selector": "div > img:nth-child(1)",
+        "content": "assets/imgs/gallery/image-6.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_60": {
+        "type": "link",
+        "selector": "h3 > a:nth-child(1)",
+        "content": "Branding",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_61": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Creative Direction",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_62": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Brand Identity",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_63": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Branding Strategy",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_64": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Graphic Design",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_65": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Startup",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_66": {
+        "type": "link",
+        "selector": "h3 > a:nth-child(1)",
+        "content": "UI-UX Design",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622008_67": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "UI UX Consulting",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_68": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "UX Research",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_69": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Usability Testing",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_70": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Wireframing",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_71": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Prototyping",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_72": {
+        "type": "link",
+        "selector": "h3 > a:nth-child(1)",
+        "content": "Development",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_73": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "WordPress",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_74": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Webflow",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_75": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Laravel Framework",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_76": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "React & Flutter",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_77": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Design System",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_78": {
+        "type": "link",
+        "selector": "h3 > a:nth-child(1)",
+        "content": "Digital Marketing",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_79": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Online Marketing",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_80": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "SEO-Marketing",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_81": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Strategy",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_82": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Market Research",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622009_83": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Social Reform",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      }
+    },
+    "section-content": {
+      "text_text_1752300621985_0": {
+        "type": "text",
+        "selector": "div > p:nth-child(2)",
+        "content": "Average clients satisfied\n                            and repeating",
+        "editable": true
+      },
+      "text_text_1752300621985_1": {
+        "type": "text",
+        "selector": "div > p:nth-child(2)",
+        "content": "Successfully projects done\n                            in 24 countries",
+        "editable": true
+      },
+      "text_text_1752300621985_2": {
+        "type": "text",
+        "selector": "div > p:nth-child(1)",
+        "content": "We’re a digital products design & development agency that works passionately\n                      with the digital experiences.",
+        "editable": true
+      },
+      "text_text_1752300621986_3": {
+        "type": "text",
+        "selector": "div > p:nth-child(1)",
+        "content": "We’re a dynamic startup agency specializing in innovative solutions for businesses\n                    looking to elevate their brand presence. We offer a range of services including digital marketing,\n                    branding, web development, and creative strategy to help company",
+        "editable": true
+      },
+      "text_text_1752300621987_10": {
+        "type": "text",
+        "selector": "div > p:nth-child(1)",
+        "content": "We’re a great team of creatives with a strongest capabilities to helping progressive\n                    fields achieve their goals. With the best talent on every project done successfully",
+        "editable": true
+      },
+      "text_text_1752300621990_13": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "98%",
+        "editable": true
+      },
+      "text_text_1752300621991_14": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "120+",
+        "editable": true
+      },
+      "text_text_1752300621991_15": {
+        "type": "text",
+        "selector": "a > span:nth-child(1)",
+        "content": "Learn More\n                      Learn More",
+        "editable": true
+      },
+      "text_text_1752300621991_16": {
+        "type": "text",
+        "selector": "span > span:nth-child(1)",
+        "content": "Learn More",
+        "editable": true
+      },
+      "text_text_1752300621991_17": {
+        "type": "text",
+        "selector": "span > span:nth-child(2)",
+        "content": "Learn More",
+        "editable": true
+      },
+      "link_link_1752300622008_46": {
+        "type": "link",
+        "selector": "div > a:nth-child(1)",
+        "content": "Learn More\n                      Learn More",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      }
+    },
+    "section-header": {
+      "text_text_1752300621986_4": {
+        "type": "text",
+        "selector": "div > p:nth-child(1)",
+        "content": "Excellency in creative designs",
+        "editable": true
+      },
+      "text_text_1752300621991_18": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "(26)",
+        "editable": true
+      }
+    },
+    "funfact-wrapper-box": {
+      "text_text_1752300621986_5": {
+        "type": "text",
+        "selector": "div > p:nth-child(2)",
+        "content": "We helped to get companies with\n                      $200M+ funding.",
+        "editable": true
+      },
+      "text_text_1752300621986_6": {
+        "type": "text",
+        "selector": "div > p:nth-child(2)",
+        "content": "Crafted responsive, user-centered\n                      website & app.",
+        "editable": true
+      },
+      "text_text_1752300621986_7": {
+        "type": "text",
+        "selector": "div > p:nth-child(2)",
+        "content": "We have had quite a run in our 12+ years of working.",
+        "editable": true
+      },
+      "text_text_1752300621986_8": {
+        "type": "text",
+        "selector": "div > p:nth-child(2)",
+        "content": "Professional skilled designers and developers.",
+        "editable": true
+      },
+      "text_text_1752300621987_9": {
+        "type": "text",
+        "selector": "div > p:nth-child(2)",
+        "content": "Average 99% clients satisfaction\n                      with expertise.",
+        "editable": true
+      },
+      "text_text_1752300621995_38": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "1.8M",
+        "editable": true
+      },
+      "text_text_1752300621995_39": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "260+",
+        "editable": true
+      },
+      "text_text_1752300621995_40": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "12+",
+        "editable": true
+      },
+      "text_text_1752300621995_41": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "80+",
+        "editable": true
+      },
+      "text_text_1752300621996_42": {
+        "type": "text",
+        "selector": "div > span:nth-child(1)",
+        "content": "99%",
+        "editable": true
+      }
+    },
+    "header-area": {
+      "text_text_1752300621990_9": {
+        "type": "text",
+        "selector": "a > span:nth-child(1)",
+        "content": "Let’s Talk\n                Let’s Talk",
+        "editable": true
+      },
+      "text_text_1752300621990_10": {
+        "type": "text",
+        "selector": "span > span:nth-child(1)",
+        "content": "Let’s Talk",
+        "editable": true
+      },
+      "text_text_1752300621990_11": {
+        "type": "text",
+        "selector": "span > span:nth-child(2)",
+        "content": "Let’s Talk",
+        "editable": true
+      },
+      "text_text_1752300621997_0": {
+        "type": "text",
+        "selector": "ul > li:nth-child(1)",
+        "content": "Home\n                  \n                    Digital Agency\n                    Creative Agency\n                    Marketing Agency\n                    Design Agency\n                    Startup Agency\n                    Modern Agency\n                    Agency Portfolio\n                    Portfolio Horizontal\n                    Portfolio Line Effect\n                    Portfolio Box Effect\n                    Portfolio Vertical\n                    Portfolio Slicer\n                    Parallax Carousal\n                    Portfolio Showcase",
+        "editable": true
+      },
+      "text_text_1752300621997_1": {
+        "type": "text",
+        "selector": "ul > li:nth-child(1)",
+        "content": "Digital Agency",
+        "editable": true
+      },
+      "text_text_1752300621997_2": {
+        "type": "text",
+        "selector": "ul > li:nth-child(2)",
+        "content": "Creative Agency",
+        "editable": true
+      },
+      "text_text_1752300621997_3": {
+        "type": "text",
+        "selector": "ul > li:nth-child(3)",
+        "content": "Marketing Agency",
+        "editable": true
+      },
+      "text_text_1752300621997_4": {
+        "type": "text",
+        "selector": "ul > li:nth-child(4)",
+        "content": "Design Agency",
+        "editable": true
+      },
+      "text_text_1752300621997_5": {
+        "type": "text",
+        "selector": "ul > li:nth-child(5)",
+        "content": "Startup Agency",
+        "editable": true
+      },
+      "text_text_1752300621997_6": {
+        "type": "text",
+        "selector": "ul > li:nth-child(6)",
+        "content": "Modern Agency",
+        "editable": true
+      },
+      "text_text_1752300621997_7": {
+        "type": "text",
+        "selector": "ul > li:nth-child(7)",
+        "content": "Agency Portfolio",
+        "editable": true
+      },
+      "text_text_1752300621997_8": {
+        "type": "text",
+        "selector": "ul > li:nth-child(8)",
+        "content": "Portfolio Horizontal",
+        "editable": true
+      },
+      "text_text_1752300621997_9": {
+        "type": "text",
+        "selector": "ul > li:nth-child(9)",
+        "content": "Portfolio Line Effect",
+        "editable": true
+      },
+      "text_text_1752300621997_10": {
+        "type": "text",
+        "selector": "ul > li:nth-child(10)",
+        "content": "Portfolio Box Effect",
+        "editable": true
+      },
+      "text_text_1752300621997_11": {
+        "type": "text",
+        "selector": "ul > li:nth-child(11)",
+        "content": "Portfolio Vertical",
+        "editable": true
+      },
+      "text_text_1752300621997_12": {
+        "type": "text",
+        "selector": "ul > li:nth-child(12)",
+        "content": "Portfolio Slicer",
+        "editable": true
+      },
+      "text_text_1752300621997_13": {
+        "type": "text",
+        "selector": "ul > li:nth-child(13)",
+        "content": "Parallax Carousal",
+        "editable": true
+      },
+      "text_text_1752300621997_14": {
+        "type": "text",
+        "selector": "ul > li:nth-child(14)",
+        "content": "Portfolio Showcase",
+        "editable": true
+      },
+      "text_text_1752300621997_15": {
+        "type": "text",
+        "selector": "ul > li:nth-child(2)",
+        "content": "About Us",
+        "editable": true
+      },
+      "text_text_1752300621997_16": {
+        "type": "text",
+        "selector": "ul > li:nth-child(3)",
+        "content": "Service\n                  \n                    Core Services\n                    Services ST. Pulse\n                    Services ST. Morph\n                    Services ST. Nova\n                    Services ST. Zenith\n                    Services ST. Prism\n                    Service Details",
+        "editable": true
+      },
+      "text_text_1752300621998_17": {
+        "type": "text",
+        "selector": "ul > li:nth-child(1)",
+        "content": "Core Services",
+        "editable": true
+      },
+      "text_text_1752300621998_18": {
+        "type": "text",
+        "selector": "ul > li:nth-child(2)",
+        "content": "Services ST. Pulse",
+        "editable": true
+      },
+      "text_text_1752300621998_19": {
+        "type": "text",
+        "selector": "ul > li:nth-child(3)",
+        "content": "Services ST. Morph",
+        "editable": true
+      },
+      "text_text_1752300621998_20": {
+        "type": "text",
+        "selector": "ul > li:nth-child(4)",
+        "content": "Services ST. Nova",
+        "editable": true
+      },
+      "text_text_1752300621998_21": {
+        "type": "text",
+        "selector": "ul > li:nth-child(5)",
+        "content": "Services ST. Zenith",
+        "editable": true
+      },
+      "text_text_1752300621998_22": {
+        "type": "text",
+        "selector": "ul > li:nth-child(6)",
+        "content": "Services ST. Prism",
+        "editable": true
+      },
+      "text_text_1752300621998_23": {
+        "type": "text",
+        "selector": "ul > li:nth-child(7)",
+        "content": "Service Details",
+        "editable": true
+      },
+      "text_text_1752300621998_24": {
+        "type": "text",
+        "selector": "ul > li:nth-child(4)",
+        "content": "Blog\n                  \n                    Blog\n                    Blog Details",
+        "editable": true
+      },
+      "text_text_1752300621998_25": {
+        "type": "text",
+        "selector": "ul > li:nth-child(1)",
+        "content": "Blog",
+        "editable": true
+      },
+      "text_text_1752300621998_26": {
+        "type": "text",
+        "selector": "ul > li:nth-child(2)",
+        "content": "Blog Details",
+        "editable": true
+      },
+      "text_text_1752300621998_27": {
+        "type": "text",
+        "selector": "ul > li:nth-child(5)",
+        "content": "Pages\n                  \n                    Core Portfolio\n                    Portfolio ST. Classic\n                    Portfolio ST. Minimal\n                    Portfolio ST. Modern\n                    Portfolio ST. Interactive\n                    Portfolio ST. Metro\n                    Portfolio Details\n                    Team\n                    Team Details\n                    FAQ Page\n                    404 Page",
+        "editable": true
+      },
+      "text_text_1752300621998_28": {
+        "type": "text",
+        "selector": "ul > li:nth-child(1)",
+        "content": "Core Portfolio",
+        "editable": true
+      },
+      "text_text_1752300621998_29": {
+        "type": "text",
+        "selector": "ul > li:nth-child(2)",
+        "content": "Portfolio ST. Classic",
+        "editable": true
+      },
+      "text_text_1752300621998_30": {
+        "type": "text",
+        "selector": "ul > li:nth-child(3)",
+        "content": "Portfolio ST. Minimal",
+        "editable": true
+      },
+      "text_text_1752300621999_31": {
+        "type": "text",
+        "selector": "ul > li:nth-child(4)",
+        "content": "Portfolio ST. Modern",
+        "editable": true
+      },
+      "text_text_1752300621999_32": {
+        "type": "text",
+        "selector": "ul > li:nth-child(5)",
+        "content": "Portfolio ST. Interactive",
+        "editable": true
+      },
+      "text_text_1752300621999_33": {
+        "type": "text",
+        "selector": "ul > li:nth-child(6)",
+        "content": "Portfolio ST. Metro",
+        "editable": true
+      },
+      "text_text_1752300621999_34": {
+        "type": "text",
+        "selector": "ul > li:nth-child(7)",
+        "content": "Portfolio Details",
+        "editable": true
+      },
+      "text_text_1752300621999_35": {
+        "type": "text",
+        "selector": "ul > li:nth-child(8)",
+        "content": "Team",
+        "editable": true
+      },
+      "text_text_1752300621999_36": {
+        "type": "text",
+        "selector": "ul > li:nth-child(9)",
+        "content": "Team Details",
+        "editable": true
+      },
+      "text_text_1752300621999_37": {
+        "type": "text",
+        "selector": "ul > li:nth-child(10)",
+        "content": "FAQ Page",
+        "editable": true
+      },
+      "text_text_1752300621999_38": {
+        "type": "text",
+        "selector": "ul > li:nth-child(11)",
+        "content": "404 Page",
+        "editable": true
+      },
+      "text_text_1752300621999_39": {
+        "type": "text",
+        "selector": "ul > li:nth-child(6)",
+        "content": "Contact",
+        "editable": true
+      },
+      "image_image_1752300622001_1": {
+        "type": "image",
+        "selector": ".normal-logo",
+        "content": "assets/imgs/logo/logo.png",
+        "attributes": {
+          "alt": "Site Logo",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "link_link_1752300622005_5": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Home",
+        "attributes": {
+          "href": "#"
+        },
+        "editable": true
+      },
+      "link_link_1752300622005_6": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Digital Agency",
+        "attributes": {
+          "href": "digital-agency.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622005_7": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Creative Agency",
+        "attributes": {
+          "href": "creative-agency.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622005_8": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Marketing Agency",
+        "attributes": {
+          "href": "marketing-agency.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622005_9": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Design Agency",
+        "attributes": {
+          "href": "design-agency.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622005_10": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Startup Agency",
+        "attributes": {
+          "href": "startup-agency.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622005_11": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Modern Agency",
+        "attributes": {
+          "href": "modern-agency.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622005_12": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Agency Portfolio",
+        "attributes": {
+          "href": "agency-portfolio.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_13": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Portfolio Horizontal",
+        "attributes": {
+          "href": "portfolio-horizontal.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_14": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Portfolio Line Effect",
+        "attributes": {
+          "href": "portfolio-line-effect.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_15": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Portfolio Box Effect",
+        "attributes": {
+          "href": "portfolio-box-effect.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_16": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Portfolio Vertical",
+        "attributes": {
+          "href": "portfolio-vertical.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_17": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Portfolio Slicer",
+        "attributes": {
+          "href": "portfolio-slicer.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_18": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Parallax Carousal",
+        "attributes": {
+          "href": "parallax-carousal.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_19": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Portfolio Showcase",
+        "attributes": {
+          "href": "portfolio-showcase.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_20": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "About Us",
+        "attributes": {
+          "href": "about.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_21": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Service",
+        "attributes": {
+          "href": "#"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_22": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Core Services",
+        "attributes": {
+          "href": "services.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_23": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Services ST. Pulse",
+        "attributes": {
+          "href": "services-2.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_24": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Services ST. Morph",
+        "attributes": {
+          "href": "services-3.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_25": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Services ST. Nova",
+        "attributes": {
+          "href": "services-4.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_26": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Services ST. Zenith",
+        "attributes": {
+          "href": "services-5.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_27": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Services ST. Prism",
+        "attributes": {
+          "href": "services-6.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622006_28": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Service Details",
+        "attributes": {
+          "href": "service-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_29": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Blog",
+        "attributes": {
+          "href": "#"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_30": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Blog",
+        "attributes": {
+          "href": "blog.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_31": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Blog Details",
+        "attributes": {
+          "href": "blog-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_32": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Pages",
+        "attributes": {
+          "href": "#"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_33": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Core Portfolio",
+        "attributes": {
+          "href": "portfolio.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_34": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Portfolio ST. Classic",
+        "attributes": {
+          "href": "portfolio-2.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_35": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Portfolio ST. Minimal",
+        "attributes": {
+          "href": "portfolio-3.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_36": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Portfolio ST. Modern",
+        "attributes": {
+          "href": "portfolio-4.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_37": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Portfolio ST. Interactive",
+        "attributes": {
+          "href": "portfolio-5.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_38": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Portfolio ST. Metro",
+        "attributes": {
+          "href": "portfolio-6.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_39": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Portfolio Details",
+        "attributes": {
+          "href": "portfolio-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_40": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Team",
+        "attributes": {
+          "href": "team.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_41": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Team Details",
+        "attributes": {
+          "href": "team-details.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_42": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "FAQ Page",
+        "attributes": {
+          "href": "faq.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_43": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "404 Page",
+        "attributes": {
+          "href": "404.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_44": {
+        "type": "link",
+        "selector": "li > a:nth-child(1)",
+        "content": "Contact",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      },
+      "link_link_1752300622007_45": {
+        "type": "link",
+        "selector": "div > a:nth-child(1)",
+        "content": "Let’s Talk\n                Let’s Talk",
+        "attributes": {
+          "href": "contact.html"
+        },
+        "editable": true
+      }
+    },
+    "hero-content": {
+      "image_image_1752300622001_2": {
+        "type": "image",
+        "selector": "div > img:nth-child(1)",
+        "content": "assets/imgs/shape/shape-3.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622001_3": {
+        "type": "image",
+        "selector": "div > img:nth-child(2)",
+        "content": "assets/imgs/shape/shape-2.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      }
+    },
+    "client-area-inner": {
+      "image_image_1752300622003_15": {
+        "type": "image",
+        "selector": "span > img:nth-child(1)",
+        "content": "assets/imgs/client/client-9-light.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_16": {
+        "type": "image",
+        "selector": "span > img:nth-child(1)",
+        "content": "assets/imgs/client/client-10.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_17": {
+        "type": "image",
+        "selector": "span > img:nth-child(1)",
+        "content": "assets/imgs/client/client-11.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_18": {
+        "type": "image",
+        "selector": "span > img:nth-child(1)",
+        "content": "assets/imgs/client/client-12-light.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_19": {
+        "type": "image",
+        "selector": "span > img:nth-child(1)",
+        "content": "assets/imgs/client/client-13.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_20": {
+        "type": "image",
+        "selector": "span > img:nth-child(1)",
+        "content": "assets/imgs/client/client-14.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_21": {
+        "type": "image",
+        "selector": "span > img:nth-child(1)",
+        "content": "assets/imgs/client/client-15-light.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_22": {
+        "type": "image",
+        "selector": "span > img:nth-child(1)",
+        "content": "assets/imgs/client/client-16-light.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_23": {
+        "type": "image",
+        "selector": "span > img:nth-child(1)",
+        "content": "assets/imgs/client/client-17.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_24": {
+        "type": "image",
+        "selector": "span > img:nth-child(1)",
+        "content": "assets/imgs/client/client-18-light.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_25": {
+        "type": "image",
+        "selector": "span > img:nth-child(1)",
+        "content": "assets/imgs/client/client-19.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_26": {
+        "type": "image",
+        "selector": "span > img:nth-child(1)",
+        "content": "assets/imgs/client/client-20-light.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_27": {
+        "type": "image",
+        "selector": "span > img:nth-child(1)",
+        "content": "assets/imgs/client/client-21.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      },
+      "image_image_1752300622003_28": {
+        "type": "image",
+        "selector": "span > img:nth-child(1)",
+        "content": "assets/imgs/client/client-22.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      }
+    },
+    "unknown": {
+      "image_image_1752300622003_29": {
+        "type": "image",
+        "selector": ".w-100",
+        "content": "assets/imgs/gallery/image-7.webp",
+        "attributes": {
+          "alt": "image",
+          "width": "",
+          "height": ""
+        },
+        "editable": true
+      }
+    }
+  },
+  "structure": {
+    "sections": [
+      "loader-section",
+      "hero-area",
+      "hero-area-inner",
+      "hero-content",
+      "section-header",
+      "section-title-wrapper",
+      "section-title",
+      "section-content",
+      "about-area",
+      "about-area-inner",
+      "work-area",
+      "service-area",
+      "service-area-inner",
+      "funfact-area",
+      "funfact-wrapper-box",
+      "client-area",
+      "client-area-inner",
+      "cta-area",
+      "cta-area-inner",
+      "productivity-area",
+      "productivity-area-inner"
+    ],
+    "hasNavbar": true,
+    "hasFooter": true
+  }
+}
