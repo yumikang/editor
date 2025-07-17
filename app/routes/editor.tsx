@@ -5,6 +5,7 @@ import * as path from "path";
 import * as fs from "fs/promises";
 import { getJsonStorage } from "~/utils/json-storage";
 import { ThemeScanner } from "~/utils/theme-scanner";
+import VersionControl from "~/components/version/VersionControl";
 
 // JSON 파일 경로 설정
 const ACTIVE_JSON_PATH = path.join(process.cwd(), "../website-texts-active.json");
@@ -152,6 +153,7 @@ export default function Editor() {
   const [showResetDialog, setShowResetDialog] = useState(false);
   const [showVersionDialog, setShowVersionDialog] = useState(false);
   const [sectionVisibility, setSectionVisibility] = useState<Record<string, boolean>>({});
+  const [sidebarTab, setSidebarTab] = useState<'sections' | 'versions'>('sections');
   const saveTimeoutRef = useRef<NodeJS.Timeout>();
   const iframeRef = useRef<HTMLIFrameElement>(null);
   
@@ -206,40 +208,48 @@ export default function Editor() {
   
   // 실제 파일에 저장하는 함수
   const handleSave = async (createVersion: boolean = false) => {
-    // 모든 변경사항을 저장
-    const updates = [];
+    if (!theme) return;
+    
+    // 모든 변경사항을 새로운 버전 관리 API로 저장
+    const savePromises: Promise<Response>[] = [];
     
     Object.entries(editedData).forEach(([section, items]) => {
-      Object.entries(items as any).forEach(([key, item]: [string, any]) => {
-        ['korean', 'english', 'applied'].forEach(field => {
-          if (item[field] !== undefined) {
-            const formData = new FormData();
-            formData.append("section", section);
-            formData.append("key", key);
-            formData.append("field", field);
-            formData.append("value", item[field] || "");
-            
-            // 메타데이터도 함께 전송
-            if (item.location) formData.append("location", item.location);
-            if (item.originalContent) formData.append("originalContent", item.originalContent);
-            if (item.type) formData.append("type", item.type);
-            
-            submit(formData, { method: "post" });
-          }
-        });
+      Object.entries(items as Record<string, any>).forEach(([key, item]) => {
+        // 각 항목에 대해 저장 API 호출
+        const formData = new FormData();
+        formData.append("templateId", theme);
+        formData.append("section", section);
+        formData.append("key", key);
+        
+        // 텍스트 데이터
+        if (item.korean !== undefined) formData.append("korean", item.korean || "");
+        if (item.english !== undefined) formData.append("english", item.english || "");
+        
+        // 메타데이터
+        if (item.location) formData.append("location", item.location);
+        if (item.type) formData.append("type", item.type);
+        
+        savePromises.push(
+          fetch('/api/editor/save', {
+            method: 'POST',
+            body: formData
+          })
+        );
       });
     });
     
-    // 버전 생성 (선택적)
-    if (createVersion) {
-      setTimeout(() => {
-        const formData = new FormData();
-        formData.append("action", "createVersion");
-        submit(formData, { method: "post" });
-      }, 500); // 저장 완료 후 버전 생성
+    try {
+      // 모든 저장 작업 완료 대기
+      await Promise.all(savePromises);
+      setHasUnsavedChanges(false);
+      
+      console.log('All changes saved successfully');
+      
+      // 버전 생성은 VersionControl 컴포넌트에서 처리하므로 여기서는 제거
+    } catch (error) {
+      console.error('Failed to save changes:', error);
+      // 에러 처리 (토스트 메시지 등)
     }
-    
-    setHasUnsavedChanges(false);
     // 저장 후 iframe도 새로고침
     setTimeout(() => {
       setIframeKey(Date.now());
@@ -442,49 +452,94 @@ export default function Editor() {
       )}
       
       <div className="flex h-screen">
-        {/* 사이드바 - 섹션 목록 */}
-        <div className="w-64 bg-white shadow-lg overflow-y-auto">
-          <div className="p-4 border-b">
-            <h2 className="font-bold text-lg">섹션 목록</h2>
+        {/* 사이드바 - 섹션 목록 & 버전 관리 */}
+        <div className="w-80 bg-white shadow-lg flex flex-col">
+          {/* 탭 헤더 */}
+          <div className="border-b">
+            <div className="flex">
+              <button
+                onClick={() => setSidebarTab('sections')}
+                className={`flex-1 px-4 py-3 text-sm font-medium border-b-2 ${
+                  sidebarTab === 'sections'
+                    ? 'border-blue-500 text-blue-600 bg-blue-50'
+                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:bg-gray-50'
+                }`}
+              >
+                📝 섹션 편집
+              </button>
+              <button
+                onClick={() => setSidebarTab('versions')}
+                className={`flex-1 px-4 py-3 text-sm font-medium border-b-2 ${
+                  sidebarTab === 'versions'
+                    ? 'border-blue-500 text-blue-600 bg-blue-50'
+                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:bg-gray-50'
+                }`}
+              >
+                🕒 버전 관리
+              </button>
+            </div>
           </div>
           
-          <div className="p-4">
-            {sections.map(section => (
-              <div key={section} className="mb-2">
-                <button
-                  onClick={() => setSelectedSection(section)}
-                  className={`w-full text-left px-3 py-2 rounded transition-colors flex items-center justify-between ${
-                    selectedSection === section
-                      ? "bg-blue-500 text-white"
-                      : "hover:bg-gray-100"
-                  }`}
-                >
-                  <span>{section}</span>
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      toggleSection(section);
-                    }}
-                    className={`ml-2 px-2 py-1 text-xs rounded ${
-                      sectionVisibility[section]
-                        ? "bg-green-500 text-white"
-                        : "bg-gray-300 text-gray-600"
-                    }`}
+          {/* 탭 콘텐츠 */}
+          <div className="flex-1 overflow-y-auto">
+            {sidebarTab === 'sections' && (
+              <div>
+                <div className="p-4">
+                  {sections.map(section => (
+                    <div key={section} className="mb-2">
+                      <button
+                        onClick={() => setSelectedSection(section)}
+                        className={`w-full text-left px-3 py-2 rounded transition-colors flex items-center justify-between ${
+                          selectedSection === section
+                            ? "bg-blue-500 text-white"
+                            : "hover:bg-gray-100"
+                        }`}
+                      >
+                        <span>{section}</span>
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleSection(section);
+                          }}
+                          className={`ml-2 px-2 py-1 text-xs rounded ${
+                            sectionVisibility[section]
+                              ? "bg-green-500 text-white"
+                              : "bg-gray-300 text-gray-600"
+                          }`}
+                        >
+                          {sectionVisibility[section] ? "ON" : "OFF"}
+                        </button>
+                      </button>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="p-4 border-t">
+                  <Link
+                    to="/editor"
+                    className="block text-center px-3 py-2 bg-gray-200 rounded hover:bg-gray-300"
                   >
-                    {sectionVisibility[section] ? "ON" : "OFF"}
-                  </button>
-                </button>
+                    테마 변경
+                  </Link>
+                </div>
               </div>
-            ))}
-          </div>
-          
-          <div className="p-4 border-t">
-            <Link
-              to="/editor"
-              className="block text-center px-3 py-2 bg-gray-200 rounded hover:bg-gray-300"
-            >
-              테마 변경
-            </Link>
+            )}
+            
+            {sidebarTab === 'versions' && theme && (
+              <div className="p-4">
+                <VersionControl 
+                  templateId={theme}
+                  onVersionChange={(version) => {
+                    // 버전 변경 시 페이지 새로고침
+                    if (version) {
+                      window.location.href = `/editor?theme=${theme}&version=${version}`;
+                    } else {
+                      window.location.href = `/editor?theme=${theme}`;
+                    }
+                  }}
+                />
+              </div>
+            )}
           </div>
         </div>
         

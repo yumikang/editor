@@ -2,6 +2,8 @@ import { json, type LoaderFunctionArgs, type ActionFunctionArgs } from "@remix-r
 import { useLoaderData, Link, useFetcher, useRevalidator } from "@remix-run/react";
 import * as path from "path";
 import { ThemeScanner } from "~/utils/theme-scanner";
+// import { getTemplateWatcher } from "~/utils/template-watcher";
+import { initializeServer } from "~/utils/server-init";
 import { useState, useEffect } from "react";
 import { analyzeTemplate } from "./api.template-status.$id";
 
@@ -37,6 +39,9 @@ const analysisStatus = new Map<string, TemplateStatus>();
 
 export async function loader({ request }: LoaderFunctionArgs) {
   try {
+    // 서버 초기화 (템플릿 감시 시작)
+    await initializeServer();
+    
     const scanner = new ThemeScanner(THEMES_PATH, DATA_PATH);
     const scannedThemes = await scanner.scanThemes();
     
@@ -133,6 +138,7 @@ export default function Templates() {
   const revalidator = useRevalidator();
   const [isScanning, setIsScanning] = useState(false);
   const [templateProgress, setTemplateProgress] = useState<Record<string, any>>({});
+  const [notifications, setNotifications] = useState<Array<{ id: string; message: string; type: 'info' | 'success' | 'warning' | 'error'; timestamp: Date }>>([]);
   
   // SSE를 통한 실시간 진행률 업데이트
   useEffect(() => {
@@ -164,6 +170,84 @@ export default function Templates() {
       eventSources.forEach(es => es.close());
     };
   }, [templates, revalidator]);
+
+  // SSE를 통한 실시간 템플릿 변경사항 감지
+  useEffect(() => {
+    const eventSource = new EventSource('/api/template-events');
+    
+    eventSource.addEventListener('connected', (event) => {
+      const data = JSON.parse(event.data);
+      console.log('[Templates] Connected to template events:', data.message);
+    });
+    
+    eventSource.addEventListener('templateChange', (event) => {
+      const changeEvent = JSON.parse(event.data);
+      console.log('[Templates] Template change detected:', changeEvent);
+      
+      // 알림 추가
+      const notification = {
+        id: Date.now().toString(),
+        message: getChangeMessage(changeEvent),
+        type: getChangeType(changeEvent.type),
+        timestamp: new Date(changeEvent.timestamp)
+      };
+      
+      setNotifications(prev => [notification, ...prev.slice(0, 4)]); // 최대 5개 알림 유지
+      
+      // 템플릿 목록 새로고침
+      setTimeout(() => {
+        revalidator.revalidate();
+      }, 1000);
+    });
+    
+    eventSource.addEventListener('watchingStarted', (event) => {
+      const data = JSON.parse(event.data);
+      console.log('[Templates] Template watching started:', data);
+      
+      const notification = {
+        id: Date.now().toString(),
+        message: `폴더 감시가 시작되었습니다 (${data.knownTemplates.length}개 템플릿)`,
+        type: 'info' as const,
+        timestamp: new Date()
+      };
+      
+      setNotifications(prev => [notification, ...prev.slice(0, 4)]);
+    });
+    
+    return () => {
+      eventSource.close();
+    };
+  }, [revalidator]);
+
+  const getChangeMessage = (changeEvent: any) => {
+    switch (changeEvent.type) {
+      case 'added':
+        return `새 템플릿이 감지되었습니다: ${changeEvent.templateId}`;
+      case 'removed':
+        return `템플릿이 제거되었습니다: ${changeEvent.templateId}`;
+      case 'modified':
+        return `템플릿이 수정되었습니다: ${changeEvent.templateId}`;
+      default:
+        return `템플릿 변경: ${changeEvent.templateId}`;
+    }
+  };
+
+  const getChangeType = (type: string) => {
+    switch (type) {
+      case 'added':
+        return 'success' as const;
+      case 'removed':
+        return 'warning' as const;
+      case 'modified':
+        return 'info' as const;
+      default:
+        return 'info' as const;
+    }
+  };
+
+  const dismissNotification = (id: string) => {
+    setNotifications(prev => prev.filter(n => n.id !== id));
+  };
   
   const handleScan = () => {
     setIsScanning(true);
@@ -189,6 +273,45 @@ export default function Templates() {
   
   return (
     <div className="min-h-screen bg-gray-50 p-8">
+      {/* 실시간 알림 */}
+      {notifications.length > 0 && (
+        <div className="fixed top-4 right-4 z-50 space-y-2">
+          {notifications.map((notification) => (
+            <div
+              key={notification.id}
+              className={`max-w-sm p-4 rounded-lg shadow-lg border-l-4 bg-white ${
+                notification.type === 'success' ? 'border-green-500' :
+                notification.type === 'warning' ? 'border-yellow-500' :
+                notification.type === 'error' ? 'border-red-500' :
+                'border-blue-500'
+              } animate-pulse`}
+            >
+              <div className="flex items-start justify-between">
+                <div className="flex-1">
+                  <p className={`text-sm font-medium ${
+                    notification.type === 'success' ? 'text-green-800' :
+                    notification.type === 'warning' ? 'text-yellow-800' :
+                    notification.type === 'error' ? 'text-red-800' :
+                    'text-blue-800'
+                  }`}>
+                    {notification.message}
+                  </p>
+                  <p className="text-xs text-gray-500 mt-1">
+                    {notification.timestamp.toLocaleTimeString('ko-KR')}
+                  </p>
+                </div>
+                <button
+                  onClick={() => dismissNotification(notification.id)}
+                  className="ml-3 text-gray-400 hover:text-gray-600"
+                >
+                  ✕
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+      
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold">Template Dashboard</h1>
@@ -338,8 +461,25 @@ export default function Templates() {
                       )}
                       
                       {template.status.status === 'error' && (
-                        <div className="text-sm text-red-600 ml-9">
-                          오류: {template.status.message || 'index.html을 찾을 수 없습니다'}
+                        <div className="ml-9">
+                          <div className="text-sm text-red-600 font-medium mb-2">
+                            오류: {template.status.message || 'index.html을 찾을 수 없습니다'}
+                          </div>
+                          {(template.status as any).data?.suggestions && (
+                            <div className="text-xs text-gray-600 bg-red-50 p-2 rounded border-l-2 border-red-200">
+                              <div className="font-medium mb-1">해결 방법:</div>
+                              <ul className="list-disc list-inside space-y-1">
+                                {(template.status as any).data.suggestions.slice(0, 2).map((suggestion: string, index: number) => (
+                                  <li key={index}>{suggestion}</li>
+                                ))}
+                              </ul>
+                              {(template.status as any).data?.errorCode && (
+                                <div className="mt-2 text-xs text-gray-500">
+                                  오류 코드: {(template.status as any).data.errorCode}
+                                </div>
+                              )}
+                            </div>
+                          )}
                         </div>
                       )}
                     </div>

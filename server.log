@@ -31531,3 +31531,30 @@ ErrorResponseImpl {
 [themes.loader] Full path: agency-redox/light/assets/imgs/shape/shape-6.webp Theme: agency-redox File: light/assets/imgs/shape/shape-6.webp
 [themes.loader] Absolute path: /Users/dongeuncheon/blee_project/codeb_webbulider/themes/agency-redox/light/assets/imgs/shape/shape-4.webp
 [themes.loader] Absolute path: /Users/dongeuncheon/blee_project/codeb_webbulider/themes/agency-redox/light/assets/imgs/shape/shape-6.webp
+[themes.loader] Full path: agency-redox/light/index.html Theme: agency-redox File: light/index.html
+[themes.loader] Absolute path: /Users/dongeuncheon/blee_project/codeb_webbulider/themes/agency-redox/light/index.html
+[themes.loader] Loaded text data sections: [ 'global', 'section-title', 'section-content', 'unknown' ]
+[themes.loader] Replaced 0 text elements
+[themes.loader] Custom styles added for theme: agency-redox
+[themes.loader] Full path: agency-redox/light/assets/vendor/bootstrap.min.css Theme: agency-redox File: light/assets/vendor/bootstrap.min.css
+[themes.loader] Full path: agency-redox/light/assets/vendor/fontawesome.min.css Theme: agency-redox File: light/assets/vendor/fontawesome.min.css
+[themes.loader] Full path: agency-redox/light/assets/vendor/animate.min.css Theme: agency-redox File: light/assets/vendor/animate.min.css
+[themes.loader] Full path: agency-redox/light/assets/css/style.css Theme: agency-redox File: light/assets/css/style.css
+[themes.loader] Absolute path: /Users/dongeuncheon/blee_project/codeb_webbulider/themes/agency-redox/light/assets/vendor/bootstrap.min.css
+[themes.loader] Absolute path: /Users/dongeuncheon/blee_project/codeb_webbulider/themes/agency-redox/light/assets/vendor/fontawesome.min.css
+[themes.loader] Full path: agency-redox/light/assets/vendor/jquery-3.7.1.min.js Theme: agency-redox File: light/assets/vendor/jquery-3.7.1.min.js
+[themes.loader] Absolute path: /Users/dongeuncheon/blee_project/codeb_webbulider/themes/agency-redox/light/assets/vendor/animate.min.css
+[themes.loader] Full path: agency-redox/light/assets/vendor/bootstrap.bundle.min.js Theme: agency-redox File: light/assets/vendor/bootstrap.bundle.min.js
+[themes.loader] Absolute path: /Users/dongeuncheon/blee_project/codeb_webbulider/themes/agency-redox/light/assets/css/style.css
+[themes.loader] Absolute path: /Users/dongeuncheon/blee_project/codeb_webbulider/themes/agency-redox/light/assets/vendor/jquery-3.7.1.min.js
+[themes.loader] Absolute path: /Users/dongeuncheon/blee_project/codeb_webbulider/themes/agency-redox/light/assets/vendor/bootstrap.bundle.min.js
+[themes.loader] Full path: agency-redox/light/assets/vendor/swiper-bundle.min.js Theme: agency-redox File: light/assets/vendor/swiper-bundle.min.js
+[themes.loader] Full path: agency-redox/light/assets/vendor/gsap.min.js Theme: agency-redox File: light/assets/vendor/gsap.min.js
+[themes.loader] Full path: agency-redox/light/assets/vendor/matter.js Theme: agency-redox File: light/assets/vendor/matter.js
+[themes.loader] Full path: agency-redox/light/assets/js/main.js Theme: agency-redox File: light/assets/js/main.js
+[themes.loader] Absolute path: /Users/dongeuncheon/blee_project/codeb_webbulider/themes/agency-redox/light/assets/vendor/swiper-bundle.min.js
+[themes.loader] Absolute path: /Users/dongeuncheon/blee_project/codeb_webbulider/themes/agency-redox/light/assets/vendor/gsap.min.js
+[themes.loader] Absolute path: /Users/dongeuncheon/blee_project/codeb_webbulider/themes/agency-redox/light/assets/vendor/matter.js
+[themes.loader] Absolute path: /Users/dongeuncheon/blee_project/codeb_webbulider/themes/agency-redox/light/assets/js/main.js
+[themes.loader] Full path: agency-redox/light/assets/webfonts/fa-solid-900.woff2 Theme: agency-redox File: light/assets/webfonts/fa-solid-900.woff2
+[themes.loader] Absolute path: /Users/dongeuncheon/blee_project/codeb_webbulider/themes/agency-redox/light/assets/webfonts/fa-solid-900.woff2
