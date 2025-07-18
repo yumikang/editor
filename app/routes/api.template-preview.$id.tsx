@@ -2,6 +2,7 @@ import { type LoaderFunctionArgs } from "@remix-run/node";
 import * as path from "path";
 import * as fs from "fs/promises";
 import * as cheerio from "cheerio";
+import { previewMessageHandler } from "~/components/preview/LivePreview";
 
 const THEMES_PATH = path.join(process.cwd(), "../themes");
 
@@ -77,30 +78,8 @@ export async function loader({ params, request }: LoaderFunctionArgs) {
       }
     });
     
-    // 실시간 업데이트를 위한 스크립트 추가
-    $('body').append(`
-      <script>
-        console.log('Preview page loaded, listening for messages...');
-        window.addEventListener('message', function(event) {
-          console.log('Message received:', event.data);
-          if (event.data.type === 'content-update') {
-            const { selector, content } = event.data;
-            console.log('Updating:', selector, 'with:', content);
-            const element = document.querySelector(selector);
-            if (element) {
-              if (element.tagName === 'IMG') {
-                element.src = content;
-              } else {
-                element.textContent = content;
-              }
-              console.log('Update successful');
-            } else {
-              console.warn('Element not found:', selector);
-            }
-          }
-        });
-      </script>
-    `);
+    // LivePreview 메시지 핸들러 스크립트 추가
+    $('body').append(previewMessageHandler);
     
     return new Response($.html(), {
       headers: {

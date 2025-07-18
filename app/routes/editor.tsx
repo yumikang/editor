@@ -1,11 +1,18 @@
 import { json, type LoaderFunctionArgs, type ActionFunctionArgs } from "@remix-run/node";
-import { useLoaderData, useNavigation, Link, useSubmit } from "@remix-run/react";
+import { useLoaderData, useNavigation, Link, useSubmit, useFetcher } from "@remix-run/react";
 import { useState, useEffect, useRef } from "react";
 import * as path from "path";
 import * as fs from "fs/promises";
 import { getJsonStorage } from "~/utils/json-storage";
 import { ThemeScanner } from "~/utils/theme-scanner";
 import VersionControl from "~/components/version/VersionControl";
+import { BasicColorEditor } from "~/components/color/BasicColorEditor";
+import { DesignTab } from "~/components/editor/DesignTab";
+import { LivePreview } from "~/components/preview/LivePreview";
+import { ColorTokenManager } from "~/utils/color-token-manager";
+import { StyleTokenManager } from "~/utils/style-token-manager";
+import type { ColorSystem } from "~/types/color-system";
+import type { StyleTokenSystem } from "~/types/style-tokens";
 
 // JSON 파일 경로 설정
 const ACTIVE_JSON_PATH = path.join(process.cwd(), "../website-texts-active.json");
@@ -153,9 +160,10 @@ export default function Editor() {
   const [showResetDialog, setShowResetDialog] = useState(false);
   const [showVersionDialog, setShowVersionDialog] = useState(false);
   const [sectionVisibility, setSectionVisibility] = useState<Record<string, boolean>>({});
-  const [sidebarTab, setSidebarTab] = useState<'sections' | 'versions'>('sections');
+  const [sidebarTab, setSidebarTab] = useState<'sections' | 'versions' | 'colors'>('sections');
+  const [colorSystem, setColorSystem] = useState<ColorSystem | null>(null);
+  const [styleTokens, setStyleTokens] = useState<StyleTokenSystem | null>(null);
   const saveTimeoutRef = useRef<NodeJS.Timeout>();
-  const iframeRef = useRef<HTMLIFrameElement>(null);
   
   // 초기 데이터 설정
   useEffect(() => {
@@ -250,10 +258,8 @@ export default function Editor() {
       console.error('Failed to save changes:', error);
       // 에러 처리 (토스트 메시지 등)
     }
-    // 저장 후 iframe도 새로고침
-    setTimeout(() => {
-      setIframeKey(Date.now());
-    }, 100);
+    // 저장 완료 처리
+    console.log('Save completed');
   };
   
   // 원본으로 초기화하는 함수
@@ -278,43 +284,11 @@ export default function Editor() {
     }));
   };
   
-  // 미리보기에 실시간 업데이트 전송
-  useEffect(() => {
-    if (iframeRef.current && editedData && autoPreview) {
-      const iframe = iframeRef.current;
-      const sendUpdate = () => {
-        // iframe이 로드된 후 약간의 지연을 주고 업데이트 전송
-        setTimeout(() => {
-          Object.entries(editedData).forEach(([section, items]) => {
-            Object.entries(items as any).forEach(([key, item]: [string, any]) => {
-              if (item.location) {
-                // applied가 있으면 최우선 사용, 없으면 korean 사용
-                const content = item.applied || item.korean || "";
-                if (content) {
-                  console.log('Sending update:', item.location, content);
-                  iframe.contentWindow?.postMessage({
-                    type: 'content-update',
-                    selector: item.location,
-                    content: content
-                  }, '*');
-                }
-              }
-            });
-          });
-        }, 500); // 500ms 지연
-      };
-      
-      // iframe 로드 완료 후 업데이트 전송
-      iframe.addEventListener('load', sendUpdate);
-      
-      // editedData가 변경될 때마다 즉시 업데이트 전송 (autoPreview가 켜져있을 때만)
-      if (autoPreview) {
-        sendUpdate();
-      }
-      
-      return () => iframe.removeEventListener('load', sendUpdate);
-    }
-  }, [editedData, autoPreview]);
+  // 컬러 시스템 변경 핸들러
+  const handleColorSystemChange = (newColorSystem: ColorSystem) => {
+    setColorSystem(newColorSystem);
+    setHasUnsavedChanges(true);
+  };
   
   const sections = analysisData ? Object.keys(analysisData.elements) : [];
   const isSaving = navigation.state === "submitting";
@@ -365,6 +339,45 @@ export default function Editor() {
     );
   }
   
+  // 컬러 탭이 선택된 경우 DesignTab 레이아웃 사용
+  if (sidebarTab === 'colors' && theme) {
+    return (
+      <div className="min-h-screen bg-gray-50 h-screen flex flex-col">
+        {/* 헤더 */}
+        <header className="bg-white shadow-sm border-b px-6 py-3">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <h1 className="text-xl font-bold">웹사이트 에디터</h1>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setSidebarTab('sections')}
+                  className="px-3 py-1 text-sm text-gray-600 hover:text-gray-900"
+                >
+                  ← 섹션 편집으로
+                </button>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              {hasUnsavedChanges && (
+                <span className="text-sm text-orange-500">저장되지 않은 변경사항</span>
+              )}
+            </div>
+          </div>
+        </header>
+
+        {/* DesignTab - 3패널 레이아웃 */}
+        <div className="flex-1">
+          <DesignTab
+            templateId={theme}
+            editedData={editedData}
+            initialColorSystem={colorSystem}
+            initialStyleTokens={styleTokens}
+          />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* 초기화 확인 다이얼로그 */}
@@ -477,6 +490,16 @@ export default function Editor() {
               >
                 🕒 버전 관리
               </button>
+              <button
+                onClick={() => setSidebarTab('colors')}
+                className={`flex-1 px-4 py-3 text-sm font-medium border-b-2 ${
+                  sidebarTab === 'colors'
+                    ? 'border-blue-500 text-blue-600 bg-blue-50'
+                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:bg-gray-50'
+                }`}
+              >
+                🎨 컬러
+              </button>
             </div>
           </div>
           
@@ -537,6 +560,15 @@ export default function Editor() {
                       window.location.href = `/editor?theme=${theme}`;
                     }
                   }}
+                />
+              </div>
+            )}
+            
+            {sidebarTab === 'colors' && theme && (
+              <div className="overflow-hidden">
+                <BasicColorEditor 
+                  templateId={theme}
+                  onColorChange={handleColorSystemChange}
                 />
               </div>
             )}
@@ -798,28 +830,18 @@ export default function Editor() {
                   </div>
                 </div>
                 
-                {/* iframe 컨테이너 */}
-                <div className="flex-1 overflow-auto bg-gray-200 p-4">
-                  <div 
-                    className="mx-auto bg-white shadow-lg transition-all duration-300"
-                    style={{
-                      width: previewSize === 'desktop' ? '100%' : 
-                             previewSize === 'tablet' ? '768px' :
-                             previewSize === 'mobile' ? '375px' :
-                             `${customWidth}px`,
-                      maxWidth: '100%',
-                      height: '100%',
-                      minHeight: '600px'
-                    }}
-                  >
-                    <iframe
-                      ref={iframeRef}
-                      key={iframeKey}
-                      src={`/api/template-preview/${theme}`}
-                      className="w-full h-full border-0"
-                      title="미리보기"
-                    />
-                  </div>
+                {/* LivePreview 컨테이너 */}
+                <div className="flex-1 overflow-auto bg-gray-200">
+                  <LivePreview
+                    templateId={theme}
+                    previewUrl={`/api/template-preview/${theme}`}
+                    editedData={editedData}
+                    colorSystem={colorSystem}
+                    styleTokens={styleTokens}
+                    previewSize={previewSize === 'tablet' ? 'desktop' : previewSize as 'mobile' | 'desktop' | 'custom'}
+                    customWidth={customWidth}
+                    className="h-full"
+                  />
                 </div>
               </div>
             </div>
