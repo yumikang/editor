@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { MediaUploadZone } from '~/components/media/MediaUploadZone';
 import { ImagePreview } from '~/components/media/ImagePreview';
 import { ImageEditor } from '~/components/media/ImageEditor';
+import { AdvancedImageEditor } from '~/components/media/AdvancedImageEditor';
 import { LivePreview } from '~/components/preview/LivePreview';
 import type { ProcessedImage } from '~/types/media';
 
@@ -15,6 +16,7 @@ export function MediaTab({ templateId, editedData }: MediaTabProps) {
   const [uploadedImages, setUploadedImages] = useState<ProcessedImage[]>([]);
   const [selectedImage, setSelectedImage] = useState<ProcessedImage | null>(null);
   const [showEditor, setShowEditor] = useState(false);
+  const [showAdvancedEditor, setShowAdvancedEditor] = useState(false);
   const [previewSize, setPreviewSize] = useState<'mobile' | 'desktop'>('desktop');
 
   // 이미지 업로드 핸들러
@@ -45,10 +47,22 @@ export function MediaTab({ templateId, editedData }: MediaTabProps) {
     setShowEditor(false);
   };
 
+  // 고급 편집기 저장 핸들러
+  const handleAdvancedEditorSave = (editedImage: ProcessedImage) => {
+    handleImageUpdate(editedImage);
+    setShowAdvancedEditor(false);
+  };
+
   // 편집기 열기
   const handleEditImage = (image: ProcessedImage) => {
     setSelectedImage(image);
     setShowEditor(true);
+  };
+
+  // 고급 편집기 열기
+  const handleAdvancedEditImage = (image: ProcessedImage) => {
+    setSelectedImage(image);
+    setShowAdvancedEditor(true);
   };
 
   return (
@@ -101,15 +115,26 @@ export function MediaTab({ templateId, editedData }: MediaTabProps) {
                   
                   {/* 편집 버튼 */}
                   <div className="p-2 border-t">
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleEditImage(image);
-                      }}
-                      className="w-full py-1 px-3 text-sm bg-blue-600 text-white rounded hover:bg-blue-700"
-                    >
-                      편집
-                    </button>
+                    <div className="flex gap-2">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleEditImage(image);
+                        }}
+                        className="flex-1 py-1 px-2 text-xs bg-gray-600 text-white rounded hover:bg-gray-700"
+                      >
+                        기본 편집
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleAdvancedEditImage(image);
+                        }}
+                        className="flex-1 py-1 px-2 text-xs bg-blue-600 text-white rounded hover:bg-blue-700"
+                      >
+                        고급 편집
+                      </button>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -218,16 +243,22 @@ export function MediaTab({ templateId, editedData }: MediaTabProps) {
                   <h4 className="font-medium text-gray-900">편집 액션</h4>
                   <div className="space-y-2">
                     <button
-                      onClick={() => handleEditImage(selectedImage)}
+                      onClick={() => handleAdvancedEditImage(selectedImage)}
                       className="w-full py-2 px-4 bg-blue-600 text-white rounded hover:bg-blue-700"
                     >
-                      고급 편집
+                      🖼️ 고급 편집 (크롭/라운딩)
+                    </button>
+                    <button
+                      onClick={() => handleEditImage(selectedImage)}
+                      className="w-full py-2 px-4 bg-gray-600 text-white rounded hover:bg-gray-700"
+                    >
+                      ⚙️ 기본 편집
                     </button>
                     <button
                       onClick={() => handleImageRemove(selectedImage.id)}
                       className="w-full py-2 px-4 bg-red-600 text-white rounded hover:bg-red-700"
                     >
-                      삭제
+                      🗑️ 삭제
                     </button>
                   </div>
                 </div>
@@ -251,13 +282,24 @@ export function MediaTab({ templateId, editedData }: MediaTabProps) {
         </div>
       </div>
 
-      {/* 이미지 편집기 모달 */}
+      {/* 기본 이미지 편집기 모달 */}
       {showEditor && selectedImage && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-75">
           <ImageEditor
             image={selectedImage}
             onSave={handleEditorSave}
             onCancel={() => setShowEditor(false)}
+          />
+        </div>
+      )}
+
+      {/* 고급 이미지 편집기 모달 */}
+      {showAdvancedEditor && selectedImage && (
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-75">
+          <AdvancedImageEditor
+            image={selectedImage}
+            onSave={handleAdvancedEditorSave}
+            onCancel={() => setShowAdvancedEditor(false)}
           />
         </div>
       )}

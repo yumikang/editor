@@ -3,12 +3,14 @@ import { useState } from 'react';
 import { MediaUploadZone } from '~/components/media/MediaUploadZone';
 import { ImagePreview } from '~/components/media/ImagePreview';
 import { ImageEditor } from '~/components/media/ImageEditor';
+import { AdvancedImageEditor } from '~/components/media/AdvancedImageEditor';
 import type { ProcessedImage } from '~/types/media';
 
 export default function TestMedia() {
   const [images, setImages] = useState<ProcessedImage[]>([]);
   const [selectedImage, setSelectedImage] = useState<ProcessedImage | null>(null);
   const [showEditor, setShowEditor] = useState(false);
+  const [showAdvancedEditor, setShowAdvancedEditor] = useState(false);
   const [testResults, setTestResults] = useState<string[]>([]);
 
   const addTestResult = (result: string) => {
@@ -49,7 +51,13 @@ export default function TestMedia() {
   const handleEditorSave = (editedImage: ProcessedImage) => {
     handleImageUpdate(editedImage);
     setShowEditor(false);
-    addTestResult(`💾 편집 완료: ${editedImage.metadata.originalName}`);
+    addTestResult(`💾 기본 편집 완료: ${editedImage.metadata.originalName}`);
+  };
+
+  const handleAdvancedEditorSave = (editedImage: ProcessedImage) => {
+    handleImageUpdate(editedImage);
+    setShowAdvancedEditor(false);
+    addTestResult(`🎨 고급 편집 완료: ${editedImage.metadata.originalName}`);
   };
 
   const clearTestResults = () => {
@@ -124,23 +132,35 @@ export default function TestMedia() {
                       showControls={false}
                     />
                     <div className="p-3 border-t">
-                      <div className="flex gap-2">
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setSelectedImage(image);
-                            setShowEditor(true);
-                          }}
-                          className="flex-1 py-1 px-2 text-xs bg-blue-600 text-white rounded hover:bg-blue-700"
-                        >
-                          편집
-                        </button>
+                      <div className="space-y-2">
+                        <div className="flex gap-1">
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedImage(image);
+                              setShowEditor(true);
+                            }}
+                            className="flex-1 py-1 px-2 text-xs bg-gray-600 text-white rounded hover:bg-gray-700"
+                          >
+                            기본
+                          </button>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedImage(image);
+                              setShowAdvancedEditor(true);
+                            }}
+                            className="flex-1 py-1 px-2 text-xs bg-blue-600 text-white rounded hover:bg-blue-700"
+                          >
+                            고급
+                          </button>
+                        </div>
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
                             handleImageRemove(image.id);
                           }}
-                          className="flex-1 py-1 px-2 text-xs bg-red-600 text-white rounded hover:bg-red-700"
+                          className="w-full py-1 px-2 text-xs bg-red-600 text-white rounded hover:bg-red-700"
                         >
                           삭제
                         </button>
@@ -243,13 +263,24 @@ export default function TestMedia() {
         </div>
       </div>
 
-      {/* 이미지 편집기 모달 */}
+      {/* 기본 이미지 편집기 모달 */}
       {showEditor && selectedImage && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-75">
           <ImageEditor
             image={selectedImage}
             onSave={handleEditorSave}
             onCancel={() => setShowEditor(false)}
+          />
+        </div>
+      )}
+
+      {/* 고급 이미지 편집기 모달 */}
+      {showAdvancedEditor && selectedImage && (
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-75">
+          <AdvancedImageEditor
+            image={selectedImage}
+            onSave={handleAdvancedEditorSave}
+            onCancel={() => setShowAdvancedEditor(false)}
           />
         </div>
       )}

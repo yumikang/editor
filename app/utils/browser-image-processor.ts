@@ -278,6 +278,313 @@ export class BrowserImageProcessor {
     });
   }
 
+  // 라운딩 처리 (border-radius 효과)
+  async applyRounding(
+    source: File | Blob,
+    borderRadius: number,
+    format = 'webp',
+    quality = 0.85
+  ): Promise<Blob> {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+
+      if (!ctx) {
+        reject(new Error('Canvas context not available'));
+        return;
+      }
+
+      img.onload = () => {
+        canvas.width = img.width;
+        canvas.height = img.height;
+
+        // 클리핑 패스 생성 (둥근 사각형)
+        ctx.beginPath();
+        ctx.roundRect(0, 0, img.width, img.height, borderRadius);
+        ctx.clip();
+
+        // 이미지 그리기
+        ctx.drawImage(img, 0, 0);
+
+        canvas.toBlob(
+          (blob) => {
+            if (blob) {
+              resolve(blob);
+            } else {
+              reject(new Error('Failed to create blob'));
+            }
+          },
+          `image/${format}`,
+          quality
+        );
+      };
+
+      img.onerror = () => reject(new Error('Failed to load image'));
+      img.src = URL.createObjectURL(source);
+    });
+  }
+
+  // 고급 크롭 (정확한 좌표 기반)
+  async cropImageAdvanced(
+    source: File | Blob,
+    cropData: ImageCropData,
+    format = 'webp',
+    quality = 0.85
+  ): Promise<Blob> {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+
+      if (!ctx) {
+        reject(new Error('Canvas context not available'));
+        return;
+      }
+
+      img.onload = () => {
+        canvas.width = cropData.width;
+        canvas.height = cropData.height;
+
+        // 고품질 설정
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = 'high';
+
+        // 크롭 영역 그리기
+        ctx.drawImage(
+          img,
+          cropData.x,
+          cropData.y,
+          cropData.width,
+          cropData.height,
+          0,
+          0,
+          cropData.width,
+          cropData.height
+        );
+
+        canvas.toBlob(
+          (blob) => {
+            if (blob) {
+              resolve(blob);
+            } else {
+              reject(new Error('Failed to create blob'));
+            }
+          },
+          `image/${format}`,
+          quality
+        );
+      };
+
+      img.onerror = () => reject(new Error('Failed to load image'));
+      img.src = URL.createObjectURL(source);
+    });
+  }
+
+  // Canvas 체인 처리 (여러 효과 연속 적용)
+  async processImageChain(
+    source: File | Blob,
+    operations: Array<{
+      type: 'crop' | 'round' | 'filter' | 'resize' | 'rotate';
+      params: any;
+    }>,
+    format = 'webp',
+    quality = 0.85
+  ): Promise<Blob> {
+    let currentBlob: Blob = source instanceof File ? source : source;
+
+    for (const operation of operations) {
+      switch (operation.type) {
+        case 'crop':
+          currentBlob = await this.cropImageAdvanced(
+            currentBlob,
+            operation.params,
+            format,
+            quality
+          );
+          break;
+        case 'round':
+          currentBlob = await this.applyRounding(
+            currentBlob,
+            operation.params.borderRadius,
+            format,
+            quality
+          );
+          break;
+        case 'filter':
+          currentBlob = await this.applyFiltersToBlob(
+            currentBlob,
+            operation.params,
+            format,
+            quality
+          );
+          break;
+        case 'resize':
+          currentBlob = await this.resizeFromBlob(
+            currentBlob,
+            operation.params,
+            format,
+            quality
+          );
+          break;
+        case 'rotate':
+          currentBlob = await this.rotateFromBlob(
+            currentBlob,
+            operation.params.degrees,
+            format,
+            quality
+          );
+          break;
+      }
+    }
+
+    return currentBlob;
+  }
+
+  // Blob에서 필터 적용
+  private async applyFiltersToBlob(
+    blob: Blob,
+    filters: ImageFilterOptions,
+    format = 'webp',
+    quality = 0.85
+  ): Promise<Blob> {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+
+      if (!ctx) {
+        reject(new Error('Canvas context not available'));
+        return;
+      }
+
+      img.onload = () => {
+        canvas.width = img.width;
+        canvas.height = img.height;
+
+        // 필터 적용
+        const filterString = this.buildFilterString(filters);
+        ctx.filter = filterString;
+        
+        ctx.drawImage(img, 0, 0);
+
+        canvas.toBlob(
+          (blob) => {
+            if (blob) {
+              resolve(blob);
+            } else {
+              reject(new Error('Failed to create blob'));
+            }
+          },
+          `image/${format}`,
+          quality
+        );
+      };
+
+      img.onerror = () => reject(new Error('Failed to load image'));
+      img.src = URL.createObjectURL(blob);
+    });
+  }
+
+  // Blob에서 리사이즈
+  private async resizeFromBlob(
+    blob: Blob,
+    options: ImageProcessingOptions,
+    format = 'webp',
+    quality = 0.85
+  ): Promise<Blob> {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+
+      if (!ctx) {
+        reject(new Error('Canvas context not available'));
+        return;
+      }
+
+      img.onload = () => {
+        const { width, height } = this.calculateDimensions(
+          img.width,
+          img.height,
+          options.maxWidth || img.width,
+          options.maxHeight || img.height,
+          options.maintainAspectRatio !== false
+        );
+
+        canvas.width = width;
+        canvas.height = height;
+
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = 'high';
+        
+        ctx.drawImage(img, 0, 0, width, height);
+
+        canvas.toBlob(
+          (blob) => {
+            if (blob) {
+              resolve(blob);
+            } else {
+              reject(new Error('Failed to create blob'));
+            }
+          },
+          `image/${format}`,
+          quality
+        );
+      };
+
+      img.onerror = () => reject(new Error('Failed to load image'));
+      img.src = URL.createObjectURL(blob);
+    });
+  }
+
+  // Blob에서 회전
+  private async rotateFromBlob(
+    blob: Blob,
+    degrees: number,
+    format = 'webp',
+    quality = 0.85
+  ): Promise<Blob> {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+
+      if (!ctx) {
+        reject(new Error('Canvas context not available'));
+        return;
+      }
+
+      img.onload = () => {
+        const radians = (degrees * Math.PI) / 180;
+        const sin = Math.abs(Math.sin(radians));
+        const cos = Math.abs(Math.cos(radians));
+
+        canvas.width = img.width * cos + img.height * sin;
+        canvas.height = img.width * sin + img.height * cos;
+
+        ctx.translate(canvas.width / 2, canvas.height / 2);
+        ctx.rotate(radians);
+        ctx.drawImage(img, -img.width / 2, -img.height / 2);
+
+        canvas.toBlob(
+          (blob) => {
+            if (blob) {
+              resolve(blob);
+            } else {
+              reject(new Error('Failed to create blob'));
+            }
+          },
+          `image/${format}`,
+          quality
+        );
+      };
+
+      img.onerror = () => reject(new Error('Failed to load image'));
+      img.src = URL.createObjectURL(blob);
+    });
+  }
+
   // 메타데이터 추출
   async extractMetadata(file: File): Promise<Partial<ImageMetadata>> {
     return new Promise((resolve, reject) => {
