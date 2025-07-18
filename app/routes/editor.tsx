@@ -8,6 +8,7 @@ import { ThemeScanner } from "~/utils/theme-scanner";
 import VersionControl from "~/components/version/VersionControl";
 import { BasicColorEditor } from "~/components/color/BasicColorEditor";
 import { DesignTab } from "~/components/editor/DesignTab";
+import { MediaTab } from "~/components/editor/MediaTab";
 import { LivePreview } from "~/components/preview/LivePreview";
 import { ColorTokenManager } from "~/utils/color-token-manager";
 import { StyleTokenManager } from "~/utils/style-token-manager";
@@ -160,7 +161,7 @@ export default function Editor() {
   const [showResetDialog, setShowResetDialog] = useState(false);
   const [showVersionDialog, setShowVersionDialog] = useState(false);
   const [sectionVisibility, setSectionVisibility] = useState<Record<string, boolean>>({});
-  const [sidebarTab, setSidebarTab] = useState<'sections' | 'versions' | 'colors'>('sections');
+  const [sidebarTab, setSidebarTab] = useState<'sections' | 'versions' | 'colors' | 'media'>('sections');
   const [colorSystem, setColorSystem] = useState<ColorSystem | null>(null);
   const [styleTokens, setStyleTokens] = useState<StyleTokenSystem | null>(null);
   const saveTimeoutRef = useRef<NodeJS.Timeout>();
@@ -339,6 +340,41 @@ export default function Editor() {
     );
   }
   
+  // 미디어 탭이 선택된 경우 MediaTab 레이아웃 사용
+  if (sidebarTab === 'media' && theme) {
+    return (
+      <div className="min-h-screen bg-gray-50 h-screen flex flex-col">
+        {/* 헤더 */}
+        <header className="bg-white shadow-sm border-b px-6 py-3">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <h1 className="text-xl font-bold">웹사이트 에디터 - 미디어</h1>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setSidebarTab('sections')}
+                  className="px-3 py-1 text-sm text-gray-600 hover:text-gray-900"
+                >
+                  ← 섹션 편집으로
+                </button>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <span className="text-sm text-gray-600">테마: {theme}</span>
+            </div>
+          </div>
+        </header>
+        
+        {/* 미디어 편집 영역 */}
+        <div className="flex-1 overflow-hidden">
+          <MediaTab 
+            templateId={theme}
+            editedData={editedData}
+          />
+        </div>
+      </div>
+    );
+  }
+
   // 컬러 탭이 선택된 경우 DesignTab 레이아웃 사용
   if (sidebarTab === 'colors' && theme) {
     return (
@@ -499,6 +535,16 @@ export default function Editor() {
                 }`}
               >
                 🎨 컬러
+              </button>
+              <button
+                onClick={() => setSidebarTab('media')}
+                className={`flex-1 px-4 py-3 text-sm font-medium border-b-2 ${
+                  sidebarTab === 'media'
+                    ? 'border-blue-500 text-blue-600 bg-blue-50'
+                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:bg-gray-50'
+                }`}
+              >
+                🖼️ 미디어
               </button>
             </div>
           </div>
