@@ -1,0 +1,31 @@
+{
+  "id": "forest-green",
+  "name": "포레스트 그린",
+  "colors": {
+    "brand": {
+      "primary": "#059669",
+      "secondary": "#0891B2"
+    },
+    "semantic": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#3B82F6"
+    },
+    "neutral": {
+      "textPrimary": "#064E3B",
+      "textSecondary": "#047857",
+      "background": "#F0FDF4",
+      "surface": "#D1FAE5",
+      "border": "#6EE7B7"
+    },
+    "interaction": {
+      "hover": "#047857",
+      "active": "#065F46",
+      "focus": "#05966933",
+      "disabled": "#6EE7B7"
+    }
+  },
+  "createdAt": "2025-07-18T06:53:30.584Z",
+  "updatedAt": "2025-07-18T06:53:30.584Z"
+}

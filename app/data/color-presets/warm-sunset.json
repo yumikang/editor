@@ -1,0 +1,31 @@
+{
+  "id": "warm-sunset",
+  "name": "따뜻한 석양",
+  "colors": {
+    "brand": {
+      "primary": "#F97316",
+      "secondary": "#EC4899"
+    },
+    "semantic": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#06B6D4"
+    },
+    "neutral": {
+      "textPrimary": "#18181B",
+      "textSecondary": "#71717A",
+      "background": "#FFFBF5",
+      "surface": "#FFF7ED",
+      "border": "#FED7AA"
+    },
+    "interaction": {
+      "hover": "#EA580C",
+      "active": "#C2410C",
+      "focus": "#F9731633",
+      "disabled": "#FDBA74"
+    }
+  },
+  "createdAt": "2025-07-18T06:53:30.584Z",
+  "updatedAt": "2025-07-18T06:53:30.584Z"
+}

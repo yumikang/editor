@@ -21,8 +21,17 @@ export class PresetManager {
     // 디렉토리 생성
     await fs.mkdir(this.presetsPath, { recursive: true });
     
-    // 기본 프리셋 로드
+    // 🆕 기본 프리셋을 파일로 저장 (없는 경우에만)
     for (const preset of defaultPresets) {
+      const filePath = path.join(this.presetsPath, `${preset.id}.json`);
+      try {
+        await fs.access(filePath);
+        // 파일이 이미 존재함
+      } catch {
+        // 파일이 없으므로 저장
+        await fs.writeFile(filePath, JSON.stringify(preset, null, 2));
+        console.log(`[PresetManager] Saved default preset to file: ${preset.id}`);
+      }
       this.presets.set(preset.id, preset);
     }
     

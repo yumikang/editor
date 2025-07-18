@@ -1,0 +1,31 @@
+{
+  "id": "minimal-gray",
+  "name": "미니멀 그레이",
+  "colors": {
+    "brand": {
+      "primary": "#374151",
+      "secondary": "#7C3AED"
+    },
+    "semantic": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#3B82F6"
+    },
+    "neutral": {
+      "textPrimary": "#111827",
+      "textSecondary": "#6B7280",
+      "background": "#FFFFFF",
+      "surface": "#F9FAFB",
+      "border": "#E5E7EB"
+    },
+    "interaction": {
+      "hover": "#1F2937",
+      "active": "#111827",
+      "focus": "#37415133",
+      "disabled": "#9CA3AF"
+    }
+  },
+  "createdAt": "2025-07-18T06:53:30.584Z",
+  "updatedAt": "2025-07-18T06:53:30.584Z"
+}

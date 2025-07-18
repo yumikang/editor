@@ -1,6 +1,7 @@
 import * as fs from 'fs/promises';
 import * as path from 'path';
 import { createHash } from 'crypto';
+import type { ColorSystem } from '~/types/color-system';
 
 export interface VersionMetadata {
   id: string;
@@ -11,6 +12,7 @@ export interface VersionMetadata {
     texts: number;
     styles: number;
     media: number;
+    colors: number; // 🆕 컬러 변경 개수 추가
   };
   checksum: string;
   parentVersion?: string;
@@ -30,6 +32,8 @@ export interface WorkingData {
   texts: Record<string, string>;
   images: Record<string, string>;
   styles?: Record<string, unknown>;
+  colorSystem?: ColorSystem; // 🆕 컬러 시스템 추가
+  componentMappings?: Record<string, any>; // 🆕 컴포넌트 매핑 추가
   isDirty: boolean;
 }
 
@@ -167,6 +171,12 @@ export class VersionManager {
       const content = await fs.readFile(workingPath, 'utf-8');
       const data = JSON.parse(content);
       
+      // 🆕 마이그레이션: colorSystem이 없으면 기본값 제공
+      if (!data.colorSystem) {
+        data.colorSystem = this.getDefaultColorSystem();
+        console.log(`[VersionManager] Migrated colorSystem for ${this.templateId}`);
+      }
+      
       return {
         ...data,
         lastModified: new Date(data.lastModified),
@@ -187,6 +197,7 @@ export class VersionManager {
         lastModified: new Date(),
         texts: {},
         images: {},
+        colorSystem: this.getDefaultColorSystem(),
         isDirty: false
       };
       
@@ -278,6 +289,24 @@ export class VersionManager {
       'utf-8'
     );
     
+    // 🆕 컬러 시스템 별도 파일로도 저장 (빠른 접근용)
+    if (workingData.colorSystem) {
+      await fs.writeFile(
+        path.join(versionFolderPath, 'colors.json'),
+        JSON.stringify(workingData.colorSystem, null, 2),
+        'utf-8'
+      );
+    }
+    
+    // 🆕 컴포넌트 매핑 저장
+    if (workingData.componentMappings) {
+      await fs.writeFile(
+        path.join(versionFolderPath, 'component-mappings.json'),
+        JSON.stringify(workingData.componentMappings, null, 2),
+        'utf-8'
+      );
+    }
+    
     // 히스토리 업데이트
     history.versions.push(versionMetadata);
     history.currentVersion = newVersion;
@@ -313,6 +342,28 @@ export class VersionManager {
       const workingPath = path.join(this.workingPath, 'content.json');
       await fs.writeFile(workingPath, content, 'utf-8');
       
+      // 🆕 컬러 시스템 복원
+      if (versionData.colorSystem) {
+        const colorsPath = path.join(this.workingPath, 'colors.json');
+        await fs.writeFile(
+          colorsPath,
+          JSON.stringify(versionData.colorSystem, null, 2),
+          'utf-8'
+        );
+        console.log(`[VersionManager] Restored color system for ${this.templateId}`);
+      }
+      
+      // 🆕 컴포넌트 매핑 복원
+      if (versionData.componentMappings) {
+        const mappingsPath = path.join(this.workingPath, 'component-mappings.json');
+        await fs.writeFile(
+          mappingsPath,
+          JSON.stringify(versionData.componentMappings, null, 2),
+          'utf-8'
+        );
+        console.log(`[VersionManager] Restored component mappings for ${this.templateId}`);
+      }
+      
       // 히스토리 업데이트
       const history = await this.loadVersionHistory();
       history.currentVersion = version;
@@ -339,6 +390,23 @@ export class VersionManager {
     
     try {
       await fs.copyFile(originalPath, workingPath);
+      
+      // 🆕 기본 컬러 시스템으로 리셋
+      const defaultColorSystem = this.getDefaultColorSystem();
+      const colorsPath = path.join(this.workingPath, 'colors.json');
+      await fs.writeFile(
+        colorsPath,
+        JSON.stringify(defaultColorSystem, null, 2),
+        'utf-8'
+      );
+      
+      // 🆕 컴포넌트 매핑 제거
+      const mappingsPath = path.join(this.workingPath, 'component-mappings.json');
+      try {
+        await fs.unlink(mappingsPath);
+      } catch {
+        // 파일이 없어도 무시
+      }
       
       // 히스토리 업데이트
       const history = await this.loadVersionHistory();
@@ -368,12 +436,14 @@ export class VersionManager {
     texts: number;
     styles: number;
     media: number;
+    colors: number;
   } {
     if (!originalData) {
       return {
         texts: Object.keys(workingData.texts || {}).length,
         styles: Object.keys(workingData.styles || {}).length,
-        media: Object.keys(workingData.images || {}).length
+        media: Object.keys(workingData.images || {}).length,
+        colors: this.countColorChanges(workingData.colorSystem, this.getDefaultColorSystem())
       };
     }
     
@@ -404,10 +474,17 @@ export class VersionManager {
       }
     });
     
+    // 🆕 컬러 변경사항 계산
+    const colorChanges = this.countColorChanges(
+      workingData.colorSystem,
+      this.getDefaultColorSystem()
+    );
+    
     return {
       texts: textChanges,
       styles: Object.keys(workingData.styles || {}).length,
-      media: mediaChanges
+      media: mediaChanges,
+      colors: colorChanges
     };
   }
 
@@ -415,6 +492,87 @@ export class VersionManager {
   private calculateChecksum(data: unknown): string {
     const content = JSON.stringify(data, Object.keys(data as object).sort());
     return createHash('sha256').update(content).digest('hex').substring(0, 16);
+  }
+
+  // 🆕 기본 컬러 시스템 생성
+  private getDefaultColorSystem(): ColorSystem {
+    return {
+      brand: {
+        primary: '#3B82F6',
+        secondary: '#8B5CF6'
+      },
+      semantic: {
+        success: '#10B981',
+        warning: '#F59E0B',
+        error: '#EF4444',
+        info: '#3B82F6'
+      },
+      neutral: {
+        textPrimary: '#111827',
+        textSecondary: '#6B7280',
+        background: '#FFFFFF',
+        surface: '#F9FAFB',
+        border: '#E5E7EB'
+      },
+      interaction: {
+        hover: '#2563EB',
+        active: '#1D4ED8',
+        focus: '#3B82F6',
+        disabled: '#9CA3AF'
+      }
+    };
+  }
+
+  // 🆕 컬러 변경 개수 계산
+  private countColorChanges(current?: ColorSystem, original?: ColorSystem): number {
+    if (!current || !original) return 0;
+    
+    let changes = 0;
+    
+    // 재귀적으로 객체 비교
+    const compareObjects = (obj1: any, obj2: any): number => {
+      let count = 0;
+      const allKeys = new Set([...Object.keys(obj1 || {}), ...Object.keys(obj2 || {})]);
+      
+      for (const key of allKeys) {
+        if (typeof obj1?.[key] === 'object' && typeof obj2?.[key] === 'object') {
+          count += compareObjects(obj1[key], obj2[key]);
+        } else if (obj1?.[key] !== obj2?.[key]) {
+          count++;
+        }
+      }
+      
+      return count;
+    };
+    
+    changes = compareObjects(current, original);
+    return changes;
+  }
+
+  // 🆕 컬러 변경사항 요약 생성
+  generateColorChangeSummary(workingData: WorkingData, originalColorSystem?: ColorSystem): string {
+    if (!workingData.colorSystem) return '';
+    
+    const original = originalColorSystem || this.getDefaultColorSystem();
+    const changes: string[] = [];
+    
+    // 브랜드 컬러 변경 확인
+    if (workingData.colorSystem.brand.primary !== original.brand.primary) {
+      changes.push(`Primary: ${original.brand.primary} → ${workingData.colorSystem.brand.primary}`);
+    }
+    if (workingData.colorSystem.brand.secondary !== original.brand.secondary) {
+      changes.push(`Secondary: ${original.brand.secondary} → ${workingData.colorSystem.brand.secondary}`);
+    }
+    
+    // 컴포넌트 매핑 개수
+    const mappingCount = Object.keys(workingData.componentMappings || {}).length;
+    if (mappingCount > 0) {
+      changes.push(`${mappingCount}개 컴포넌트 매핑`);
+    }
+    
+    return changes.length > 0 
+      ? `컬러 변경: ${changes.join(', ')}` 
+      : '';
   }
 
   // 버전 삭제

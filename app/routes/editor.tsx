@@ -560,6 +560,10 @@ export default function Editor() {
                       window.location.href = `/editor?theme=${theme}`;
                     }
                   }}
+                  onColorSystemRestore={() => {
+                    // 🆕 컬러 시스템 리로드
+                    window.location.reload();
+                  }}
                 />
               </div>
             )}

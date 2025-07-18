@@ -5,6 +5,7 @@ import type { VersionMetadata, VersionHistory } from "~/utils/version-manager";
 interface VersionControlProps {
   templateId: string;
   onVersionChange?: (version: string | null) => void;
+  onColorSystemRestore?: () => void; // 🆕 컬러 시스템 복원 콜백
 }
 
 interface VersionListData {
@@ -21,7 +22,7 @@ interface VersionActionData {
   restoredVersion?: string;
 }
 
-export default function VersionControl({ templateId, onVersionChange }: VersionControlProps) {
+export default function VersionControl({ templateId, onVersionChange, onColorSystemRestore }: VersionControlProps) {
   const listFetcher = useFetcher<VersionListData>();
   const createFetcher = useFetcher<VersionActionData>();
   const restoreFetcher = useFetcher<VersionActionData>();
@@ -48,6 +49,11 @@ export default function VersionControl({ templateId, onVersionChange }: VersionC
       setShowCreateDialog(false);
       setNewVersionDescription("");
       setShowDeleteConfirm(null);
+      
+      // 🆕 버전 복원/리셋 시 컬러 시스템 리로드 트리거
+      if (restoreFetcher.data?.success || resetFetcher.data?.success) {
+        onColorSystemRestore?.();
+      }
       
       // 부모 컴포넌트에 변경사항 알림
       if (onVersionChange) {

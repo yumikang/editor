@@ -93,6 +93,20 @@ export async function action({ request }: ActionFunctionArgs) {
           JSON.stringify(colorSystem, null, 2)
         );
         
+        // 🆕 버전 관리 시스템에도 업데이트
+        const versionManager = new (await import('~/utils/version-manager')).VersionManager(
+          templateId,
+          path.join(process.cwd(), 'app/data/themes')
+        );
+        
+        const workingData = await versionManager.loadWorkingData();
+        if (workingData) {
+          await versionManager.saveWorkingData({
+            ...workingData,
+            colorSystem
+          });
+        }
+        
         // CSS 변수 생성
         const tokenManager = new ColorTokenManager(colorSystem);
         const cssVariables = tokenManager.exportAsCSSVariables();

@@ -28,9 +28,11 @@ export function DesignTab({
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [lastSaveTime, setLastSaveTime] = useState<Date | null>(null);
+  const [componentMappings, setComponentMappings] = useState<Record<string, any>>({});
   
   const colorFetcher = useFetcher();
   const styleFetcher = useFetcher();
+  const versionFetcher = useFetcher();
   
   // ColorTokenManager 인스턴스
   const [tokenManager] = useState(() => new ColorTokenManager(colorSystem));
@@ -60,7 +62,7 @@ export function DesignTab({
 
   // 디바운싱된 저장 함수 (200ms)
   const debouncedSave = useCallback(
-    debounce((newColorSystem: ColorSystem) => {
+    debounce((newColorSystem: ColorSystem, newMappings?: Record<string, any>) => {
       setIsSaving(true);
       
       const formData = new FormData();
@@ -71,6 +73,17 @@ export function DesignTab({
       colorFetcher.submit(formData, {
         method: 'POST',
         action: '/api/style/tokens'
+      });
+      
+      // 🆕 버전 관리 시스템에 isDirty 상태 업데이트
+      const versionFormData = new FormData();
+      versionFormData.append('templateId', templateId);
+      versionFormData.append('operation', 'markDirty');
+      versionFormData.append('changeType', 'color');
+      
+      versionFetcher.submit(versionFormData, {
+        method: 'POST',
+        action: '/api/version/dirty-state'
       });
     }, 200),
     [templateId]
@@ -208,7 +221,25 @@ export function DesignTab({
           colorSystem={colorSystem}
           onMappingChange={(componentId, tokenPath) => {
             console.log(`Mapped ${componentId} to ${tokenPath}`);
-            // 미리보기 실시간 업데이트는 LivePreview의 postMessage로 처리됨
+            
+            // 🆕 매핑 상태 업데이트
+            const newMappings = {
+              ...componentMappings,
+              [componentId]: tokenPath
+            };
+            setComponentMappings(newMappings);
+            setHasUnsavedChanges(true);
+            
+            // 🆕 버전 관리 시스템에 알림
+            const formData = new FormData();
+            formData.append('templateId', templateId);
+            formData.append('operation', 'markDirty');
+            formData.append('changeType', 'mapping');
+            
+            versionFetcher.submit(formData, {
+              method: 'POST',
+              action: '/api/version/dirty-state'
+            });
           }}
         />
       </div>

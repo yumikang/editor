@@ -1,0 +1,31 @@
+{
+  "id": "modern-blue",
+  "name": "모던 블루",
+  "colors": {
+    "brand": {
+      "primary": "#3B82F6",
+      "secondary": "#8B5CF6"
+    },
+    "semantic": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#3B82F6"
+    },
+    "neutral": {
+      "textPrimary": "#111827",
+      "textSecondary": "#6B7280",
+      "background": "#FFFFFF",
+      "surface": "#F9FAFB",
+      "border": "#E5E7EB"
+    },
+    "interaction": {
+      "hover": "#2563EB",
+      "active": "#1D4ED8",
+      "focus": "#3B82F633",
+      "disabled": "#9CA3AF"
+    }
+  },
+  "createdAt": "2025-07-18T06:53:30.584Z",
+  "updatedAt": "2025-07-18T06:53:30.584Z"
+}
