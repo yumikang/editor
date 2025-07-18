@@ -7,7 +7,8 @@ import { LivePreview } from '~/components/preview/LivePreview';
 import { ColorTokenManager } from '~/utils/color-token-manager';
 import type { ColorSystem } from '~/types/color-system';
 import type { StyleTokenSystem } from '~/types/style-tokens';
-import { debounce } from 'lodash';
+import pkg from 'lodash';
+const { debounce } = pkg;
 
 interface DesignTabProps {
   templateId: string;
