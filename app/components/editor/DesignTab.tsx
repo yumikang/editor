@@ -1,12 +1,14 @@
 // 디자인 탭 - 3패널 레이아웃 - Phase 3 Day 5-6
 import { useState, useEffect, useCallback } from 'react';
 import { useFetcher } from '@remix-run/react';
+import { ColorPalette } from './ColorPalette';
 import { ColorSystemPanel } from '~/components/color/ColorSystemPanel';
 import { ComponentMappingPanel } from '~/components/color/ComponentMappingPanel';
 import { LivePreview } from '~/components/preview/LivePreview';
 import { ColorTokenManager } from '~/utils/color-token-manager';
 import type { ColorSystem } from '~/types/color-system';
 import type { StyleTokenSystem } from '~/types/style-tokens';
+import type { DesignAnalysisResult } from '~/utils/design-scanner.server';
 import pkg from 'lodash';
 const { debounce } = pkg;
 
@@ -15,13 +17,15 @@ interface DesignTabProps {
   editedData: any; // 텍스트 데이터
   initialColorSystem?: ColorSystem | null;
   initialStyleTokens?: StyleTokenSystem | null;
+  designAnalysis?: DesignAnalysisResult | null;
 }
 
 export function DesignTab({ 
   templateId, 
   editedData,
   initialColorSystem,
-  initialStyleTokens
+  initialStyleTokens,
+  designAnalysis
 }: DesignTabProps) {
   const [colorSystem, setColorSystem] = useState<ColorSystem | null>(initialColorSystem || null);
   const [styleTokens, setStyleTokens] = useState<StyleTokenSystem | null>(initialStyleTokens || null);
@@ -30,6 +34,8 @@ export function DesignTab({
   const [isSaving, setIsSaving] = useState(false);
   const [lastSaveTime, setLastSaveTime] = useState<Date | null>(null);
   const [componentMappings, setComponentMappings] = useState<Record<string, any>>({});
+  const [selectedColor, setSelectedColor] = useState<string>();
+  const [activePanel, setActivePanel] = useState<'palette' | 'system'>('palette');
   
   const colorFetcher = useFetcher();
   const styleFetcher = useFetcher();
@@ -139,15 +145,73 @@ export function DesignTab({
     }
   }, [colorFetcher.state, colorFetcher.data]);
 
+  // 색상 변경 핸들러
+  const handleColorChange = (originalColor: string, newColor: string, usage: string) => {
+    // 미리보기에 색상 변경 전송
+    window.postMessage({
+      type: 'UPDATE_COLOR',
+      originalColor,
+      newColor,
+      usage
+    }, '*');
+    
+    setHasUnsavedChanges(true);
+  };
+
   return (
     <div className="h-full flex">
-      {/* 좌측 패널: 컬러 시스템 (300px) */}
-      <div className="w-[300px] border-r bg-white">
-        <ColorSystemPanel
-          templateId={templateId}
-          colorSystem={colorSystem}
-          onColorSystemChange={handleColorSystemChange}
-        />
+      {/* 좌측 패널: 색상 팔레트 또는 컬러 시스템 (350px) */}
+      <div className="w-[350px] border-r bg-white flex flex-col">
+        {/* 패널 헤더 */}
+        <div className="border-b border-gray-200 bg-gray-50">
+          <div className="flex">
+            <button
+              onClick={() => setActivePanel('palette')}
+              className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
+                activePanel === 'palette'
+                  ? 'bg-white text-blue-600 border-b-2 border-blue-600'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              🎨 색상 팔레트
+            </button>
+            <button
+              onClick={() => setActivePanel('system')}
+              className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
+                activePanel === 'system'
+                  ? 'bg-white text-blue-600 border-b-2 border-blue-600'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              ⚙️ 시스템
+            </button>
+          </div>
+        </div>
+        
+        {/* 패널 컨텐츠 */}
+        <div className="flex-1 overflow-hidden">
+          {activePanel === 'palette' ? (
+            designAnalysis?.colors ? (
+              <ColorPalette
+                colors={designAnalysis.colors}
+                onColorChange={handleColorChange}
+                selectedColor={selectedColor}
+              />
+            ) : (
+              <div className="p-6 text-center text-gray-500">
+                <div className="text-4xl mb-2">🔍</div>
+                <p className="mb-2">디자인 분석이 필요합니다</p>
+                <p className="text-sm">대시보드에서 템플릿을 분석해주세요.</p>
+              </div>
+            )
+          ) : (
+            <ColorSystemPanel
+              templateId={templateId}
+              colorSystem={colorSystem}
+              onColorSystemChange={handleColorSystemChange}
+            />
+          )}
+        </div>
       </div>
 
       {/* 중앙 패널: 실시간 미리보기 (flex-1) */}
@@ -215,8 +279,8 @@ export function DesignTab({
         </div>
       </div>
 
-      {/* 우측 패널: 컴포넌트 매핑 (350px) */}
-      <div className="w-[350px] border-l bg-white">
+      {/* 우측 패널: 컴포넌트 매핑 (300px) */}
+      <div className="w-[300px] border-l bg-white">
         <ComponentMappingPanel
           templateId={templateId}
           colorSystem={colorSystem}

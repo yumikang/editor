@@ -322,6 +322,7 @@ export const action: ActionFunction = async ({ request }) => {
       // HTML 분석기 및 전처리기 import
       const { HtmlAnalyzer } = await import("~/utils/html-analyzer.server");
       const { preprocessTemplate } = await import("~/utils/template-preprocessor.server");
+      const { scanTemplateDesign } = await import("~/utils/design-scanner.server");
       
       // 템플릿 경로
       const templatePath = join(TEMPLATES_DIR, templateId);
@@ -346,6 +347,11 @@ export const action: ActionFunction = async ({ request }) => {
       
       await fs.writeFile(originalContentPath, JSON.stringify(originalContent, null, 2));
       
+      // 디자인 요소 스캔
+      const designAnalysis = await scanTemplateDesign(templatePath);
+      const designPath = join(templatePath, 'design-analysis.json');
+      await fs.writeFile(designPath, JSON.stringify(designAnalysis, null, 2));
+      
       // 템플릿 전처리 (data 속성 추가)
       await preprocessTemplate(templatePath);
       
@@ -362,7 +368,12 @@ export const action: ActionFunction = async ({ request }) => {
       return json({ 
         success: true, 
         message: `템플릿 ${templateId} 분석 완료`,
-        analyzedElements: analysisResult.elements.length
+        analyzedElements: analysisResult.elements.length,
+        designElements: {
+          colors: designAnalysis.colors.length,
+          typography: designAnalysis.typography.length,
+          spacing: designAnalysis.spacing.length
+        }
       });
       
     } catch (error) {

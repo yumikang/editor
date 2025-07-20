@@ -46,6 +46,11 @@
         // 특정 요소 하이라이트
         highlightElement(message.elementId);
         break;
+        
+      case 'UPDATE_COLOR':
+        // 색상 변경
+        updateColor(message.originalColor, message.newColor, message.usage);
+        break;
     }
   });
   
@@ -135,6 +140,97 @@
     // 추가 색상들도 동일하게 적용
   }
   
+  // 색상 변경 적용
+  function updateColor(originalColor, newColor, usage) {
+    // 색상을 사용하는 모든 요소 찾기
+    const elements = document.querySelectorAll('*');
+    
+    elements.forEach(element => {
+      const computedStyle = window.getComputedStyle(element);
+      
+      // 사용 용도에 따라 색상 변경
+      switch (usage) {
+        case 'text':
+          if (computedStyle.color === originalColor || 
+              rgbToHex(computedStyle.color) === originalColor) {
+            element.style.color = newColor;
+            element.classList.add('color-changing');
+            setTimeout(() => element.classList.remove('color-changing'), 1000);
+          }
+          break;
+          
+        case 'background':
+          if (computedStyle.backgroundColor === originalColor ||
+              rgbToHex(computedStyle.backgroundColor) === originalColor) {
+            element.style.backgroundColor = newColor;
+            element.classList.add('color-changing');
+            setTimeout(() => element.classList.remove('color-changing'), 1000);
+          }
+          break;
+          
+        case 'border':
+          if (computedStyle.borderColor === originalColor ||
+              rgbToHex(computedStyle.borderColor) === originalColor) {
+            element.style.borderColor = newColor;
+            element.classList.add('color-changing');
+            setTimeout(() => element.classList.remove('color-changing'), 1000);
+          }
+          break;
+      }
+      
+      // 인라인 스타일에서도 변경
+      const inlineStyle = element.getAttribute('style') || '';
+      if (inlineStyle.includes(originalColor)) {
+        const newStyle = inlineStyle.replace(new RegExp(originalColor, 'g'), newColor);
+        element.setAttribute('style', newStyle);
+        element.classList.add('color-changing');
+        setTimeout(() => element.classList.remove('color-changing'), 1000);
+      }
+    });
+    
+    // CSS 스타일시트에서도 변경 (동적으로 CSS 룰 수정)
+    updateCSSRules(originalColor, newColor);
+  }
+  
+  // CSS 룰 동적 수정
+  function updateCSSRules(originalColor, newColor) {
+    try {
+      for (let stylesheet of document.styleSheets) {
+        try {
+          for (let rule of stylesheet.cssRules || stylesheet.rules) {
+            if (rule.style) {
+              // 모든 CSS 속성 검사
+              for (let prop in rule.style) {
+                if (rule.style[prop] === originalColor) {
+                  rule.style[prop] = newColor;
+                }
+              }
+            }
+          }
+        } catch (e) {
+          // Cross-origin 또는 기타 접근 제한
+          console.log('Cannot access stylesheet:', e);
+        }
+      }
+    } catch (e) {
+      console.log('Error updating CSS rules:', e);
+    }
+  }
+  
+  // RGB 색상을 HEX로 변환
+  function rgbToHex(rgb) {
+    if (!rgb || !rgb.includes('rgb')) return rgb;
+    
+    const matches = rgb.match(/rgb\((\d+),\s*(\d+),\s*(\d+)\)/);
+    if (!matches) return rgb;
+    
+    const r = parseInt(matches[1]).toString(16).padStart(2, '0');
+    const g = parseInt(matches[2]).toString(16).padStart(2, '0');
+    const b = parseInt(matches[3]).toString(16).padStart(2, '0');
+    
+    return `#${r}${g}${b}`;
+  }
+  
   // 하이라이트 스타일 추가
   const style = document.createElement('style');
   style.textContent = `
@@ -162,6 +258,17 @@
       outline: 1px dashed #94a3b8;
       outline-offset: 2px;
       cursor: pointer;
+    }
+    
+    /* 색상 변경 애니메이션 */
+    .color-changing {
+      transition: all 0.3s ease !important;
+      animation: color-pulse 1s ease-in-out;
+    }
+    
+    @keyframes color-pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; transform: scale(1.02); }
     }
   `;
   document.head.appendChild(style);

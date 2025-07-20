@@ -24,6 +24,12 @@ interface Template {
     images: any[];
     analyzedAt: string;
   };
+  designAnalysis?: {
+    colors: any[];
+    typography: any[];
+    spacing: any[];
+    extractedAt: string;
+  };
 }
 
 interface EditedData {
@@ -235,12 +241,23 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
     // 분석 데이터가 없어도 괜찮음
   }
   
+  // 디자인 분석 데이터 불러오기
+  let designAnalysis = null;
+  try {
+    const designPath = path.join(templatePath, 'design-analysis.json');
+    const designContent = await fs.readFile(designPath, 'utf-8');
+    designAnalysis = JSON.parse(designContent);
+  } catch {
+    // 디자인 분석 데이터가 없어도 괜찮음
+  }
+  
   const template: Template = {
     id: templateId,
     name: templateId.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
     path: templatePath,
     hasIndex,
-    analyzedData
+    analyzedData,
+    designAnalysis
   };
   
   // 최근 프로젝트 저장을 위한 데이터
@@ -714,14 +731,13 @@ export default function EditorPage() {
         )}
         
         {activeTab === 'design' && (
-          <div className="p-8">
-            <DesignTab
-              templateId={template.id}
-              editedData={currentData}
-              initialColorSystem={currentData.colors || null}
-              initialStyleTokens={null}
-            />
-          </div>
+          <DesignTab
+            templateId={template.id}
+            editedData={currentData}
+            initialColorSystem={currentData.colors || null}
+            initialStyleTokens={null}
+            designAnalysis={template.designAnalysis || null}
+          />
         )}
         
         {activeTab === 'media' && (
