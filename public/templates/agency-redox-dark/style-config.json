@@ -1,0 +1,28 @@
+{
+  "fonts": [
+    {
+      "id": "font_1752307243325",
+      "name": "Pretendard",
+      "fontFamily": "Pretendard",
+      "webfontCode": "@font-face {\n  font-family: 'Pretendard';\n  src: url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css');\n  font-weight: 400;\n  font-style: normal;\n}",
+      "active": true
+    },
+    {
+      "id": "font_1752307321546",
+      "name": "스터닝 산스",
+      "fontFamily": "STUNNING-Bd",
+      "webfontCode": "@font-face {\n    font-family: 'STUNNING-Bd';\n    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/STUNNING-Bd.woff2') format('woff2');\n    font-weight: normal;\n    font-style: normal;\n}",
+      "active": true
+    }
+  ],
+  "customCSS": "",
+  "fontAssignments": {
+    "h1": "STUNNING-Bd",
+    "h2": "STUNNING-Bd",
+    "h3": "Pretendard",
+    "h4": "Pretendard",
+    "h6": "Pretendard",
+    "h5": "Pretendard",
+    "body": "Pretendard"
+  }
+}

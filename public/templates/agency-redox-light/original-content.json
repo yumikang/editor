@@ -1,0 +1,2502 @@
+{
+  "templateId": "agency-redox-light",
+  "analyzedAt": "2025-07-20T07:51:41.205Z",
+  "elements": [
+    {
+      "id": "text_1752997901163_0",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Contact US",
+      "section": "global"
+    },
+    {
+      "id": "text_1752997901164_1",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Let’s sharpen\n                        your brand\n                        withquality\n                        work",
+      "section": "section-title"
+    },
+    {
+      "id": "text_1752997901165_2",
+      "selector": ".big-text",
+      "type": "text",
+      "content": "Redox",
+      "section": "hero-area-inner"
+    },
+    {
+      "id": "text_1752997901165_3",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Redox",
+      "section": "section-title"
+    },
+    {
+      "id": "text_1752997901166_4",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Featured work",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901166_5",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Featured work",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901166_6",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Featured work",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901167_7",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Featured work",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901167_8",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Featured work",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901167_9",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Featured work",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901168_10",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Featured work",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901168_11",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Featured Work",
+      "section": "section-title"
+    },
+    {
+      "id": "text_1752997901168_12",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Complex \n                      proficiency",
+      "section": "section-title"
+    },
+    {
+      "id": "text_1752997901169_13",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Perfect \n                      —activity",
+      "section": "section-title"
+    },
+    {
+      "id": "text_1752997901169_14",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Client: Helping brands\n                      to grow\n                      and say their success stories to\n                      the world.",
+      "section": "section-title"
+    },
+    {
+      "id": "text_1752997901169_15",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Let’s\n                          Work",
+      "section": "section-title"
+    },
+    {
+      "id": "text_1752997901170_16",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "It’s all about the \n                      unique thinking with\n                      creativity and quality for\n                      complex solution in \n                      easy way",
+      "section": "section-title"
+    },
+    {
+      "id": "text_1752997901170_17",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Company",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901170_18",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Social",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901170_19",
+      "selector": "div > h2:nth-child(1)",
+      "type": "text",
+      "content": "Office",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901171_0",
+      "selector": "div > h3:nth-child(1)",
+      "type": "text",
+      "content": "Panda Automap",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901171_1",
+      "selector": "div > h3:nth-child(1)",
+      "type": "text",
+      "content": "Saudi Venture Capital",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901172_2",
+      "selector": "div > h3:nth-child(1)",
+      "type": "text",
+      "content": "Rebrand Lawberry",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901172_3",
+      "selector": "div > h3:nth-child(1)",
+      "type": "text",
+      "content": "Selicon Cloud Cave",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901172_4",
+      "selector": "div > h3:nth-child(1)",
+      "type": "text",
+      "content": "Mountain Upwork",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901173_5",
+      "selector": "div > h3:nth-child(1)",
+      "type": "text",
+      "content": "Blacky Motorola",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901173_6",
+      "selector": "div > h3:nth-child(1)",
+      "type": "text",
+      "content": "Branding",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901174_7",
+      "selector": "div > h3:nth-child(1)",
+      "type": "text",
+      "content": "UI-UX Design",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901174_8",
+      "selector": "div > h3:nth-child(1)",
+      "type": "text",
+      "content": "Development",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901174_9",
+      "selector": "div > h3:nth-child(1)",
+      "type": "text",
+      "content": "Digital Marketing",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901175_0",
+      "selector": "div > p:nth-child(2)",
+      "type": "text",
+      "content": "Average clients satisfied\n                            and repeating",
+      "section": "section-content"
+    },
+    {
+      "id": "text_1752997901176_1",
+      "selector": "div > p:nth-child(2)",
+      "type": "text",
+      "content": "Successfully projects done\n                            in 24 countries",
+      "section": "section-content"
+    },
+    {
+      "id": "text_1752997901176_2",
+      "selector": "div > p:nth-child(1)",
+      "type": "text",
+      "content": "We’re a digital products design & development agency that works passionately\n                      with the digital experiences.",
+      "section": "section-content"
+    },
+    {
+      "id": "text_1752997901176_3",
+      "selector": "div > p:nth-child(1)",
+      "type": "text",
+      "content": "We’re a dynamic startup agency specializing in innovative solutions for businesses\n                    looking to elevate their brand presence. We offer a range of services including digital marketing,\n                    branding, web development, and creative strategy to help company",
+      "section": "section-content"
+    },
+    {
+      "id": "text_1752997901176_4",
+      "selector": "div > p:nth-child(1)",
+      "type": "text",
+      "content": "Excellency in creative designs",
+      "section": "section-header"
+    },
+    {
+      "id": "text_1752997901177_5",
+      "selector": "div > p:nth-child(2)",
+      "type": "text",
+      "content": "We helped to get companies with\n                      $200M+ funding.",
+      "section": "funfact-wrapper-box"
+    },
+    {
+      "id": "text_1752997901177_6",
+      "selector": "div > p:nth-child(2)",
+      "type": "text",
+      "content": "Crafted responsive, user-centered\n                      website & app.",
+      "section": "funfact-wrapper-box"
+    },
+    {
+      "id": "text_1752997901177_7",
+      "selector": "div > p:nth-child(2)",
+      "type": "text",
+      "content": "We have had quite a run in our 12+ years of working.",
+      "section": "funfact-wrapper-box"
+    },
+    {
+      "id": "text_1752997901177_8",
+      "selector": "div > p:nth-child(2)",
+      "type": "text",
+      "content": "Professional skilled designers and developers.",
+      "section": "funfact-wrapper-box"
+    },
+    {
+      "id": "text_1752997901178_9",
+      "selector": "div > p:nth-child(2)",
+      "type": "text",
+      "content": "Average 99% clients satisfaction\n                      with expertise.",
+      "section": "funfact-wrapper-box"
+    },
+    {
+      "id": "text_1752997901178_10",
+      "selector": "div > p:nth-child(1)",
+      "type": "text",
+      "content": "We’re a great team of creatives with a strongest capabilities to helping progressive\n                    fields achieve their goals. With the best talent on every project done successfully",
+      "section": "section-content"
+    },
+    {
+      "id": "text_1752997901178_25",
+      "selector": "div > p:nth-child(1)",
+      "type": "text",
+      "content": "Redox is a startup digital agency of design, development and marketing that works\n                  friendly with global client",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901178_26",
+      "selector": "div > p:nth-child(1)",
+      "type": "text",
+      "content": "By subscribing you agree with our\n                      Privacy Policy",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901179_27",
+      "selector": "div > p:nth-child(1)",
+      "type": "text",
+      "content": "© 2025 RavexTheme. All right\n                reserved",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901179_0",
+      "selector": "a > span:nth-child(1)",
+      "type": "text",
+      "content": "Let's Talk\n              Let's Talk",
+      "section": "global"
+    },
+    {
+      "id": "text_1752997901180_1",
+      "selector": "span > span:nth-child(1)",
+      "type": "text",
+      "content": "Let's Talk",
+      "section": "global"
+    },
+    {
+      "id": "text_1752997901180_2",
+      "selector": "span > span:nth-child(2)",
+      "type": "text",
+      "content": "Let's Talk",
+      "section": "global"
+    },
+    {
+      "id": "text_1752997901180_4",
+      "selector": "div > span:nth-child(2)",
+      "type": "text",
+      "content": "3891 Ranchview Dr. Richardson",
+      "section": "global"
+    },
+    {
+      "id": "text_1752997901180_6",
+      "selector": "div > span:nth-child(2)",
+      "type": "text",
+      "content": "hello@redoxagency.com",
+      "section": "global"
+    },
+    {
+      "id": "text_1752997901181_8",
+      "selector": "div > span:nth-child(2)",
+      "type": "text",
+      "content": "(505) 555-0125",
+      "section": "global"
+    },
+    {
+      "id": "text_1752997901181_9",
+      "selector": "a > span:nth-child(1)",
+      "type": "text",
+      "content": "Let’s Talk\n                Let’s Talk",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901181_10",
+      "selector": "span > span:nth-child(1)",
+      "type": "text",
+      "content": "Let’s Talk",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901182_11",
+      "selector": "span > span:nth-child(2)",
+      "type": "text",
+      "content": "Let’s Talk",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901182_13",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "98%",
+      "section": "section-content"
+    },
+    {
+      "id": "text_1752997901182_14",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "120+",
+      "section": "section-content"
+    },
+    {
+      "id": "text_1752997901182_15",
+      "selector": "a > span:nth-child(1)",
+      "type": "text",
+      "content": "Learn More\n                      Learn More",
+      "section": "section-content"
+    },
+    {
+      "id": "text_1752997901182_16",
+      "selector": "span > span:nth-child(1)",
+      "type": "text",
+      "content": "Learn More",
+      "section": "section-content"
+    },
+    {
+      "id": "text_1752997901183_17",
+      "selector": "span > span:nth-child(2)",
+      "type": "text",
+      "content": "Learn More",
+      "section": "section-content"
+    },
+    {
+      "id": "text_1752997901183_18",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "(26)",
+      "section": "section-header"
+    },
+    {
+      "id": "text_1752997901183_19",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "Development",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901184_20",
+      "selector": "div > span:nth-child(2)",
+      "type": "text",
+      "content": "2025",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901184_21",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "Graphics",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901184_22",
+      "selector": "div > span:nth-child(2)",
+      "type": "text",
+      "content": "2025",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901184_23",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "Motion, Design",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901185_24",
+      "selector": "div > span:nth-child(2)",
+      "type": "text",
+      "content": "2025",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901185_25",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "UI Design",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901185_26",
+      "selector": "div > span:nth-child(2)",
+      "type": "text",
+      "content": "2025",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901185_27",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "Branding",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901186_28",
+      "selector": "div > span:nth-child(2)",
+      "type": "text",
+      "content": "2025",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901186_29",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "UI Design",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901186_30",
+      "selector": "div > span:nth-child(2)",
+      "type": "text",
+      "content": "2025",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901186_31",
+      "selector": "a > span:nth-child(1)",
+      "type": "text",
+      "content": "View All Work\n                    View All Work",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901187_32",
+      "selector": "span > span:nth-child(1)",
+      "type": "text",
+      "content": "View All Work",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901187_33",
+      "selector": "span > span:nth-child(2)",
+      "type": "text",
+      "content": "View All Work",
+      "section": "work-area"
+    },
+    {
+      "id": "text_1752997901187_34",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "(01)",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901187_35",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "(02)",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901187_36",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "(03)",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901188_37",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "(04)",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901188_38",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "1.8M",
+      "section": "funfact-wrapper-box"
+    },
+    {
+      "id": "text_1752997901188_39",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "260+",
+      "section": "funfact-wrapper-box"
+    },
+    {
+      "id": "text_1752997901188_40",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "12+",
+      "section": "funfact-wrapper-box"
+    },
+    {
+      "id": "text_1752997901188_41",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "80+",
+      "section": "funfact-wrapper-box"
+    },
+    {
+      "id": "text_1752997901189_42",
+      "selector": "div > span:nth-child(1)",
+      "type": "text",
+      "content": "99%",
+      "section": "funfact-wrapper-box"
+    },
+    {
+      "id": "text_1752997901189_43",
+      "selector": "h2 > span:nth-child(1)",
+      "type": "text",
+      "content": "Client:",
+      "section": "section-title"
+    },
+    {
+      "id": "text_1752997901189_58",
+      "selector": "h2 > span:nth-child(2)",
+      "type": "text",
+      "content": "thinking",
+      "section": "section-title"
+    },
+    {
+      "id": "text_1752997901189_59",
+      "selector": "h2 > span:nth-child(3)",
+      "type": "text",
+      "content": "creativity",
+      "section": "section-title"
+    },
+    {
+      "id": "text_1752997901190_60",
+      "selector": "h2 > span:nth-child(4)",
+      "type": "text",
+      "content": "quality",
+      "section": "section-title"
+    },
+    {
+      "id": "text_1752997901190_0",
+      "selector": "ul > li:nth-child(1)",
+      "type": "text",
+      "content": "Home\n                  \n                    Digital Agency\n                    Creative Agency\n                    Marketing Agency\n                    Design Agency\n                    Startup Agency\n                    Modern Agency\n                    Agency Portfolio\n                    Portfolio Horizontal\n                    Portfolio Line Effect\n                    Portfolio Box Effect\n                    Portfolio Vertical\n                    Portfolio Slicer\n                    Parallax Carousal\n                    Portfolio Showcase",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901190_1",
+      "selector": "ul > li:nth-child(1)",
+      "type": "text",
+      "content": "Digital Agency",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901190_2",
+      "selector": "ul > li:nth-child(2)",
+      "type": "text",
+      "content": "Creative Agency",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901191_3",
+      "selector": "ul > li:nth-child(3)",
+      "type": "text",
+      "content": "Marketing Agency",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901191_4",
+      "selector": "ul > li:nth-child(4)",
+      "type": "text",
+      "content": "Design Agency",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901191_5",
+      "selector": "ul > li:nth-child(5)",
+      "type": "text",
+      "content": "Startup Agency",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901191_6",
+      "selector": "ul > li:nth-child(6)",
+      "type": "text",
+      "content": "Modern Agency",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901191_7",
+      "selector": "ul > li:nth-child(7)",
+      "type": "text",
+      "content": "Agency Portfolio",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901191_8",
+      "selector": "ul > li:nth-child(8)",
+      "type": "text",
+      "content": "Portfolio Horizontal",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901191_9",
+      "selector": "ul > li:nth-child(9)",
+      "type": "text",
+      "content": "Portfolio Line Effect",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901191_10",
+      "selector": "ul > li:nth-child(10)",
+      "type": "text",
+      "content": "Portfolio Box Effect",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901191_11",
+      "selector": "ul > li:nth-child(11)",
+      "type": "text",
+      "content": "Portfolio Vertical",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901191_12",
+      "selector": "ul > li:nth-child(12)",
+      "type": "text",
+      "content": "Portfolio Slicer",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901191_13",
+      "selector": "ul > li:nth-child(13)",
+      "type": "text",
+      "content": "Parallax Carousal",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901191_14",
+      "selector": "ul > li:nth-child(14)",
+      "type": "text",
+      "content": "Portfolio Showcase",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901191_15",
+      "selector": "ul > li:nth-child(2)",
+      "type": "text",
+      "content": "About Us",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901191_16",
+      "selector": "ul > li:nth-child(3)",
+      "type": "text",
+      "content": "Service\n                  \n                    Core Services\n                    Services ST. Pulse\n                    Services ST. Morph\n                    Services ST. Nova\n                    Services ST. Zenith\n                    Services ST. Prism\n                    Service Details",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901192_17",
+      "selector": "ul > li:nth-child(1)",
+      "type": "text",
+      "content": "Core Services",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901192_18",
+      "selector": "ul > li:nth-child(2)",
+      "type": "text",
+      "content": "Services ST. Pulse",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901192_19",
+      "selector": "ul > li:nth-child(3)",
+      "type": "text",
+      "content": "Services ST. Morph",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901192_20",
+      "selector": "ul > li:nth-child(4)",
+      "type": "text",
+      "content": "Services ST. Nova",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901192_21",
+      "selector": "ul > li:nth-child(5)",
+      "type": "text",
+      "content": "Services ST. Zenith",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901192_22",
+      "selector": "ul > li:nth-child(6)",
+      "type": "text",
+      "content": "Services ST. Prism",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901192_23",
+      "selector": "ul > li:nth-child(7)",
+      "type": "text",
+      "content": "Service Details",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901192_24",
+      "selector": "ul > li:nth-child(4)",
+      "type": "text",
+      "content": "Blog\n                  \n                    Blog\n                    Blog Details",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901192_25",
+      "selector": "ul > li:nth-child(1)",
+      "type": "text",
+      "content": "Blog",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901192_26",
+      "selector": "ul > li:nth-child(2)",
+      "type": "text",
+      "content": "Blog Details",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901192_27",
+      "selector": "ul > li:nth-child(5)",
+      "type": "text",
+      "content": "Pages\n                  \n                    Core Portfolio\n                    Portfolio ST. Classic\n                    Portfolio ST. Minimal\n                    Portfolio ST. Modern\n                    Portfolio ST. Interactive\n                    Portfolio ST. Metro\n                    Portfolio Details\n                    Team\n                    Team Details\n                    FAQ Page\n                    404 Page",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901192_28",
+      "selector": "ul > li:nth-child(1)",
+      "type": "text",
+      "content": "Core Portfolio",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901193_29",
+      "selector": "ul > li:nth-child(2)",
+      "type": "text",
+      "content": "Portfolio ST. Classic",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901193_30",
+      "selector": "ul > li:nth-child(3)",
+      "type": "text",
+      "content": "Portfolio ST. Minimal",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901193_31",
+      "selector": "ul > li:nth-child(4)",
+      "type": "text",
+      "content": "Portfolio ST. Modern",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901193_32",
+      "selector": "ul > li:nth-child(5)",
+      "type": "text",
+      "content": "Portfolio ST. Interactive",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901193_33",
+      "selector": "ul > li:nth-child(6)",
+      "type": "text",
+      "content": "Portfolio ST. Metro",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901193_34",
+      "selector": "ul > li:nth-child(7)",
+      "type": "text",
+      "content": "Portfolio Details",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901193_35",
+      "selector": "ul > li:nth-child(8)",
+      "type": "text",
+      "content": "Team",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901193_36",
+      "selector": "ul > li:nth-child(9)",
+      "type": "text",
+      "content": "Team Details",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901193_37",
+      "selector": "ul > li:nth-child(10)",
+      "type": "text",
+      "content": "FAQ Page",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901193_38",
+      "selector": "ul > li:nth-child(11)",
+      "type": "text",
+      "content": "404 Page",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901193_39",
+      "selector": "ul > li:nth-child(6)",
+      "type": "text",
+      "content": "Contact",
+      "section": "header-area"
+    },
+    {
+      "id": "text_1752997901193_40",
+      "selector": "ul > li:nth-child(1)",
+      "type": "text",
+      "content": "Creative Direction",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901193_41",
+      "selector": "ul > li:nth-child(2)",
+      "type": "text",
+      "content": "Brand Identity",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901193_42",
+      "selector": "ul > li:nth-child(3)",
+      "type": "text",
+      "content": "Branding Strategy",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901193_43",
+      "selector": "ul > li:nth-child(4)",
+      "type": "text",
+      "content": "Graphic Design",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901193_44",
+      "selector": "ul > li:nth-child(5)",
+      "type": "text",
+      "content": "Startup",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901193_45",
+      "selector": "ul > li:nth-child(1)",
+      "type": "text",
+      "content": "UI UX Consulting",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901193_46",
+      "selector": "ul > li:nth-child(2)",
+      "type": "text",
+      "content": "UX Research",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901194_47",
+      "selector": "ul > li:nth-child(3)",
+      "type": "text",
+      "content": "Usability Testing",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901194_48",
+      "selector": "ul > li:nth-child(4)",
+      "type": "text",
+      "content": "Wireframing",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901194_49",
+      "selector": "ul > li:nth-child(5)",
+      "type": "text",
+      "content": "Prototyping",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901194_50",
+      "selector": "ul > li:nth-child(1)",
+      "type": "text",
+      "content": "WordPress",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901194_51",
+      "selector": "ul > li:nth-child(2)",
+      "type": "text",
+      "content": "Webflow",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901194_52",
+      "selector": "ul > li:nth-child(3)",
+      "type": "text",
+      "content": "Laravel Framework",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901194_53",
+      "selector": "ul > li:nth-child(4)",
+      "type": "text",
+      "content": "React & Flutter",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901194_54",
+      "selector": "ul > li:nth-child(5)",
+      "type": "text",
+      "content": "Design System",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901194_55",
+      "selector": "ul > li:nth-child(1)",
+      "type": "text",
+      "content": "Online Marketing",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901194_56",
+      "selector": "ul > li:nth-child(2)",
+      "type": "text",
+      "content": "SEO-Marketing",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901194_57",
+      "selector": "ul > li:nth-child(3)",
+      "type": "text",
+      "content": "Strategy",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901194_58",
+      "selector": "ul > li:nth-child(4)",
+      "type": "text",
+      "content": "Market Research",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901194_59",
+      "selector": "ul > li:nth-child(5)",
+      "type": "text",
+      "content": "Social Reform",
+      "section": "service-area-inner"
+    },
+    {
+      "id": "text_1752997901194_60",
+      "selector": "ul > li:nth-child(1)",
+      "type": "text",
+      "content": "agency",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901194_61",
+      "selector": "ul > li:nth-child(2)",
+      "type": "text",
+      "content": "Solutions",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901194_62",
+      "selector": "ul > li:nth-child(3)",
+      "type": "text",
+      "content": "Community",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901194_63",
+      "selector": "ul > li:nth-child(4)",
+      "type": "text",
+      "content": "Work",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901194_64",
+      "selector": "ul > li:nth-child(5)",
+      "type": "text",
+      "content": "Contact",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901194_65",
+      "selector": "ul > li:nth-child(1)",
+      "type": "text",
+      "content": "Facebook",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901194_66",
+      "selector": "ul > li:nth-child(2)",
+      "type": "text",
+      "content": "Twitter",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901194_67",
+      "selector": "ul > li:nth-child(3)",
+      "type": "text",
+      "content": "Dribbble",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901195_68",
+      "selector": "ul > li:nth-child(4)",
+      "type": "text",
+      "content": "Instagram",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901195_69",
+      "selector": "ul > li:nth-child(5)",
+      "type": "text",
+      "content": "Awwwards",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901195_70",
+      "selector": "ul > li:nth-child(6)",
+      "type": "text",
+      "content": "YouTube",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901195_71",
+      "selector": "ul > li:nth-child(1)",
+      "type": "text",
+      "content": "New York",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901195_72",
+      "selector": "ul > li:nth-child(2)",
+      "type": "text",
+      "content": "Toronto",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901195_73",
+      "selector": "ul > li:nth-child(3)",
+      "type": "text",
+      "content": "Berlin",
+      "section": "footer-area"
+    },
+    {
+      "id": "text_1752997901195_74",
+      "selector": "ul > li:nth-child(4)",
+      "type": "text",
+      "content": "London",
+      "section": "footer-area"
+    },
+    {
+      "id": "image_1752997901196_0",
+      "selector": "a > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/logo/logo.png",
+      "attributes": {
+        "alt": "site logo",
+        "width": "",
+        "height": ""
+      },
+      "section": "global"
+    },
+    {
+      "id": "image_1752997901196_1",
+      "selector": ".normal-logo",
+      "type": "image",
+      "content": "assets/imgs/logo/logo.png",
+      "attributes": {
+        "alt": "Site Logo",
+        "width": "",
+        "height": ""
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "image_1752997901196_2",
+      "selector": "div > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/shape/shape-3.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "hero-content"
+    },
+    {
+      "id": "image_1752997901196_3",
+      "selector": "div > img:nth-child(2)",
+      "type": "image",
+      "content": "assets/imgs/shape/shape-2.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "hero-content"
+    },
+    {
+      "id": "image_1752997901196_4",
+      "selector": ".title-shape-1.fade-anim",
+      "type": "image",
+      "content": "assets/imgs/shape/shape-1.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "section-title"
+    },
+    {
+      "id": "image_1752997901197_5",
+      "selector": "a > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/project/image-1.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "work-area"
+    },
+    {
+      "id": "image_1752997901197_6",
+      "selector": "a > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/project/image-2.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "work-area"
+    },
+    {
+      "id": "image_1752997901197_7",
+      "selector": "a > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/project/image-3.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "work-area"
+    },
+    {
+      "id": "image_1752997901197_8",
+      "selector": "a > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/project/image-4.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "work-area"
+    },
+    {
+      "id": "image_1752997901197_9",
+      "selector": "a > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/project/image-5.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "work-area"
+    },
+    {
+      "id": "image_1752997901197_10",
+      "selector": "a > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/project/image-6.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "work-area"
+    },
+    {
+      "id": "image_1752997901197_11",
+      "selector": "div > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/gallery/image-3.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "image_1752997901197_12",
+      "selector": "div > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/gallery/image-4.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "image_1752997901197_13",
+      "selector": "div > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/gallery/image-5.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "image_1752997901198_14",
+      "selector": "div > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/gallery/image-6.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "image_1752997901198_15",
+      "selector": "span > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/client/client-9-light.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "client-area-inner"
+    },
+    {
+      "id": "image_1752997901198_16",
+      "selector": "span > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/client/client-10.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "client-area-inner"
+    },
+    {
+      "id": "image_1752997901198_17",
+      "selector": "span > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/client/client-11.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "client-area-inner"
+    },
+    {
+      "id": "image_1752997901198_18",
+      "selector": "span > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/client/client-12-light.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "client-area-inner"
+    },
+    {
+      "id": "image_1752997901198_19",
+      "selector": "span > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/client/client-13.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "client-area-inner"
+    },
+    {
+      "id": "image_1752997901198_20",
+      "selector": "span > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/client/client-14.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "client-area-inner"
+    },
+    {
+      "id": "image_1752997901198_21",
+      "selector": "span > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/client/client-15-light.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "client-area-inner"
+    },
+    {
+      "id": "image_1752997901198_22",
+      "selector": "span > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/client/client-16-light.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "client-area-inner"
+    },
+    {
+      "id": "image_1752997901198_23",
+      "selector": "span > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/client/client-17.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "client-area-inner"
+    },
+    {
+      "id": "image_1752997901198_24",
+      "selector": "span > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/client/client-18-light.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "client-area-inner"
+    },
+    {
+      "id": "image_1752997901198_25",
+      "selector": "span > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/client/client-19.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "client-area-inner"
+    },
+    {
+      "id": "image_1752997901198_26",
+      "selector": "span > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/client/client-20-light.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "client-area-inner"
+    },
+    {
+      "id": "image_1752997901198_27",
+      "selector": "span > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/client/client-21.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "client-area-inner"
+    },
+    {
+      "id": "image_1752997901198_28",
+      "selector": "span > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/client/client-22.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "client-area-inner"
+    },
+    {
+      "id": "image_1752997901198_29",
+      "selector": ".w-100",
+      "type": "image",
+      "content": "assets/imgs/gallery/image-7.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "unknown"
+    },
+    {
+      "id": "image_1752997901198_30",
+      "selector": "a > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/logo/logo-2.png",
+      "attributes": {
+        "alt": "site-logo",
+        "width": "",
+        "height": ""
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "image_1752997901198_31",
+      "selector": "button > img:nth-child(1)",
+      "type": "image",
+      "content": "assets/imgs/icon/icon-1.webp",
+      "attributes": {
+        "alt": "image",
+        "width": "",
+        "height": ""
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901199_1",
+      "selector": "div > a:nth-child(1)",
+      "type": "link",
+      "content": "Let's Talk\n              Let's Talk",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "global"
+    },
+    {
+      "id": "link_1752997901200_2",
+      "selector": "span > a:nth-child(1)",
+      "type": "link",
+      "content": "hello@redoxagency.com",
+      "attributes": {
+        "href": "mailto:hello@redoxagency.com"
+      },
+      "section": "global"
+    },
+    {
+      "id": "link_1752997901200_3",
+      "selector": "span > a:nth-child(1)",
+      "type": "link",
+      "content": "(505) 555-0125",
+      "attributes": {
+        "href": "tel:(505)555-0125"
+      },
+      "section": "global"
+    },
+    {
+      "id": "link_1752997901200_5",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Home",
+      "attributes": {
+        "href": "#"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_6",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Digital Agency",
+      "attributes": {
+        "href": "digital-agency.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_7",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Creative Agency",
+      "attributes": {
+        "href": "creative-agency.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_8",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Marketing Agency",
+      "attributes": {
+        "href": "marketing-agency.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_9",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Design Agency",
+      "attributes": {
+        "href": "design-agency.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_10",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Startup Agency",
+      "attributes": {
+        "href": "startup-agency.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_11",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Modern Agency",
+      "attributes": {
+        "href": "modern-agency.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_12",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Agency Portfolio",
+      "attributes": {
+        "href": "agency-portfolio.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_13",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Portfolio Horizontal",
+      "attributes": {
+        "href": "portfolio-horizontal.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_14",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Portfolio Line Effect",
+      "attributes": {
+        "href": "portfolio-line-effect.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_15",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Portfolio Box Effect",
+      "attributes": {
+        "href": "portfolio-box-effect.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_16",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Portfolio Vertical",
+      "attributes": {
+        "href": "portfolio-vertical.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_17",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Portfolio Slicer",
+      "attributes": {
+        "href": "portfolio-slicer.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_18",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Parallax Carousal",
+      "attributes": {
+        "href": "parallax-carousal.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_19",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Portfolio Showcase",
+      "attributes": {
+        "href": "portfolio-showcase.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_20",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "About Us",
+      "attributes": {
+        "href": "about.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_21",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Service",
+      "attributes": {
+        "href": "#"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_22",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Core Services",
+      "attributes": {
+        "href": "services.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_23",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Services ST. Pulse",
+      "attributes": {
+        "href": "services-2.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901200_24",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Services ST. Morph",
+      "attributes": {
+        "href": "services-3.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_25",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Services ST. Nova",
+      "attributes": {
+        "href": "services-4.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_26",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Services ST. Zenith",
+      "attributes": {
+        "href": "services-5.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_27",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Services ST. Prism",
+      "attributes": {
+        "href": "services-6.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_28",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Service Details",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_29",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Blog",
+      "attributes": {
+        "href": "#"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_30",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Blog",
+      "attributes": {
+        "href": "blog.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_31",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Blog Details",
+      "attributes": {
+        "href": "blog-details.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_32",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Pages",
+      "attributes": {
+        "href": "#"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_33",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Core Portfolio",
+      "attributes": {
+        "href": "portfolio.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_34",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Portfolio ST. Classic",
+      "attributes": {
+        "href": "portfolio-2.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_35",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Portfolio ST. Minimal",
+      "attributes": {
+        "href": "portfolio-3.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_36",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Portfolio ST. Modern",
+      "attributes": {
+        "href": "portfolio-4.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_37",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Portfolio ST. Interactive",
+      "attributes": {
+        "href": "portfolio-5.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_38",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Portfolio ST. Metro",
+      "attributes": {
+        "href": "portfolio-6.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_39",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Portfolio Details",
+      "attributes": {
+        "href": "portfolio-details.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_40",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Team",
+      "attributes": {
+        "href": "team.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_41",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Team Details",
+      "attributes": {
+        "href": "team-details.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_42",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "FAQ Page",
+      "attributes": {
+        "href": "faq.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_43",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "404 Page",
+      "attributes": {
+        "href": "404.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_44",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Contact",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_45",
+      "selector": "div > a:nth-child(1)",
+      "type": "link",
+      "content": "Let’s Talk\n                Let’s Talk",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "header-area"
+    },
+    {
+      "id": "link_1752997901201_46",
+      "selector": "div > a:nth-child(1)",
+      "type": "link",
+      "content": "Learn More\n                      Learn More",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "section-content"
+    },
+    {
+      "id": "link_1752997901202_48",
+      "selector": "h3 > a:nth-child(1)",
+      "type": "link",
+      "content": "Panda Automap",
+      "attributes": {
+        "href": "portfolio-details.html"
+      },
+      "section": "work-area"
+    },
+    {
+      "id": "link_1752997901202_50",
+      "selector": "h3 > a:nth-child(1)",
+      "type": "link",
+      "content": "Saudi Venture Capital",
+      "attributes": {
+        "href": "portfolio-details.html"
+      },
+      "section": "work-area"
+    },
+    {
+      "id": "link_1752997901202_52",
+      "selector": "h3 > a:nth-child(1)",
+      "type": "link",
+      "content": "Rebrand Lawberry",
+      "attributes": {
+        "href": "portfolio-details.html"
+      },
+      "section": "work-area"
+    },
+    {
+      "id": "link_1752997901202_54",
+      "selector": "h3 > a:nth-child(1)",
+      "type": "link",
+      "content": "Selicon Cloud Cave",
+      "attributes": {
+        "href": "portfolio-details.html"
+      },
+      "section": "work-area"
+    },
+    {
+      "id": "link_1752997901202_56",
+      "selector": "h3 > a:nth-child(1)",
+      "type": "link",
+      "content": "Mountain Upwork",
+      "attributes": {
+        "href": "portfolio-details.html"
+      },
+      "section": "work-area"
+    },
+    {
+      "id": "link_1752997901202_58",
+      "selector": "h3 > a:nth-child(1)",
+      "type": "link",
+      "content": "Blacky Motorola",
+      "attributes": {
+        "href": "portfolio-details.html"
+      },
+      "section": "work-area"
+    },
+    {
+      "id": "link_1752997901202_59",
+      "selector": ".rr-btn.btn-border.hover-bg-theme",
+      "type": "link",
+      "content": "View All Work\n                    View All Work",
+      "attributes": {
+        "href": "portfolio.html"
+      },
+      "section": "work-area"
+    },
+    {
+      "id": "link_1752997901202_60",
+      "selector": "h3 > a:nth-child(1)",
+      "type": "link",
+      "content": "Branding",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_61",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Creative Direction",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_62",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Brand Identity",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_63",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Branding Strategy",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_64",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Graphic Design",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_65",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Startup",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_66",
+      "selector": "h3 > a:nth-child(1)",
+      "type": "link",
+      "content": "UI-UX Design",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_67",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "UI UX Consulting",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_68",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "UX Research",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_69",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Usability Testing",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_70",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Wireframing",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_71",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Prototyping",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_72",
+      "selector": "h3 > a:nth-child(1)",
+      "type": "link",
+      "content": "Development",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_73",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "WordPress",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_74",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Webflow",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_75",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Laravel Framework",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_76",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "React & Flutter",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901202_77",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Design System",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901203_78",
+      "selector": "h3 > a:nth-child(1)",
+      "type": "link",
+      "content": "Digital Marketing",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901203_79",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Online Marketing",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901203_80",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "SEO-Marketing",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901203_81",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Strategy",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901203_82",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Market Research",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901203_83",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Social Reform",
+      "attributes": {
+        "href": "service-details.html"
+      },
+      "section": "service-area-inner"
+    },
+    {
+      "id": "link_1752997901203_84",
+      "selector": "h2 > a:nth-child(1)",
+      "type": "link",
+      "content": "Let’s\n                          Work",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "section-title"
+    },
+    {
+      "id": "link_1752997901203_86",
+      "selector": "div > a:nth-child(1)",
+      "type": "link",
+      "content": "info@redox.com",
+      "attributes": {
+        "href": "mailto:info@redox.com"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_87",
+      "selector": "p > a:nth-child(1)",
+      "type": "link",
+      "content": "Privacy Policy",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_88",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "agency",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_89",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Solutions",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_90",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Community",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_91",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Work",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_92",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Contact",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_93",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Facebook",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_94",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Twitter",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_95",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Dribbble",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_96",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Instagram",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_97",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Awwwards",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_98",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "YouTube",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_99",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "New York",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_100",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Toronto",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_101",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "Berlin",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_102",
+      "selector": "li > a:nth-child(1)",
+      "type": "link",
+      "content": "London",
+      "attributes": {
+        "href": "contact.html"
+      },
+      "section": "footer-area"
+    },
+    {
+      "id": "link_1752997901203_103",
+      "selector": "p > a:nth-child(1)",
+      "type": "link",
+      "content": "RavexTheme.",
+      "attributes": {
+        "href": "https://themeforest.net/user/ravextheme"
+      },
+      "section": "footer-area"
+    }
+  ],
+  "structure": {
+    "sections": [
+      "loader-section",
+      "hero-area",
+      "hero-area-inner",
+      "hero-content",
+      "section-header",
+      "section-title-wrapper",
+      "section-title",
+      "section-content",
+      "about-area",
+      "about-area-inner",
+      "work-area",
+      "service-area",
+      "service-area-inner",
+      "funfact-area",
+      "funfact-wrapper-box",
+      "client-area",
+      "client-area-inner",
+      "cta-area",
+      "cta-area-inner",
+      "productivity-area",
+      "productivity-area-inner"
+    ],
+    "hasNavbar": true,
+    "hasFooter": true
+  },
+  "totalElements": 289
+}

@@ -13,12 +13,14 @@ export const meta: MetaFunction = () => {
 interface Template {
   id: string;
   name: string;
-  status: 'ready' | 'analyzing' | 'error' | 'new';
+  status: 'ready' | 'analyzing' | 'error' | 'new' | 'analyzed';
   hasIndex: boolean;
   fileCount?: number;
   totalSize?: string;
   lastScanned?: string;
+  lastAnalyzed?: string;
   error?: string;
+  hasOriginalContent?: boolean;
 }
 
 interface ScanResults {
@@ -105,14 +107,25 @@ export const loader: LoaderFunction = async () => {
           const totalSizeBytes = await getDirectorySize(templatePath);
           const totalSize = formatFileSize(totalSizeBytes);
           
+          // original-content.json 확인
+          let hasOriginalContent = false;
+          try {
+            const originalContentPath = join(templatePath, 'original-content.json');
+            await fs.access(originalContentPath);
+            hasOriginalContent = true;
+          } catch {
+            hasOriginalContent = false;
+          }
+          
           results.templates[templateId] = {
             id: templateId,
             name: templateId.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
-            status: hasIndex ? 'ready' : 'new',
+            status: hasOriginalContent ? 'analyzed' : (hasIndex ? 'ready' : 'new'),
             hasIndex,
             fileCount,
             totalSize,
-            lastScanned: new Date().toISOString()
+            lastScanned: new Date().toISOString(),
+            hasOriginalContent
           };
           
         } catch (error) {
@@ -165,6 +178,16 @@ export const action: ActionFunction = async ({ request }) => {
   // 템플릿 디렉토리 경로
   const TEMPLATES_DIR = join(process.cwd(), 'public', 'templates');
   const SCAN_RESULTS_PATH = join(process.cwd(), 'app', 'data', 'scan-results.json');
+
+  // 저장된 스캔 결과 불러오기
+  async function loadScanResults(): Promise<ScanResults | null> {
+    try {
+      const data = await fs.readFile(SCAN_RESULTS_PATH, 'utf-8');
+      return JSON.parse(data);
+    } catch {
+      return null;
+    }
+  }
 
   // 파일 크기를 읽기 쉬운 형식으로 변환
   function formatFileSize(bytes: number): string {
@@ -237,14 +260,25 @@ export const action: ActionFunction = async ({ request }) => {
           const totalSizeBytes = await getDirectorySize(templatePath);
           const totalSize = formatFileSize(totalSizeBytes);
           
+          // original-content.json 확인
+          let hasOriginalContent = false;
+          try {
+            const originalContentPath = join(templatePath, 'original-content.json');
+            await fs.access(originalContentPath);
+            hasOriginalContent = true;
+          } catch {
+            hasOriginalContent = false;
+          }
+          
           results.templates[templateId] = {
             id: templateId,
             name: templateId.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
-            status: hasIndex ? 'ready' : 'new',
+            status: hasOriginalContent ? 'analyzed' : (hasIndex ? 'ready' : 'new'),
             hasIndex,
             fileCount,
             totalSize,
-            lastScanned: new Date().toISOString()
+            lastScanned: new Date().toISOString(),
+            hasOriginalContent
           };
           
         } catch (error) {
@@ -277,6 +311,79 @@ export const action: ActionFunction = async ({ request }) => {
     return json({ scanResults });
   }
   
+  if (action === "analyze") {
+    const templateId = formData.get("templateId") as string;
+    
+    if (!templateId) {
+      return json({ error: "Template ID is required" }, { status: 400 });
+    }
+    
+    try {
+      // HTML 분석기 및 전처리기 import
+      const { HtmlAnalyzer } = await import("~/utils/html-analyzer.server");
+      const { preprocessTemplate } = await import("~/utils/template-preprocessor.server");
+      
+      // 템플릿 경로
+      const templatePath = join(TEMPLATES_DIR, templateId);
+      const indexPath = join(templatePath, 'index.html');
+      
+      // index.html 읽기
+      const html = await fs.readFile(indexPath, 'utf-8');
+      
+      // HTML 분석
+      const analyzer = new HtmlAnalyzer(html);
+      const analysisResult = analyzer.analyze();
+      
+      // 결과를 original-content.json으로 저장
+      const originalContentPath = join(templatePath, 'original-content.json');
+      const originalContent = {
+        templateId,
+        analyzedAt: new Date().toISOString(),
+        elements: analysisResult.elements,
+        structure: analysisResult.structure,
+        totalElements: analysisResult.elements.length
+      };
+      
+      await fs.writeFile(originalContentPath, JSON.stringify(originalContent, null, 2));
+      
+      // 템플릿 전처리 (data 속성 추가)
+      await preprocessTemplate(templatePath);
+      
+      // scan-results.json 업데이트
+      let scanResults = await loadScanResults();
+      if (scanResults && scanResults.templates[templateId]) {
+        scanResults.templates[templateId].status = 'analyzed';
+        scanResults.templates[templateId].lastAnalyzed = new Date().toISOString();
+        scanResults.templates[templateId].hasOriginalContent = true;
+        
+        await fs.writeFile(SCAN_RESULTS_PATH, JSON.stringify(scanResults, null, 2));
+      }
+      
+      return json({ 
+        success: true, 
+        message: `템플릿 ${templateId} 분석 완료`,
+        analyzedElements: analysisResult.elements.length
+      });
+      
+    } catch (error) {
+      console.error('Template analysis error:', error);
+      
+      // scan-results.json에 오류 상태 업데이트
+      let scanResults = await loadScanResults();
+      if (scanResults && scanResults.templates[templateId]) {
+        scanResults.templates[templateId].status = 'error';
+        scanResults.templates[templateId].error = error instanceof Error ? error.message : 'Unknown error';
+        
+        await fs.writeFile(SCAN_RESULTS_PATH, JSON.stringify(scanResults, null, 2));
+      }
+      
+      return json({ 
+        error: "Analysis failed", 
+        details: error instanceof Error ? error.message : 'Unknown error' 
+      }, { status: 500 });
+    }
+  }
+  
   return json({ error: "Unknown action" }, { status: 400 });
 };
 
@@ -284,20 +391,46 @@ export default function Dashboard() {
   const { scanResults } = useLoaderData<{ scanResults: ScanResults }>();
   const fetcher = useFetcher();
   const [isScanning, setIsScanning] = useState(false);
+  const [analyzingTemplates, setAnalyzingTemplates] = useState<Set<string>>(new Set());
   
   const templates = Object.values(scanResults?.templates || {});
   
   useEffect(() => {
     if (fetcher.state === "submitting") {
-      setIsScanning(true);
-    } else if (fetcher.state === "idle" && isScanning) {
-      setIsScanning(false);
+      const formData = fetcher.formData;
+      const action = formData?.get("action");
+      
+      if (action === "scan") {
+        setIsScanning(true);
+      } else if (action === "analyze") {
+        const templateId = formData?.get("templateId") as string;
+        if (templateId) {
+          setAnalyzingTemplates(prev => new Set(prev).add(templateId));
+        }
+      }
+    } else if (fetcher.state === "idle") {
+      if (isScanning) {
+        setIsScanning(false);
+      }
+      
+      // 분석 완료 시 상태 업데이트
+      if (analyzingTemplates.size > 0 && fetcher.data) {
+        if ('success' in fetcher.data || 'error' in fetcher.data) {
+          setAnalyzingTemplates(new Set());
+          // 페이지 새로고침으로 최신 상태 반영
+          if ('success' in fetcher.data) {
+            window.location.reload();
+          }
+        }
+      }
     }
-  }, [fetcher.state, isScanning]);
+  }, [fetcher.state, fetcher.data, fetcher.formData, isScanning, analyzingTemplates.size]);
 
   const getStatusIcon = (status: Template['status']) => {
     switch (status) {
       case 'ready':
+        return '📝';
+      case 'analyzed':
         return '✅';
       case 'analyzing':
         return '🔄';
@@ -313,6 +446,8 @@ export default function Dashboard() {
   const getStatusColor = (status: Template['status']) => {
     switch (status) {
       case 'ready':
+        return 'text-yellow-600 bg-yellow-50 border-yellow-200';
+      case 'analyzed':
         return 'text-green-600 bg-green-50 border-green-200';
       case 'analyzing':
         return 'text-orange-600 bg-orange-50 border-orange-200';
@@ -429,27 +564,54 @@ export default function Dashboard() {
                     </div>
                     
                     <div>
-                      {template.status === 'ready' ? (
+                      {template.status === 'analyzed' ? (
                         <Link
                           to={`/editor/${template.id}`}
                           className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
                         >
                           Edit →
                         </Link>
+                      ) : template.status === 'ready' ? (
+                        analyzingTemplates.has(template.id) ? (
+                          <button
+                            disabled
+                            className="px-4 py-2 bg-gray-100 text-gray-400 rounded-lg cursor-not-allowed font-medium"
+                          >
+                            <span className="flex items-center">
+                              <span className="animate-spin mr-2">🔄</span>
+                              분석 중...
+                            </span>
+                          </button>
+                        ) : (
+                          <fetcher.Form method="post" style={{ display: 'inline' }}>
+                            <input type="hidden" name="action" value="analyze" />
+                            <input type="hidden" name="templateId" value={template.id} />
+                            <button
+                              type="submit"
+                              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                            >
+                              Analyze
+                            </button>
+                          </fetcher.Form>
+                        )
                       ) : template.status === 'new' ? (
                         <button
                           disabled
                           className="px-4 py-2 bg-gray-300 text-gray-500 rounded-lg cursor-not-allowed font-medium"
                         >
-                          Analyze
+                          No index.html
                         </button>
                       ) : template.status === 'error' ? (
-                        <button
-                          disabled
-                          className="px-4 py-2 bg-red-100 text-red-600 rounded-lg cursor-not-allowed font-medium"
-                        >
-                          Retry
-                        </button>
+                        <fetcher.Form method="post" style={{ display: 'inline' }}>
+                          <input type="hidden" name="action" value="analyze" />
+                          <input type="hidden" name="templateId" value={template.id} />
+                          <button
+                            type="submit"
+                            className="px-4 py-2 bg-red-100 text-red-600 rounded-lg hover:bg-red-200 transition-colors font-medium"
+                          >
+                            Retry
+                          </button>
+                        </fetcher.Form>
                       ) : (
                         <button
                           disabled

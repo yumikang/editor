@@ -1,0 +1,78 @@
+{
+  "id": "agency-redox",
+  "name": "Agency Redox",
+  "version": "2.0.0",
+  "description": "프로페셔널 에이전시 테마 (라이트/다크 모드)",
+  "author": "CodeB",
+  "category": "agency",
+  "preview": "preview.png",
+  "features": [
+    "responsive",
+    "dark-mode",
+    "parallax",
+    "animation",
+    "multi-page"
+  ],
+  "variants": {
+    "light": {
+      "name": "라이트 모드",
+      "path": "light/"
+    },
+    "dark": {
+      "name": "다크 모드",
+      "path": "dark/"
+    }
+  },
+  "editableElements": {
+    "texts": {
+      "selector": "[data-editable='text']",
+      "types": ["heading", "paragraph", "button", "menu"]
+    },
+    "images": {
+      "selector": "[data-editable='image']",
+      "types": ["hero", "portfolio", "service", "team", "blog"]
+    },
+    "colors": {
+      "primary": "#ff6b6b",
+      "secondary": "#4ecdc4",
+      "dark": "#1a1a1a",
+      "light": "#ffffff"
+    },
+    "fonts": {
+      "heading": "BDOGrotesk",
+      "body": "Sequel Sans"
+    }
+  },
+  "templates": [
+    {
+      "id": "home",
+      "name": "메인 페이지",
+      "file": "index.html",
+      "sections": ["hero", "services", "portfolio", "testimonials"]
+    },
+    {
+      "id": "creative-agency",
+      "name": "크리에이티브 에이전시",
+      "file": "creative-agency.html",
+      "sections": ["hero", "about", "portfolio", "team"]
+    },
+    {
+      "id": "digital-agency",
+      "name": "디지털 에이전시",
+      "file": "digital-agency.html",
+      "sections": ["hero", "services", "case-studies", "contact"]
+    },
+    {
+      "id": "portfolio",
+      "name": "포트폴리오",
+      "file": "portfolio.html",
+      "variants": ["grid", "masonry", "showcase", "slider"]
+    }
+  ],
+  "assets": {
+    "css": ["assets/css/style.css"],
+    "js": ["assets/js/main.js", "assets/js/magiccursor.js"],
+    "vendor": ["assets/vendor/"],
+    "fonts": ["assets/fonts/"]
+  }
+}
