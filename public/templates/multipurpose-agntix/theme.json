@@ -1,0 +1,133 @@
+{
+  "id": "multipurpose-agntix",
+  "name": "Multipurpose Agntix",
+  "version": "3.0.0",
+  "description": "다목적 프리미엄 테마 컬렉션",
+  "author": "CodeB",
+  "category": "multipurpose",
+  "preview": "preview.png",
+  "features": [
+    "responsive",
+    "dark-mode",
+    "rtl-support",
+    "mega-menu",
+    "advanced-portfolio",
+    "e-commerce",
+    "multi-language"
+  ],
+  "editableElements": {
+    "texts": {
+      "selector": "[data-editable='text']",
+      "types": ["heading", "paragraph", "button", "menu", "breadcrumb"]
+    },
+    "images": {
+      "selector": "[data-editable='image']",
+      "types": ["hero", "portfolio", "service", "team", "blog", "product"]
+    },
+    "colors": {
+      "schemes": [
+        {
+          "name": "default",
+          "primary": "#3498db",
+          "secondary": "#2c3e50"
+        },
+        {
+          "name": "creative",
+          "primary": "#e74c3c",
+          "secondary": "#34495e"
+        },
+        {
+          "name": "corporate",
+          "primary": "#27ae60",
+          "secondary": "#2c3e50"
+        }
+      ]
+    },
+    "fonts": {
+      "heading": ["ClashDisplay", "MangoGrotesque"],
+      "body": ["Platform", "Inter"]
+    }
+  },
+  "templateCategories": {
+    "agency": {
+      "name": "에이전시",
+      "templates": [
+        "creative-agency",
+        "design-agency",
+        "digital-marketing",
+        "startup-agency",
+        "corporate-agency"
+      ]
+    },
+    "portfolio": {
+      "name": "포트폴리오",
+      "templates": [
+        "portfolio-grid",
+        "portfolio-masonry",
+        "portfolio-showcase",
+        "portfolio-slider",
+        "portfolio-interactive"
+      ]
+    },
+    "business": {
+      "name": "비즈니스",
+      "templates": [
+        "it-solution",
+        "cryptocurrency",
+        "mobile-application",
+        "architecture-hub"
+      ]
+    },
+    "creative": {
+      "name": "크리에이티브",
+      "templates": [
+        "creative-studio",
+        "design-studio",
+        "fashion-studio",
+        "unique-ai-image"
+      ]
+    },
+    "personal": {
+      "name": "개인",
+      "templates": [
+        "personal-portfolio",
+        "about-me"
+      ]
+    },
+    "shop": {
+      "name": "쇼핑",
+      "templates": [
+        "shop-modern",
+        "shop-with-slider"
+      ]
+    }
+  },
+  "components": {
+    "headers": ["default", "transparent", "sticky", "mega-menu"],
+    "footers": ["default", "minimal", "extended"],
+    "forms": ["contact", "newsletter", "job-application"],
+    "sliders": ["hero", "portfolio", "testimonial", "product"]
+  },
+  "assets": {
+    "css": [
+      "assets/css/bootstrap.css",
+      "assets/css/main.css",
+      "assets/css/spacing.css"
+    ],
+    "js": [
+      "assets/js/main.js",
+      "assets/js/three.js",
+      "assets/js/webgl.js"
+    ],
+    "fonts": ["assets/fonts/"],
+    "images": ["assets/img/"]
+  },
+  "localization": {
+    "support": true,
+    "languages": ["ko", "en"],
+    "textFiles": [
+      "website-texts.json",
+      "website-texts-updated.json"
+    ]
+  }
+}

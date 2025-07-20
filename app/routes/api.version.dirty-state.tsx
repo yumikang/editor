@@ -1,6 +1,6 @@
 // 버전 관리 dirty 상태 API - Phase 3 Day 7
 import { json, type ActionFunctionArgs } from "@remix-run/node";
-import { VersionManager } from '~/utils/version-manager';
+import { VersionManager } from '~/utils/version-manager.server';
 import * as path from 'path';
 
 export async function action({ request }: ActionFunctionArgs) {

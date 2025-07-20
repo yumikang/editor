@@ -1,0 +1,478 @@
+{
+  "website_texts": {
+    "menu": {
+      "main_navigation": [
+        {
+          "english": "Demo",
+          "korean": "",
+          "location": "main navigation"
+        },
+        {
+          "english": "Pages",
+          "korean": "",
+          "location": "main navigation"
+        },
+        {
+          "english": "Projects",
+          "korean": "",
+          "location": "main navigation"
+        },
+        {
+          "english": "Blog",
+          "korean": "",
+          "location": "main navigation"
+        },
+        {
+          "english": "Shop",
+          "korean": "",
+          "location": "main navigation"
+        },
+        {
+          "english": "Contact",
+          "korean": "",
+          "location": "main navigation"
+        }
+      ],
+      "language_selector": [
+        {
+          "english": "En",
+          "korean": "",
+          "location": "header language selector"
+        },
+        {
+          "english": "De",
+          "korean": "",
+          "location": "header language selector"
+        }
+      ],
+      "cta_button": {
+        "english": "Start a Project",
+        "korean": "",
+        "location": "header CTA button"
+      }
+    },
+    "hero_section": {
+      "title": {
+        "english": "Digital Design Experience",
+        "korean": "",
+        "location": "hero section title"
+      },
+      "subtitle": {
+        "english": "Hey! is the ultimate Agntix Agency template for professionals in the design industry.",
+        "korean": "",
+        "location": "hero section subtitle"
+      },
+      "testimonial": {
+        "author": "Juan Mauel",
+        "text": {
+          "english": "The depth of exploration and quality of the work was great",
+          "korean": "",
+          "location": "hero section testimonial"
+        },
+        "link_text": {
+          "english": "More",
+          "korean": "",
+          "location": "hero section testimonial link"
+        }
+      }
+    },
+    "about_section": {
+      "subtitle": {
+        "english": "WHO WE ARE",
+        "korean": "",
+        "location": "about section subtitle"
+      },
+      "main_text": {
+        "english": "An independent web design and branding agency in Manchester set up in 2010 who care, build relationships, have industry experience, and win awards.",
+        "korean": "",
+        "location": "about section main text"
+      },
+      "highlight_text": {
+        "english": "Driven by a passion for innovation, we specialize in delivering top-quality design solutions",
+        "korean": "",
+        "location": "about section highlight"
+      },
+      "stats": [
+        {
+          "number": "98%",
+          "text": {
+            "english": "Clients Satisfied and Repeating",
+            "korean": "",
+            "location": "about section statistics"
+          }
+        },
+        {
+          "number": "125+",
+          "text": {
+            "english": "Projects Completed in 24 Countries",
+            "korean": "",
+            "location": "about section statistics"
+          }
+        }
+      ]
+    },
+    "services_section": {
+      "title": {
+        "english": "Services",
+        "korean": "",
+        "location": "services section title"
+      },
+      "services": [
+        {
+          "number": "01",
+          "title": {
+            "english": "Web Design",
+            "korean": "",
+            "location": "service item 1"
+          },
+          "description": {
+            "english": "Whether you need stunning visuals for your website, captivating graphics for your marketing materials, or innovative UI/UX designs for your app, our team of experts is here to turn your vision into reality.",
+            "korean": "",
+            "location": "service 1 description"
+          },
+          "categories": ["UX Design", "User Testing", "Motion Design", "Product Prototype"],
+          "cta": {
+            "english": "See Our Services",
+            "korean": "",
+            "location": "service CTA button"
+          }
+        },
+        {
+          "number": "02",
+          "title": {
+            "english": "Product Design",
+            "korean": "",
+            "location": "service item 2"
+          },
+          "description": {
+            "english": "Our product design services focus on creating intuitive and aesthetically pleasing products that resonate with your audience and stand out in the market.",
+            "korean": "",
+            "location": "service 2 description"
+          },
+          "categories": ["UX Design", "User Testing", "Product Prototype", "Mobile UI", "Sotware UI design", "Web app design"]
+        },
+        {
+          "number": "03",
+          "title": {
+            "english": "Web Development",
+            "korean": "",
+            "location": "service item 3"
+          },
+          "description": {
+            "english": "From website development and e-commerce platforms to custom software and mobile apps, our development team has the expertise to bring your ideas to life.",
+            "korean": "",
+            "location": "service 3 description"
+          },
+          "categories": ["UX Design", "Frontend", "Backend", "E-commerce", "No Code / Low Code"]
+        },
+        {
+          "number": "04",
+          "title": {
+            "english": "Branding",
+            "korean": "",
+            "location": "service item 4"
+          },
+          "description": {
+            "english": "It's the core of your company's identity. It guides all business decisions, ensuring a consistent and impactful presence in the market.",
+            "korean": "",
+            "location": "service 4 description"
+          },
+          "categories": ["Research & Insights", "Unique Ways", "Value Proposition", "Naming", "Verbal Identity"]
+        }
+      ]
+    },
+    "projects_section": {
+      "title": {
+        "english": "Featured Projects",
+        "korean": "",
+        "location": "projects section title"
+      },
+      "cta": {
+        "english": "View all Works",
+        "korean": "",
+        "location": "projects section CTA"
+      },
+      "projects": [
+        {
+          "name": "Acme Studio",
+          "categories": ["Product Design", "Branding", "Creative"]
+        },
+        {
+          "name": "Grace Clinic",
+          "categories": ["Creative", "Branding", "Development"]
+        },
+        {
+          "name": "Smart Cities",
+          "categories": ["Product Design", "Branding", "Creative"]
+        },
+        {
+          "name": "Digital Farming",
+          "categories": ["Product Design", "Branding", "Creative"]
+        },
+        {
+          "name": "Virtual Reality",
+          "categories": ["Product Design", "Branding", "Creative"]
+        },
+        {
+          "name": "Cloud Computing",
+          "categories": ["Product Design", "Branding", "Creative"]
+        }
+      ]
+    },
+    "funfact_section": {
+      "stats": [
+        {
+          "title": {
+            "english": "projects completed in 24 countries",
+            "korean": "",
+            "location": "funfact section"
+          },
+          "subtitle": "( Nice! )",
+          "number": "106"
+        },
+        {
+          "title": {
+            "english": "Clients satisfied and repeating",
+            "korean": "",
+            "location": "funfact section"
+          },
+          "subtitle": "( Ho Ho! )",
+          "number": "96"
+        },
+        {
+          "title": {
+            "english": "Performing video",
+            "korean": "",
+            "location": "funfact section"
+          },
+          "subtitle": "( Holy Moly! )",
+          "number": "#1Top"
+        }
+      ]
+    },
+    "work_process_section": {
+      "title": {
+        "english": "How we Work",
+        "korean": "",
+        "location": "work process section title"
+      },
+      "subtitle": {
+        "english": "Our design thinking process",
+        "korean": "",
+        "location": "work process section subtitle"
+      },
+      "steps": [
+        {
+          "number": "01",
+          "title": {
+            "english": "User Research",
+            "korean": "",
+            "location": "work process step 1"
+          },
+          "description": {
+            "english": "We listen stories of user to understand pain points and give a rough estimate about cost and time-frame",
+            "korean": "",
+            "location": "work process step 1 description"
+          }
+        },
+        {
+          "number": "02",
+          "title": {
+            "english": "Define Problems",
+            "korean": "",
+            "location": "work process step 2"
+          },
+          "description": {
+            "english": "We listen stories of user to understand pain points and give a rough estimate about cost and time-frame",
+            "korean": "",
+            "location": "work process step 2 description"
+          }
+        },
+        {
+          "number": "03",
+          "title": {
+            "english": "Design & Prototype",
+            "korean": "",
+            "location": "work process step 3"
+          },
+          "description": {
+            "english": "We listen stories of user to understand pain points and give a rough estimate about cost and time-frame",
+            "korean": "",
+            "location": "work process step 3 description"
+          }
+        },
+        {
+          "number": "04",
+          "title": {
+            "english": "Evaluation & Testing",
+            "korean": "",
+            "location": "work process step 4"
+          },
+          "description": {
+            "english": "We listen stories of user to understand pain points and give a rough estimate about cost and time-frame",
+            "korean": "",
+            "location": "work process step 4 description"
+          }
+        }
+      ]
+    },
+    "testimonial_section": {
+      "title": {
+        "english": "Client Reviews",
+        "korean": "",
+        "location": "testimonial section title"
+      },
+      "rating_info": {
+        "rating": "4.9/5",
+        "text": {
+          "english": "Based on 24 reviews on Clutch",
+          "korean": "",
+          "location": "testimonial rating info"
+        }
+      },
+      "testimonials": [
+        {
+          "text": {
+            "english": "Agntix studio ability to create a high quality UI is stands out. It's something we placed a premium on. A studio with passionate, professional, fun and full creativity.",
+            "korean": "",
+            "location": "testimonial 1"
+          },
+          "author": "Albert Juan",
+          "position": "CEO & Founder, Archin Studio"
+        },
+        {
+          "text": {
+            "english": "Agntix studio ability to create a high quality UI is stands out. It's something we placed a premium on. A studio with passionate, professional, fun and full creativity.",
+            "korean": "",
+            "location": "testimonial 2"
+          },
+          "author": "Koen Chegg",
+          "position": "CEO & Founder, Archin Studio"
+        }
+      ]
+    },
+    "awards_section": {
+      "subtitle": {
+        "english": "( Awards! )",
+        "korean": "",
+        "location": "awards section subtitle"
+      },
+      "awards": [
+        {
+          "year": "2008",
+          "title": "1x agency of the year",
+          "position": "Winner"
+        },
+        {
+          "year": "2009",
+          "title": "3x creative agency of the day",
+          "position": "Awarded"
+        },
+        {
+          "year": "2011",
+          "title": "2x Featured design of the week",
+          "position": "Mentioned"
+        },
+        {
+          "year": "2016",
+          "title": "5x honorable mentioned",
+          "position": "Mentioned"
+        },
+        {
+          "year": "2022",
+          "title": "8x Best design of the day",
+          "position": "Winner"
+        },
+        {
+          "year": "2025",
+          "title": "3x Mobile Excellence Award",
+          "position": "Awarded"
+        }
+      ]
+    },
+    "footer_section": {
+      "main_text": {
+        "english": "Helping start-ups scale & grow.",
+        "korean": "",
+        "location": "footer main text"
+      },
+      "quick_links": {
+        "title": {
+          "english": "Quick links",
+          "korean": "",
+          "location": "footer quick links title"
+        },
+        "links": [
+          {
+            "english": "About",
+            "korean": "",
+            "location": "footer link"
+          },
+          {
+            "english": "Who we are",
+            "korean": "",
+            "location": "footer link"
+          },
+          {
+            "english": "Services",
+            "korean": "",
+            "location": "footer link"
+          },
+          {
+            "english": "Projects",
+            "korean": "",
+            "location": "footer link"
+          },
+          {
+            "english": "Blog",
+            "korean": "",
+            "location": "footer link"
+          },
+          {
+            "english": "Pricing",
+            "korean": "",
+            "location": "footer link"
+          },
+          {
+            "english": "Contact Us",
+            "korean": "",
+            "location": "footer link"
+          }
+        ]
+      },
+      "contact_info": {
+        "title": {
+          "english": "Contact",
+          "korean": "",
+          "location": "footer contact title"
+        },
+        "email": "agntixs@studio.com",
+        "phone": "+(302) 555-0107",
+        "address": {
+          "english": "4517 Washington Ave. Manchester, Kentucky 39495",
+          "korean": "",
+          "location": "footer address"
+        }
+      },
+      "copyright": {
+        "text": {
+          "english": "©2025 Agntix Design Studio.",
+          "korean": "",
+          "location": "footer copyright"
+        },
+        "links": [
+          {
+            "english": "Terms and Conditions",
+            "korean": "",
+            "location": "footer legal link"
+          },
+          {
+            "english": "Privacy Policy",
+            "korean": "",
+            "location": "footer legal link"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -11,9 +11,6 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@remix-run/node": "^2.16.8",
-    "@remix-run/react": "^2.16.8",
-    "@remix-run/serve": "^2.16.8",
     "@types/cheerio": "^0.22.35",
     "@types/sharp": "^0.31.1",
     "cheerio": "^1.1.0",
@@ -24,6 +21,9 @@
   },
   "devDependencies": {
     "@remix-run/dev": "^2.16.8",
+    "@remix-run/node": "^2.16.8",
+    "@remix-run/react": "^2.16.8",
+    "@remix-run/serve": "^2.16.8",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.7.4",

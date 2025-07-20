@@ -1,12 +1,12 @@
 import { type LoaderFunctionArgs } from "@remix-run/node";
-import * as fs from 'fs/promises';
-import * as path from 'path';
-import { JsonStorage } from "~/utils/json-storage";
+import { promises as fs } from 'fs';
+import { join } from 'path';
+import { JsonStorage } from "~/utils/json-storage.server";
 import * as cheerio from 'cheerio';
-import { ThemeInitializer } from "~/utils/theme-initializer";
+import { ThemeInitializer } from "~/utils/theme-initializer.server";
 
-const THEMES_PATH = path.join(process.cwd(), "../themes");
-const ACTIVE_JSON_PATH = path.join(process.cwd(), "../website-texts-active.json"); // 작업용 파일 사용
+const THEMES_PATH = join(process.cwd(), "../themes");
+const ACTIVE_JSON_PATH = join(process.cwd(), "../website-texts-active.json"); // 작업용 파일 사용
 
 export async function loader({ params }: LoaderFunctionArgs) {
   // params["*"]에 전체 경로가 들어옴 (예: "agency-redox/light/index.html")
@@ -26,7 +26,7 @@ export async function loader({ params }: LoaderFunctionArgs) {
   await initializer.initializeTheme(theme);
   
   try {
-    const absolutePath = path.join(THEMES_PATH, theme, filePath);
+    const absolutePath = join(THEMES_PATH, theme, filePath);
     console.log('[themes.loader] Absolute path:', absolutePath);
     
     // HTML 파일인 경우 텍스트 치환
@@ -79,7 +79,7 @@ export async function loader({ params }: LoaderFunctionArgs) {
       
       // 커스텀 스타일 시트 추가 (테마별)
       try {
-        const customStylePath = path.join(THEMES_PATH, theme, "custom-styles.css");
+        const customStylePath = join(THEMES_PATH, theme, "custom-styles.css");
         await fs.access(customStylePath);
         $('head').append(`<link rel="stylesheet" href="/themes/${theme}/custom-styles.css">`);
         console.log(`[themes.loader] Custom styles added for theme: ${theme}`);

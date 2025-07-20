@@ -1,0 +1,1199 @@
+{
+  "meta": {
+    "title": {
+      "english": "CodeB - Web & AI Solution Agency",
+      "korean": "코드비 | 웹 & AI 솔루션 에이전시"
+    },
+    "description": {
+      "english": "AI-based web solutions, faster and smarter",
+      "korean": "AI 기반 웹 솔루션, 더 빠르게 더 스마트하게"
+    },
+    "keywords": {
+      "english": "agency, portfolio, creative, digital, design",
+      "korean": "agency, portfolio, creative, digital, design"
+    }
+  },
+  "navigation": {
+    "main_menu": {
+      "demo": {
+        "english": "About",
+        "korean": "회사 소개"
+      },
+      "pages": {
+        "english": "Services",
+        "korean": "서비스"
+      },
+      "projects": {
+        "english": "Portfolio",
+        "korean": "포트폴리오"
+      },
+      "services": {
+        "english": "FAQ",
+        "korean": "FAQ"
+      },
+      "blog": {
+        "english": "Insights",
+        "korean": "인사이트"
+      },
+      "contact": {
+        "english": "Contact",
+        "korean": "Contact"
+      }
+    },
+    "home_versions": {
+      "home_light": {
+        "english": "Home Light Version",
+        "korean": "홈 라이트 버전"
+      },
+      "home_dark": {
+        "english": "Home Dark Version",
+        "korean": "홈 다크 버전"
+      }
+    },
+    "demo_types": {
+      "modern_agency": {
+        "english": "Modern Agency",
+        "korean": "모던 에이전시"
+      },
+      "design_studio": {
+        "english": "Design Studio",
+        "korean": "디자인 스튜디오"
+      },
+      "digital_marketing": {
+        "english": "Digital Marketing",
+        "korean": "디지털 마케팅"
+      },
+      "creative_studio": {
+        "english": "Creative Studio",
+        "korean": "크리에이티브 스튜디오"
+      },
+      "design_agency": {
+        "english": "Design Agency",
+        "korean": "디자인 에이전시"
+      },
+      "creative_agency": {
+        "english": "Creative Agency",
+        "korean": "크리에이티브 에이전시"
+      },
+      "architecture_hub": {
+        "english": "Architecture Hub",
+        "korean": "건축 허브"
+      },
+      "ai_image_generator": {
+        "english": "AI Image Generator",
+        "korean": "AI 이미지 생성기"
+      },
+      "corporate_agency": {
+        "english": "Corporate Agency",
+        "korean": "기업 에이전시"
+      },
+      "mobile_app": {
+        "english": "Mobile App",
+        "korean": "모바일 앱"
+      },
+      "it_solutions": {
+        "english": "IT Solutions",
+        "korean": "IT 솔루션"
+      },
+      "cryptocurrency": {
+        "english": "Cryptocurrency",
+        "korean": "암호화폐"
+      },
+      "startup_agency": {
+        "english": "Startup Agency",
+        "korean": "스타트업 에이전시"
+      },
+      "fashion_studio": {
+        "english": "Fashion Studio",
+        "korean": "패션 스튜디오"
+      },
+      "personal_portfolio": {
+        "english": "Personal Portfolio",
+        "korean": "개인 포트폴리오"
+      },
+      "shop_home": {
+        "english": "Shop Home",
+        "korean": "쇼핑 홈"
+      }
+    },
+    "about_menu": {
+      "about_light": {
+        "english": "About Light Version",
+        "korean": "소개 라이트 버전"
+      },
+      "about_dark": {
+        "english": "About Dark Version",
+        "korean": "소개 다크 버전"
+      },
+      "about_me": {
+        "english": "About Me",
+        "korean": "내 소개"
+      },
+      "about_us": {
+        "english": "About Us",
+        "korean": "회사 소개"
+      },
+      "modern_about": {
+        "english": "Modern About",
+        "korean": "모던 소개"
+      },
+      "creative_about": {
+        "english": "Creative About",
+        "korean": "크리에이티브 소개"
+      },
+      "startup_about": {
+        "english": "Startup About",
+        "korean": "스타트업 소개"
+      }
+    },
+    "services_menu": {
+      "services_light": {
+        "english": "Services Light Version",
+        "korean": "서비스 라이트 버전"
+      },
+      "services_dark": {
+        "english": "Services Dark Version",
+        "korean": "서비스 다크 버전"
+      },
+      "services": {
+        "english": "Services",
+        "korean": "서비스"
+      },
+      "service_details": {
+        "english": "Service Details",
+        "korean": "서비스 상세"
+      }
+    },
+    "projects_menu": {
+      "portfolio_grid": {
+        "english": "Portfolio Grid",
+        "korean": "포트폴리오 그리드"
+      },
+      "portfolio_masonry": {
+        "english": "Portfolio Masonry",
+        "korean": "포트폴리오 메이슨리"
+      },
+      "project_details": {
+        "english": "Project Details",
+        "korean": "프로젝트 상세"
+      }
+    },
+    "blog_menu": {
+      "blog_grid": {
+        "english": "Blog Grid",
+        "korean": "블로그 그리드"
+      },
+      "blog_list": {
+        "english": "Blog List",
+        "korean": "블로그 목록"
+      },
+      "blog_details": {
+        "english": "Blog Details",
+        "korean": "블로그 상세"
+      }
+    },
+    "contact_menu": {
+      "contact_us": {
+        "english": "Contact Us",
+        "korean": "문의하기"
+      },
+      "get_quote": {
+        "english": "Get Quote",
+        "korean": "견적 요청"
+      }
+    }
+  },
+  "hero_section": {
+    "main_title": {
+      "english": "Digital AI Solutions",
+      "korean": "디지털 AI 기반 솔루션"
+    },
+    "subtitle": {
+      "english": "From planning to construction,\nwe provide efficient web solutions utilising AI.",
+      "korean": "기획부터 구축까지,\nAI를 활용한 효율적인 웹 솔루션을 제공합니다."
+    },
+    "cta_button": {
+      "english": "Start Your Project",
+      "korean": "Start Your Project"
+    },
+    "testimonial": {
+      "text": {
+        "english": "The schedule was perfectly met thanks to the rapid development that accurately reflected our requirements.",
+        "korean": "요구사항을 정확히 반영해 빠르게 개발해주셔서 일정이 완벽히 맞춰졌습니다."
+      },
+      "author": {
+        "english": "Startup CEO, Kim OO",
+        "korean": "스타트업 대표, 김OO"
+      },
+      "more_button": {
+        "english": "More",
+        "korean": "More"
+      }
+    },
+    "stats": {
+      "projects_completed": {
+        "number": "250+",
+        "label": {
+          "english": "Projects Completed",
+          "korean": "전국 17개 시·도에서 프로젝트 경험 보유"
+        }
+      },
+      "happy_clients": {
+        "number": "150+",
+        "label": {
+          "english": "Happy Clients",
+          "korean": "국내 고객들의 높은 만족도와 재의뢰율"
+        }
+      },
+      "awards_won": {
+        "number": "25+",
+        "label": {
+          "english": "Awards Won",
+          "korean": "수상 경력"
+        }
+      }
+    }
+  },
+  "about_section": {
+    "title": {
+      "english": "WHO WE ARE",
+      "korean": "WHO WE ARE"
+    },
+    "description": {
+      "english": "codeB is your agile partner for fast and flexible web and app solutions.\nWe combine modular CMS architecture with an end-to-end development process.",
+      "korean": "codeB는 빠르고 유연한 웹·앱 솔루션을 구축하는 디지털 파트너입니다.\n모듈형 CMS와 애자일 프로세스를 기반으로 기술적 완성도를 추구합니다."
+    },
+    "sub_description": {
+      "english": "codeB is a high-quality technology strategist that expands the execution capabilities of its customers' businesses.",
+      "korean": "codeB는 고품질의 기술전략가로서, 고객 비즈니스의 실행력을 확장합니다."
+    },
+    "features": [
+      {
+        "title": {
+          "english": "Innovative solutions",
+          "korean": "혁신적인 솔루션"
+        },
+        "description": {
+          "english": "We provide innovative and creative solutions for your business",
+          "korean": "귀하의 비즈니스를 위한 혁신적이고 창의적인 솔루션을 제공합니다"
+        }
+      },
+      {
+        "title": {
+          "english": "Professional Team",
+          "korean": "전문가 팀"
+        },
+        "description": {
+          "english": "Our team consists of experienced professionals in various fields",
+          "korean": "다양한 분야의 경험 많은 전문가들로 구성된 팀입니다"
+        }
+      },
+      {
+        "title": {
+          "english": "24/7 Support",
+          "korean": "24/7 지원"
+        },
+        "description": {
+          "english": "We build trust through focused communication and agile response",
+          "korean": "핵심을 짚는 커뮤니케이션과 빠른 대응으로 신뢰를 만듭니다"
+        }
+      }
+    ]
+  },
+  "text_slider": {
+    "items": [
+      {
+        "english": "Strategy",
+        "korean": "전략"
+      },
+      {
+        "english": "Digital Solution",
+        "korean": "디지털 솔루션"
+      },
+      {
+        "english": "Business Growth",
+        "korean": "Business Growth"
+      },
+      {
+        "english": "Development",
+        "korean": "솔루션 개발"
+      },
+      {
+        "english": "IT Company",
+        "korean": "IT 에이전시"
+      },
+      {
+        "english": "SEO Agency",
+        "korean": "SEO 에이전시"
+      },
+      {
+        "english": "Consulting",
+        "korean": "기술 컨설팅"
+      },
+      {
+        "english": "Branding",
+        "korean": "Branding"
+      },
+      {
+        "english": "Lifetime Update",
+        "korean": "웹디자인"
+      }
+    ]
+  },
+  "services_section": {
+    "title": {
+      "english": "Services",
+      "korean": "서비스"
+    },
+    "subtitle": {
+      "english": "What We Offer",
+      "korean": "주요 서비스"
+    },
+    "description": {
+      "english": "We provide comprehensive digital solutions to help your business grow",
+      "korean": "귀하의 비즈니스 성장을 돕는 종합적인 디지털 솔루션을 제공합니다"
+    },
+    "services": [
+      {
+        "title": {
+          "english": "Solution Development",
+          "korean": "솔루션 개발"
+        },
+        "description": {
+          "english": "From website development and e-commerce platforms to custom software and mobile apps, we have the expertise to turn your ideas into reality.",
+          "korean": "웹사이트 개발과 이커머스 플랫폼부터 맞춤형 소프트웨어와 모바일 앱까지, 여러분의 아이디어를 현실로 만들 전문 지식을 보유하고 있습니다."
+        },
+        "categories": {
+          "english": "SEO Friendly, Custom Logic, Modular CMS, Admin Panel",
+          "korean": "SEO 친화적, 커스텀 로직, 모듈형 CMS, 관리자 대시보드"
+        },
+        "button": {
+          "english": "See Our Services",
+          "korean": "자세히 보기"
+        },
+        "features": [
+          {
+            "english": "SEO Friendly",
+            "korean": "SEO 친화적"
+          },
+          {
+            "english": "Modular CMS",
+            "korean": "모듈형 CMS"
+          },
+          {
+            "english": "Admin Panel",
+            "korean": "관리자 대시보드"
+          }
+        ]
+      },
+      {
+        "title": {
+          "english": "Web design",
+          "korean": "웹 디자인"
+        },
+        "description": {
+          "english": "Trendy web visuals, stylish graphics, and innovative UI/UX",
+          "korean": "트렌디한 웹 비주얼, 감각적인 그래픽, 혁신적인 UI/UX까지\ncodeB는 기술과 디자인의 조화를 통해\n당신의 아이디어를 빠르고 명확하게 실현합니다."
+        },
+        "categories": {
+          "english": "UX design, User testing, Web design, Responsive design",
+          "korean": "UX 디자인,사용자 테스트,웹 디자인,반응형 디자인 \n"
+        },
+        "button": {
+          "english": "See Our Services",
+          "korean": "자세히 보기"
+        },
+        "features": [
+          {
+            "english": "UX design",
+            "korean": "UX 디자인"
+          },
+          {
+            "english": "User testing",
+            "korean": "사용자 테스트"
+          },
+          {
+            "english": "Responsive design",
+            "korean": "반응형 디자인"
+          }
+        ]
+      },
+      {
+        "title": {
+          "english": "AI video production",
+          "korean": "Ai 영상 제작"
+        },
+        "description": {
+          "english": "Our AI-powered video service helps you deliver brand-aligned content with ease.\nCreate high-quality videos quickly and affordably.\n",
+          "korean": "AI 기반 영상 제작으로 브랜드에 어울리는 콘텐츠를 효과적으로 전달합니다.\n빠르고 합리적인 방식으로 고품질 영상을 완성해보세요."
+        },
+        "categories": {
+          "english": "AI Video, Marketing Ready, High Quality, Fast Delivery",
+          "korean": "AI 영상, 마케팅, 고품질 콘텐츠, 신속한 제작"
+        },
+        "button": {
+          "english": "See Our Services",
+          "korean": "자세히 보기"
+        },
+        "features": [
+          {
+            "english": "AI Video",
+            "korean": "AI 영상"
+          },
+          {
+            "english": "Marketing Ready",
+            "korean": "마케팅"
+          },
+          {
+            "english": "Fast Delivery",
+            "korean": "신속한 제작"
+          }
+        ]
+      },
+      {
+        "title": {
+          "english": "Digital Marketing",
+          "korean": "디지털 마케팅"
+        },
+        "description": {
+          "english": "Boost your online presence with our comprehensive digital marketing strategies tailored to your business goals.",
+          "korean": "귀하의 비즈니스 목표에 맞춘 종합적인 디지털 마케팅 전략으로 온라인 존재감을 높이세요."
+        },
+        "categories": {
+          "english": [
+            "SEO",
+            "Social Media Marketing",
+            "Content Marketing",
+            "PPC",
+            "Email Marketing"
+          ],
+          "korean": [
+            "SEO",
+            "소셜미디어 마케팅",
+            "콘텐츠 마케팅",
+            "PPC",
+            "이메일 마케팅"
+          ]
+        },
+        "button": {
+          "english": "See Our Services",
+          "korean": "서비스 보기"
+        }
+      }
+    ]
+  },
+  "projects_section": {
+    "title": {
+      "english": "Featured Projects",
+      "korean": "주요 프로젝트"
+    },
+    "subtitle": {
+      "english": "Our Recent Work",
+      "korean": "최근 사례 소개"
+    },
+    "description": {
+      "english": "Explore our portfolio of successful projects across various industries",
+      "korean": "다양한 산업 분야에서 성공적으로 완료한 코드비의 프로젝트 포트폴리오를 살펴보세요"
+    },
+    "view_all": {
+      "english": "View all Works",
+      "korean": "자세히 보기"
+    },
+    "cursor_text": {
+      "english": "View Demo",
+      "korean": "데모 보기"
+    },
+    "filter": {
+      "all": {
+        "english": "All",
+        "korean": "전체"
+      },
+      "web_design": {
+        "english": "Web Design",
+        "korean": "웹 디자인"
+      },
+      "branding": {
+        "english": "Branding",
+        "korean": "브랜딩"
+      },
+      "development": {
+        "english": "Development",
+        "korean": "개발"
+      },
+      "marketing": {
+        "english": "Marketing",
+        "korean": "마케팅"
+      }
+    },
+    "projects": [
+      {
+        "name": "Acme Studio",
+        "client": {
+          "english": "Acme Corporation",
+          "korean": "Acme 코퍼레이션"
+        },
+        "categories": {
+          "english": [
+            "Product Design",
+            "Branding",
+            "Creative"
+          ],
+          "korean": [
+            "제품 디자인",
+            "브랜딩",
+            "크리에이티브"
+          ]
+        },
+        "description": {
+          "english": "Complete brand identity and web design for creative studio",
+          "korean": "크리에이티브 스튜디오를 위한 완전한 브랜드 아이덴티티와 웹 디자인"
+        }
+      },
+      {
+        "name": "Grace Clinic",
+        "client": {
+          "english": "Grace Healthcare",
+          "korean": "그레이스 헬스케어"
+        },
+        "categories": {
+          "english": [
+            "Creative",
+            "Branding",
+            "Development"
+          ],
+          "korean": [
+            "크리에이티브",
+            "브랜딩",
+            "개발"
+          ]
+        },
+        "description": {
+          "english": "Modern healthcare website with appointment booking system",
+          "korean": "예약 시스템을 갖춘 현대적인 헬스케어 웹사이트"
+        }
+      },
+      {
+        "name": "Smart Cities",
+        "client": {
+          "english": "Urban Tech Solutions",
+          "korean": "어반 테크 솔루션"
+        },
+        "categories": {
+          "english": [
+            "Product Design",
+            "Branding",
+            "Creative"
+          ],
+          "korean": [
+            "제품 디자인",
+            "브랜딩",
+            "크리에이티브"
+          ]
+        },
+        "description": {
+          "english": "IoT dashboard design for smart city management",
+          "korean": "스마트 시티 관리를 위한 IoT 대시보드 디자인"
+        }
+      },
+      {
+        "name": "Digital Farming",
+        "client": {
+          "english": "AgriTech Co.",
+          "korean": "애그리테크"
+        },
+        "categories": {
+          "english": [
+            "Product Design",
+            "Branding",
+            "Creative"
+          ],
+          "korean": [
+            "제품 디자인",
+            "브랜딩",
+            "크리에이티브"
+          ]
+        },
+        "description": {
+          "english": "Agricultural technology platform design and development",
+          "korean": "농업 기술 플랫폼 디자인 및 개발"
+        }
+      },
+      {
+        "name": "Virtual Reality",
+        "client": {
+          "english": "VR Innovations",
+          "korean": "VR 이노베이션"
+        },
+        "categories": {
+          "english": [
+            "Product Design",
+            "Branding",
+            "Creative"
+          ],
+          "korean": [
+            "제품 디자인",
+            "브랜딩",
+            "크리에이티브"
+          ]
+        },
+        "description": {
+          "english": "Immersive VR experience design and interface development",
+          "korean": "몰입형 VR 경험 디자인 및 인터페이스 개발"
+        }
+      },
+      {
+        "name": "Cloud Computing",
+        "client": {
+          "english": "CloudTech Solutions",
+          "korean": "클라우드테크 솔루션"
+        },
+        "categories": {
+          "english": [
+            "Product Design",
+            "Branding",
+            "Creative"
+          ],
+          "korean": [
+            "제품 디자인",
+            "브랜딩",
+            "크리에이티브"
+          ]
+        },
+        "description": {
+          "english": "Enterprise cloud platform UI/UX design",
+          "korean": "엔터프라이즈 클라우드 플랫폼 UI/UX 디자인"
+        }
+      }
+    ]
+  },
+  "work_process_section": {
+    "title": {
+      "english": "How we Work",
+      "korean": "우리의 작업 방식"
+    },
+    "subtitle": {
+      "english": "Our design thinking process",
+      "korean": "우리의 디자인 사고 프로세스"
+    },
+    "description": {
+      "english": "We follow a proven methodology to deliver exceptional results",
+      "korean": "검증된 방법론을 따라 탁월한 결과를 제공합니다"
+    },
+    "steps": [
+      {
+        "number": "01",
+        "title": {
+          "english": "User Research",
+          "korean": "사용자 조사"
+        },
+        "description": {
+          "english": "We listen stories of user to understand pain points and give a rough estimate about cost and time-frame",
+          "korean": "사용자의 이야기를 들어 문제점을 파악하고 비용과 일정에 대한 대략적인 견적을 제공합니다"
+        },
+        "details": {
+          "english": "In-depth interviews, surveys, and user behavior analysis",
+          "korean": "심층 인터뷰, 설문조사, 사용자 행동 분석"
+        }
+      },
+      {
+        "number": "02",
+        "title": {
+          "english": "Define Problems",
+          "korean": "문제 정의"
+        },
+        "description": {
+          "english": "We analyze collected data to define core problems and set solution directions",
+          "korean": "수집한 데이터를 분석하여 핵심 문제를 정의하고 해결 방향을 설정합니다"
+        },
+        "details": {
+          "english": "Problem statement creation and solution brainstorming",
+          "korean": "문제 정의서 작성 및 솔루션 브레인스토밍"
+        }
+      },
+      {
+        "number": "03",
+        "title": {
+          "english": "Design & Prototype",
+          "korean": "디자인 & 프로토타입"
+        },
+        "description": {
+          "english": "We design creative solutions and create prototypes to materialize ideas",
+          "korean": "창의적인 솔루션을 디자인하고 프로토타입을 제작하여 아이디어를 구체화합니다"
+        },
+        "details": {
+          "english": "Wireframing, visual design, and interactive prototyping",
+          "korean": "와이어프레이밍, 비주얼 디자인, 인터랙티브 프로토타이핑"
+        }
+      },
+      {
+        "number": "04",
+        "title": {
+          "english": "Evaluation & Testing",
+          "korean": "평가 & 테스트"
+        },
+        "description": {
+          "english": "We validate solutions through user testing and improve based on feedback",
+          "korean": "사용자 테스트를 통해 솔루션을 검증하고 피드백을 반영하여 개선합니다"
+        },
+        "details": {
+          "english": "A/B testing, usability testing, and performance optimization",
+          "korean": "A/B 테스팅, 사용성 테스트, 성능 최적화"
+        }
+      }
+    ]
+  },
+  "testimonials_section": {
+    "title": {
+      "english": "Client Reviews",
+      "korean": "고객 리뷰"
+    },
+    "subtitle": {
+      "english": "What Our Clients Say",
+      "korean": "고객들의 이야기"
+    },
+    "rating_text": {
+      "english": "Based on 24 reviews on Clutch",
+      "korean": "Clutch 24개 리뷰 기반"
+    },
+    "testimonials": [
+      {
+        "text": {
+          "english": "Agntix studio ability to create a high quality UI is stands out. It's something we placed a premium on. A studio with passionate, professional, fun and full creativity.",
+          "korean": "Blee 스튜디오의 고품질 UI 제작 능력은 탁월합니다. 우리가 중요하게 생각하는 부분입니다. 열정적이고 전문적이며 재미있고 창의력이 넘치는 스튜디오입니다."
+        },
+        "author": {
+          "name": "Albert Juan",
+          "position": {
+            "english": "CEO & Founder, Archin Studio",
+            "korean": "CEO & 창립자, Archin Studio"
+          },
+          "company": {
+            "english": "Archin Studio",
+            "korean": "Archin 스튜디오"
+          }
+        },
+        "rating": 5
+      },
+      {
+        "text": {
+          "english": "Working with this team has been an absolute pleasure. They delivered beyond our expectations.",
+          "korean": "이 팀과 함께 일하는 것은 정말 즐거운 경험이었습니다. 우리의 기대를 뛰어넘는 결과를 제공했습니다."
+        },
+        "author": {
+          "name": "Sarah Kim",
+          "position": {
+            "english": "Marketing Director",
+            "korean": "마케팅 디렉터"
+          },
+          "company": {
+            "english": "Tech Innovations",
+            "korean": "테크 이노베이션"
+          }
+        },
+        "rating": 5
+      }
+    ]
+  },
+  "cta_section": {
+    "title": {
+      "english": "Ready to Start Your Project?",
+      "korean": "프로젝트를 시작할 준비가 되셨나요?"
+    },
+    "description": {
+      "english": "Let's work together to create something amazing",
+      "korean": "함께 놀라운 것을 만들어봅시다"
+    },
+    "button": {
+      "english": "Get Started",
+      "korean": "시작하기"
+    }
+  },
+  "footer_section": {
+    "title": {
+      "english": "Helping start-ups scale & grow.",
+      "korean": "스타트업의 성장을 돕습니다."
+    },
+    "newsletter": {
+      "title": {
+        "english": "Subscribe to Our Newsletter",
+        "korean": "뉴스레터 구독"
+      },
+      "placeholder": {
+        "english": "Enter your email",
+        "korean": "이메일을 입력하세요"
+      },
+      "button": {
+        "english": "Subscribe",
+        "korean": "구독하기"
+      }
+    },
+    "quick_links": {
+      "title": {
+        "english": "Quick links",
+        "korean": "빠른 링크"
+      },
+      "links": {
+        "about": {
+          "english": "About",
+          "korean": "소개"
+        },
+        "who_we_are": {
+          "english": "Who we are",
+          "korean": "우리는 누구인가"
+        },
+        "services": {
+          "english": "Services",
+          "korean": "서비스"
+        },
+        "projects": {
+          "english": "Projects",
+          "korean": "프로젝트"
+        },
+        "blog": {
+          "english": "Blog",
+          "korean": "블로그"
+        },
+        "pricing": {
+          "english": "Pricing",
+          "korean": "가격"
+        },
+        "contact_us": {
+          "english": "Contact Us",
+          "korean": "문의하기"
+        },
+        "careers": {
+          "english": "Careers",
+          "korean": "채용"
+        },
+        "faq": {
+          "english": "FAQ",
+          "korean": "자주 묻는 질문"
+        }
+      }
+    },
+    "services_links": {
+      "title": {
+        "english": "Our Services",
+        "korean": "서비스"
+      },
+      "links": {
+        "web_design": {
+          "english": "Web Design",
+          "korean": "웹 디자인"
+        },
+        "web_development": {
+          "english": "Web Development",
+          "korean": "웹 개발"
+        },
+        "mobile_apps": {
+          "english": "Mobile Apps",
+          "korean": "모바일 앱"
+        },
+        "branding": {
+          "english": "Branding",
+          "korean": "브랜딩"
+        },
+        "seo_marketing": {
+          "english": "SEO & Marketing",
+          "korean": "SEO & 마케팅"
+        }
+      }
+    },
+    "contact": {
+      "title": {
+        "english": "Contact",
+        "korean": "연락처"
+      },
+      "email": {
+        "english": "agntixs@studio.com",
+        "korean": "contact@blee.kr"
+      },
+      "phone": {
+        "english": "+(302) 555-0107",
+        "korean": "+82-2-1234-5678"
+      },
+      "address": {
+        "english": "4517 Washington Ave. Manchester, Kentucky 39495",
+        "korean": "서울특별시 강남구 테헤란로 152 강남파이낸스센터"
+      },
+      "business_hours": {
+        "title": {
+          "english": "Business Hours",
+          "korean": "영업 시간"
+        },
+        "weekdays": {
+          "english": "Mon - Fri: 9:00 AM - 6:00 PM",
+          "korean": "월 - 금: 오전 9:00 - 오후 6:00"
+        },
+        "weekend": {
+          "english": "Sat - Sun: Closed",
+          "korean": "토 - 일: 휴무"
+        }
+      }
+    },
+    "social_media": {
+      "title": {
+        "english": "Follow Us",
+        "korean": "팔로우하세요"
+      },
+      "links": {
+        "facebook": {
+          "english": "Facebook",
+          "korean": "페이스북"
+        },
+        "twitter": {
+          "english": "Twitter",
+          "korean": "트위터"
+        },
+        "instagram": {
+          "english": "Instagram",
+          "korean": "인스타그램"
+        },
+        "linkedin": {
+          "english": "LinkedIn",
+          "korean": "링크드인"
+        },
+        "youtube": {
+          "english": "YouTube",
+          "korean": "유튜브"
+        }
+      }
+    },
+    "copyright": {
+      "text": {
+        "english": "©2025 Agntix Design Studio.",
+        "korean": "©2025 Blee 디자인 스튜디오."
+      },
+      "rights": {
+        "english": "All rights reserved.",
+        "korean": "모든 권리 보유."
+      },
+      "company_name": {
+        "english": "Agntix.studio",
+        "korean": "Blee.studio"
+      }
+    },
+    "legal": {
+      "terms": {
+        "english": "Terms and Conditions",
+        "korean": "이용약관"
+      },
+      "privacy": {
+        "english": "Privacy Policy",
+        "korean": "개인정보처리방침"
+      },
+      "cookies": {
+        "english": "Cookie Policy",
+        "korean": "쿠키 정책"
+      },
+      "disclaimer": {
+        "english": "Disclaimer",
+        "korean": "면책조항"
+      }
+    }
+  },
+  "tags": {
+    "popular": {
+      "english": "Popular",
+      "korean": "인기"
+    },
+    "trending": {
+      "english": "Trending",
+      "korean": "트렌드"
+    },
+    "hot": {
+      "english": "Hot",
+      "korean": "핫"
+    },
+    "new": {
+      "english": "New",
+      "korean": "신규"
+    },
+    "featured": {
+      "english": "Featured",
+      "korean": "추천"
+    },
+    "sale": {
+      "english": "Sale",
+      "korean": "세일"
+    }
+  },
+  "buttons": {
+    "see_services": {
+      "english": "See Our Services",
+      "korean": "서비스 보기"
+    },
+    "view_demo": {
+      "english": "View Demo",
+      "korean": "데모 보기"
+    },
+    "contact": {
+      "english": "Contact",
+      "korean": "연락하기"
+    },
+    "more": {
+      "english": "More",
+      "korean": "더보기"
+    },
+    "learn_more": {
+      "english": "Learn More",
+      "korean": "자세히 알아보기"
+    },
+    "get_started": {
+      "english": "Get Started",
+      "korean": "시작하기"
+    },
+    "download": {
+      "english": "Download",
+      "korean": "다운로드"
+    },
+    "submit": {
+      "english": "Submit",
+      "korean": "제출"
+    },
+    "send": {
+      "english": "Send",
+      "korean": "보내기"
+    },
+    "cancel": {
+      "english": "Cancel",
+      "korean": "취소"
+    },
+    "save": {
+      "english": "Save",
+      "korean": "저장"
+    },
+    "edit": {
+      "english": "Edit",
+      "korean": "편집"
+    },
+    "delete": {
+      "english": "Delete",
+      "korean": "삭제"
+    },
+    "back": {
+      "english": "Back",
+      "korean": "뒤로"
+    },
+    "next": {
+      "english": "Next",
+      "korean": "다음"
+    },
+    "previous": {
+      "english": "Previous",
+      "korean": "이전"
+    }
+  },
+  "forms": {
+    "contact_form": {
+      "title": {
+        "english": "Get in Touch",
+        "korean": "연락하기"
+      },
+      "fields": {
+        "name": {
+          "label": {
+            "english": "Your Name",
+            "korean": "이름"
+          },
+          "placeholder": {
+            "english": "Enter your name",
+            "korean": "이름을 입력하세요"
+          }
+        },
+        "email": {
+          "label": {
+            "english": "Email Address",
+            "korean": "이메일 주소"
+          },
+          "placeholder": {
+            "english": "Enter your email",
+            "korean": "이메일을 입력하세요"
+          }
+        },
+        "phone": {
+          "label": {
+            "english": "Phone Number",
+            "korean": "전화번호"
+          },
+          "placeholder": {
+            "english": "Enter your phone number",
+            "korean": "전화번호를 입력하세요"
+          }
+        },
+        "subject": {
+          "label": {
+            "english": "Subject",
+            "korean": "제목"
+          },
+          "placeholder": {
+            "english": "Enter subject",
+            "korean": "제목을 입력하세요"
+          }
+        },
+        "message": {
+          "label": {
+            "english": "Message",
+            "korean": "메시지"
+          },
+          "placeholder": {
+            "english": "Enter your message",
+            "korean": "메시지를 입력하세요"
+          }
+        }
+      },
+      "submit_button": {
+        "english": "Send Message",
+        "korean": "메시지 보내기"
+      }
+    }
+  },
+  "errors": {
+    "404": {
+      "title": {
+        "english": "Page Not Found",
+        "korean": "페이지를 찾을 수 없습니다"
+      },
+      "description": {
+        "english": "The page you are looking for doesn't exist.",
+        "korean": "찾으시는 페이지가 존재하지 않습니다."
+      },
+      "button": {
+        "english": "Go Home",
+        "korean": "홈으로 가기"
+      }
+    },
+    "500": {
+      "title": {
+        "english": "Server Error",
+        "korean": "서버 오류"
+      },
+      "description": {
+        "english": "Something went wrong. Please try again later.",
+        "korean": "문제가 발생했습니다. 나중에 다시 시도해주세요."
+      }
+    }
+  },
+  "misc": {
+    "loading": {
+      "english": "Loading...",
+      "korean": "로딩 중..."
+    },
+    "search": {
+      "english": "Search",
+      "korean": "검색"
+    },
+    "search_placeholder": {
+      "english": "Type to search...",
+      "korean": "검색어를 입력하세요..."
+    },
+    "no_results": {
+      "english": "No results found",
+      "korean": "결과가 없습니다"
+    },
+    "all_rights_reserved": {
+      "english": "All rights reserved",
+      "korean": "모든 권리 보유"
+    }
+  }
+}

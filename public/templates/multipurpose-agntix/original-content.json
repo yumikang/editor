@@ -1,0 +1,4540 @@
+{
+  "templateId": "multipurpose-agntix",
+  "analyzedAt": "2025-07-11T12:42:29.574Z",
+  "htmlFile": "index.html",
+  "texts": [
+    {
+      "id": "text_text_1752237749490_0",
+      "selector": ".tp-hero-title.tp-char-animation",
+      "originalContent": "Digital \n                                        Design Experience",
+      "originalLength": 66,
+      "maxLength": 116,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749498_20",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Acme Studio",
+      "originalLength": 11,
+      "maxLength": 61,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749499_21",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Grace Clinic",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749499_22",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Smart Cities",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749499_23",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Digital Farming",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749500_24",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Virtual Reality",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749500_25",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Cloud Computing",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749500_26",
+      "selector": "div > h4:nth-child(2)",
+      "originalContent": "projects  completed  in 24 countries",
+      "originalLength": 36,
+      "maxLength": 86,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749501_27",
+      "selector": "div > h4:nth-child(2)",
+      "originalContent": "Clients  satisfied and  repeating",
+      "originalLength": 33,
+      "maxLength": 83,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749501_28",
+      "selector": ".tp-funfact-title.pl-45",
+      "originalContent": "Performing video",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749501_29",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "User Research",
+      "originalLength": 13,
+      "maxLength": 63,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749502_30",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Define Problems",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749502_31",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Design & Prototype",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749502_32",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Evaluation & Testing",
+      "originalLength": 20,
+      "maxLength": 70,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749508_1",
+      "selector": "div > p:nth-child(1)",
+      "originalContent": "Hey! is the ultimate Agntix  Agency template for professionals  in the design industry.",
+      "originalLength": 87,
+      "maxLength": 137,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749508_2",
+      "selector": "div > p:nth-child(3)",
+      "originalContent": "“The depth of exploration and quality of the work was great”",
+      "originalLength": 60,
+      "maxLength": 110,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749508_3",
+      "selector": "div > p:nth-child(1)",
+      "originalContent": "An independent web design and branding agency in Manchester set up in 2010 who care,\n                                                build relationships, have industry experience, and win awards.",
+      "originalLength": 195,
+      "maxLength": 245,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749508_4",
+      "selector": "div > p:nth-child(1)",
+      "originalContent": "Driven by a passion for innovation, we specialize in  delivering top-quality design solutions",
+      "originalLength": 93,
+      "maxLength": 143,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749508_5",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "Clients Satisfied and  Repeating",
+      "originalLength": 32,
+      "maxLength": 82,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749508_6",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "Projects Completed in  24 Countries",
+      "originalLength": 35,
+      "maxLength": 85,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749508_7",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "Whether you need stunning visuals for your website, captivating graphics  for your marketing materials, or innovative UI/UX designs for your app, our  team of experts is here to turn your vision into reality.",
+      "originalLength": 208,
+      "maxLength": 258,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_8",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "Our product design services focus on creating intuitive and aesthetically  pleasing products that resonate with your audience and stand out  in the market.",
+      "originalLength": 155,
+      "maxLength": 205,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_9",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "From website development and e-commerce platforms to custom  software and mobile apps, our development team has the expertise to  bring your ideas to life.",
+      "originalLength": 155,
+      "maxLength": 205,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_10",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "It's the core of your company's identity. It guides all business decisions,  ensuring a consistent and impactful presence in the market.",
+      "originalLength": 136,
+      "maxLength": 186,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_11",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "We listen stories of user to understand pain points and give a rough  estimate about cost and time-frame",
+      "originalLength": 104,
+      "maxLength": 154,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_12",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "We listen stories of user to understand pain points and give a rough  estimate about cost and time-frame",
+      "originalLength": 104,
+      "maxLength": 154,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_13",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "We listen stories of user to understand pain points and give a rough  estimate about cost and time-frame",
+      "originalLength": 104,
+      "maxLength": 154,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_14",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "We listen stories of user to understand pain points and give a rough  estimate about cost and time-frame",
+      "originalLength": 104,
+      "maxLength": 154,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_15",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "Based on 24 reviews on Clutch",
+      "originalLength": 29,
+      "maxLength": 79,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_16",
+      "selector": "div > p:nth-child(1)",
+      "originalContent": "“Agntix studio ability to\n                                                create a high quality UI is stands\n                                                out. It’s something we placed a\n                                                premium on. A studio with\n                                                passionate, professional, fun\n                                                and full creativity.",
+      "originalLength": 409,
+      "maxLength": 459,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_17",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "CEO & Founder, Archin Studio",
+      "originalLength": 28,
+      "maxLength": 78,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_18",
+      "selector": "div > p:nth-child(1)",
+      "originalContent": "“Agntix studio ability to\n                                                create a high quality UI is stands\n                                                out. It’s something we placed a\n                                                premium on. A studio with\n                                                passionate, professional, fun\n                                                and full creativity.",
+      "originalLength": 409,
+      "maxLength": 459,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_19",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "CEO & Founder, Archin Studio",
+      "originalLength": 28,
+      "maxLength": 78,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_20",
+      "selector": "div > p:nth-child(1)",
+      "originalContent": "“Agntix studio ability to\n                                                create a high quality UI is stands\n                                                out. It’s something we placed a\n                                                premium on. A studio with\n                                                passionate, professional, fun\n                                                and full creativity.",
+      "originalLength": 409,
+      "maxLength": 459,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_21",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "CEO & Founder, Archin Studio",
+      "originalLength": 28,
+      "maxLength": 78,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_22",
+      "selector": "div > p:nth-child(1)",
+      "originalContent": "“Agntix studio ability to\n                                                create a high quality UI is stands\n                                                out. It’s something we placed a\n                                                premium on. A studio with\n                                                passionate, professional, fun\n                                                and full creativity.",
+      "originalLength": 409,
+      "maxLength": 459,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_23",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "CEO & Founder, Archin Studio",
+      "originalLength": 28,
+      "maxLength": 78,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_24",
+      "selector": "div > p:nth-child(1)",
+      "originalContent": "“Agntix studio ability to\n                                                create a high quality UI is stands\n                                                out. It’s something we placed a\n                                                premium on. A studio with\n                                                passionate, professional, fun\n                                                and full creativity.",
+      "originalLength": 409,
+      "maxLength": 459,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_25",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "CEO & Founder, Archin Studio",
+      "originalLength": 28,
+      "maxLength": 78,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_26",
+      "selector": "div > p:nth-child(1)",
+      "originalContent": "“Agntix studio ability to\n                                                create a high quality UI is stands\n                                                out. It’s something we placed a\n                                                premium on. A studio with\n                                                passionate, professional, fun\n                                                and full creativity.",
+      "originalLength": 409,
+      "maxLength": 459,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_27",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "CEO & Founder, Archin Studio",
+      "originalLength": 28,
+      "maxLength": 78,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749517_25",
+      "selector": "h2 > span:nth-child(1)",
+      "originalContent": "Digital",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749517_26",
+      "selector": "h2 > span:nth-child(3)",
+      "originalContent": "Design",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749517_28",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Juan Mauel",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749517_30",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "0%",
+      "originalLength": 2,
+      "maxLength": 52,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749517_31",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "0+",
+      "originalLength": 2,
+      "maxLength": 52,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749517_32",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "UI Design",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749518_33",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Design Agency",
+      "originalLength": 13,
+      "maxLength": 63,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749518_34",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Strategy",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749518_35",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Digital Solution",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749519_36",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Business Growth",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749519_37",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Development",
+      "originalLength": 11,
+      "maxLength": 61,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749519_38",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "IT Company",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749519_39",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "SEO Agency",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749520_40",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Consulting",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749520_41",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Branding",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749520_42",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Lifetime Update",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749521_44",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "01.",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749521_46",
+      "selector": "a > span:nth-child(2)",
+      "originalContent": "See Our Services",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749521_47",
+      "selector": "span > span:nth-child(1)",
+      "originalContent": "See Our Services",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749522_49",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "UX Design",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749522_50",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "User Testing",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749522_51",
+      "selector": "div > span:nth-child(3)",
+      "originalContent": "Motion Design",
+      "originalLength": 13,
+      "maxLength": 63,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749522_52",
+      "selector": "div > span:nth-child(5)",
+      "originalContent": "Product Prototype",
+      "originalLength": 17,
+      "maxLength": 67,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749522_53",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "02.",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749522_55",
+      "selector": "a > span:nth-child(2)",
+      "originalContent": "See Our Services",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749522_56",
+      "selector": "span > span:nth-child(1)",
+      "originalContent": "See Our Services",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749522_58",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "UX Design",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749522_59",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "User Testing",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749522_60",
+      "selector": "div > span:nth-child(3)",
+      "originalContent": "Product Prototype",
+      "originalLength": 17,
+      "maxLength": 67,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749523_61",
+      "selector": "div > span:nth-child(4)",
+      "originalContent": "Mobile UI",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749523_62",
+      "selector": "div > span:nth-child(5)",
+      "originalContent": "Sotware UI design",
+      "originalLength": 17,
+      "maxLength": 67,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749523_63",
+      "selector": "div > span:nth-child(6)",
+      "originalContent": "Web app design",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749523_64",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "03.",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749523_66",
+      "selector": "a > span:nth-child(2)",
+      "originalContent": "See Our Services",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749524_67",
+      "selector": "span > span:nth-child(1)",
+      "originalContent": "See Our Services",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749524_69",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "UX Design",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749524_70",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Frontend",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749524_71",
+      "selector": "div > span:nth-child(3)",
+      "originalContent": "Backend",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749524_72",
+      "selector": "div > span:nth-child(4)",
+      "originalContent": "E-commerce",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749524_73",
+      "selector": "div > span:nth-child(6)",
+      "originalContent": "No Code / Low Code",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749524_74",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "04.",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749524_76",
+      "selector": "a > span:nth-child(2)",
+      "originalContent": "See Our Services",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749524_77",
+      "selector": "span > span:nth-child(1)",
+      "originalContent": "See Our Services",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749525_79",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Research & Insights",
+      "originalLength": 19,
+      "maxLength": 69,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749525_80",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Unique Ways",
+      "originalLength": 11,
+      "maxLength": 61,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749525_81",
+      "selector": "div > span:nth-child(3)",
+      "originalContent": "Value Proposition",
+      "originalLength": 17,
+      "maxLength": 67,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749525_82",
+      "selector": "div > span:nth-child(5)",
+      "originalContent": "Naming",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749525_83",
+      "selector": "div > span:nth-child(6)",
+      "originalContent": "Verbal Identity",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749525_86",
+      "selector": "a > span:nth-child(2)",
+      "originalContent": "View all Works",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749525_87",
+      "selector": "span > span:nth-child(1)",
+      "originalContent": "View all Works",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_89",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Product Design",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_90",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Branding",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_91",
+      "selector": "div > span:nth-child(3)",
+      "originalContent": "Creative",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_92",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Creative",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_93",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Branding",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_94",
+      "selector": "div > span:nth-child(3)",
+      "originalContent": "Development",
+      "originalLength": 11,
+      "maxLength": 61,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_95",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Product Design",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_96",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Branding",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_97",
+      "selector": "div > span:nth-child(3)",
+      "originalContent": "Creative",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_98",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Product Design",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_99",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Branding",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_100",
+      "selector": "div > span:nth-child(3)",
+      "originalContent": "Creative",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_101",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Product Design",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_102",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Branding",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_103",
+      "selector": "div > span:nth-child(3)",
+      "originalContent": "Creative",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_104",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Product Design",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_105",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Branding",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_106",
+      "selector": "div > span:nth-child(3)",
+      "originalContent": "Creative",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749526_107",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "( Nice! )",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749527_108",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "106",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749527_109",
+      "selector": "span > span:nth-child(1)",
+      "originalContent": "1",
+      "originalLength": 1,
+      "maxLength": 51,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749527_110",
+      "selector": "span > span:nth-child(2)",
+      "originalContent": "0",
+      "originalLength": 1,
+      "maxLength": 51,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749527_111",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "( Ho Ho! )",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749528_112",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "96",
+      "originalLength": 2,
+      "maxLength": 52,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749528_113",
+      "selector": "span > span:nth-child(1)",
+      "originalContent": "9",
+      "originalLength": 1,
+      "maxLength": 51,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749528_114",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "( Holy Moly! )",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749528_115",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "#1Top",
+      "originalLength": 5,
+      "maxLength": 55,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749528_117",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "4.9/5",
+      "originalLength": 5,
+      "maxLength": 55,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749529_118",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Albert Juan",
+      "originalLength": 11,
+      "maxLength": 61,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749529_119",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Koen Chegg",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749529_120",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Warren Daniel",
+      "originalLength": 13,
+      "maxLength": 63,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749529_121",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Elvin Bond",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749529_122",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Abbas",
+      "originalLength": 5,
+      "maxLength": 55,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749529_123",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Jessamine Mumtaz",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749529_124",
+      "selector": ".tp-award-subtitle",
+      "originalContent": "( Awards! )",
+      "originalLength": 11,
+      "maxLength": 61,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749529_125",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "2008",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749529_126",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "1x agency of the year",
+      "originalLength": 21,
+      "maxLength": 71,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749530_127",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Winner",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749530_129",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "2009",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749530_130",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "3x creative agency of the day",
+      "originalLength": 29,
+      "maxLength": 79,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749531_131",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Awarded",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749531_133",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "2011",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749531_134",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "2x Featured design of the week",
+      "originalLength": 30,
+      "maxLength": 80,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749532_135",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Mentioned",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749532_137",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "2016",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749532_138",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "5x honorable mentioned",
+      "originalLength": 22,
+      "maxLength": 72,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749532_139",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Mentioned",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749533_141",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "2022",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749533_142",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "8x Best design of the day",
+      "originalLength": 25,
+      "maxLength": 75,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749533_143",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Winner",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749534_145",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "2025",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749534_146",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "3x Mobile Excellence Award",
+      "originalLength": 26,
+      "maxLength": 76,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749534_147",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Awarded",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749490_1",
+      "selector": ".tp-section-title.fs-140",
+      "originalContent": "Our  design thinking process",
+      "originalLength": 28,
+      "maxLength": 78,
+      "section": "tp-section-title",
+      "context": "tp-section-title 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749497_16",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Web Design",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "tp-section-title",
+      "context": "tp-section-title 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749497_17",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Product Design",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "tp-section-title",
+      "context": "tp-section-title 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749498_18",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Web Development",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "tp-section-title",
+      "context": "tp-section-title 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749498_19",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Branding",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "tp-section-title",
+      "context": "tp-section-title 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749502_33",
+      "selector": ".tp-section-title.text-white",
+      "originalContent": "Client Reviews",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "tp-section-title",
+      "context": "tp-section-title 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749491_2",
+      "selector": ".tp-copyright-big-text.tp_fade_anim.p-relative",
+      "originalContent": "Agntix.studio",
+      "originalLength": 13,
+      "maxLength": 63,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749491_0",
+      "selector": "div > h3:nth-child(1)",
+      "originalContent": "Hello There!",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749492_1",
+      "selector": "div > h3:nth-child(1)",
+      "originalContent": "Information",
+      "originalLength": 11,
+      "maxLength": 61,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749492_2",
+      "selector": "div > h3:nth-child(1)",
+      "originalContent": "Follow Us",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749492_0",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Home Light Version",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749493_1",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Home Dark Version",
+      "originalLength": 17,
+      "maxLength": 67,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749493_2",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Home Light Version",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749493_3",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Home Dark Version",
+      "originalLength": 17,
+      "maxLength": 67,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749494_4",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Showcases",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749494_5",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Showcases",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749494_6",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "About Light Version",
+      "originalLength": 19,
+      "maxLength": 69,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749495_7",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "About Dark Version",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749495_8",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Services Light Version",
+      "originalLength": 22,
+      "maxLength": 72,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749495_9",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Services Dark Version",
+      "originalLength": 21,
+      "maxLength": 71,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749495_10",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Special Pages Light",
+      "originalLength": 19,
+      "maxLength": 69,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749496_11",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Special Pages Dark",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749496_12",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Portfolio Grid",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749496_13",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Showcases",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749497_14",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Showcases",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749497_15",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Single Projects",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749503_34",
+      "selector": ".tp-footer-widget-title",
+      "originalContent": "Helping  start-ups scale & grow.",
+      "originalLength": 32,
+      "maxLength": 82,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749506_35",
+      "selector": ".tp-footer-widget-title-sm.pre.mb-25",
+      "originalContent": "Quick links",
+      "originalLength": 11,
+      "maxLength": 61,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749507_36",
+      "selector": ".tp-footer-widget-title-sm.pre.mb-20",
+      "originalContent": "Contact",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749508_0",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+      "originalLength": 56,
+      "maxLength": 106,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749509_0",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Popular",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749510_1",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Trending",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749510_2",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Hot",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749511_3",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Hot",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749511_4",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Hot",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749511_5",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Popular",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749512_6",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Hot",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749512_7",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Popular",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749512_8",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Hot",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749513_9",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Popular",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749513_10",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Hot",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749513_11",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Hot",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749514_12",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Trending",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749514_13",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Popular",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749514_14",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Hot",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749514_15",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Hot",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749515_16",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Hot",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749515_17",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Hot",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749515_18",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Hot",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749516_19",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Hot",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749516_20",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Hot",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749516_22",
+      "selector": "a > span:nth-child(2)",
+      "originalContent": "Start a Project",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749517_23",
+      "selector": "span > span:nth-child(1)",
+      "originalContent": "Start a Project",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749535_153",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "©2025 Agntix Design Studio.",
+      "originalLength": 27,
+      "maxLength": 77,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_1",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Modern Agency Popular",
+      "originalLength": 21,
+      "maxLength": 71,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_2",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Design Studio",
+      "originalLength": 13,
+      "maxLength": 63,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_3",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Digital Marketing Trending",
+      "originalLength": 26,
+      "maxLength": 76,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_4",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Creative Studio",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_5",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Design Agency",
+      "originalLength": 13,
+      "maxLength": 63,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_6",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Creative Agency",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_7",
+      "selector": "ul > li:nth-child(7)",
+      "originalContent": "Architecture Hub Hot",
+      "originalLength": 20,
+      "maxLength": 70,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_8",
+      "selector": "ul > li:nth-child(8)",
+      "originalContent": "AI Image Genaretor",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_9",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Modern Agency",
+      "originalLength": 13,
+      "maxLength": 63,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_10",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Design Studio Hot",
+      "originalLength": 17,
+      "maxLength": 67,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_11",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Digital Marketing",
+      "originalLength": 17,
+      "maxLength": 67,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_12",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Creative Studio",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_13",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Design Agency Hot",
+      "originalLength": 17,
+      "maxLength": 67,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_14",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Creative Agency Popular",
+      "originalLength": 23,
+      "maxLength": 73,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_15",
+      "selector": "ul > li:nth-child(7)",
+      "originalContent": "Architecture Hub",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_16",
+      "selector": "ul > li:nth-child(8)",
+      "originalContent": "AI Image Genaretor Hot",
+      "originalLength": 22,
+      "maxLength": 72,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_17",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Corporate Agency",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_18",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Mobile App Popular",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_19",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "IT Solutions Hot",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_20",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Cryptocurrency",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_21",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Startup Agency Popular",
+      "originalLength": 22,
+      "maxLength": 72,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_22",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Fashion Studio",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749536_23",
+      "selector": "ul > li:nth-child(7)",
+      "originalContent": "Personal Portfolio",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_24",
+      "selector": "ul > li:nth-child(8)",
+      "originalContent": "Shop Home Hot",
+      "originalLength": 13,
+      "maxLength": 63,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_25",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Corporate Agency Hot",
+      "originalLength": 20,
+      "maxLength": 70,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_26",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Mobile App",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_27",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "IT Solutions",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_28",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Cryptocurrency Trending",
+      "originalLength": 23,
+      "maxLength": 73,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_29",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Startup Agency",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_30",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Fashion Studio Popular",
+      "originalLength": 22,
+      "maxLength": 72,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_31",
+      "selector": "ul > li:nth-child(7)",
+      "originalContent": "Personal Portfolio",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_32",
+      "selector": "ul > li:nth-child(8)",
+      "originalContent": "Shop Home",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_33",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Webgl Showcase Hot",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_34",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Coverflow Slider",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_35",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Creative Thumb Slider Hot",
+      "originalLength": 25,
+      "maxLength": 75,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_36",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Creative Skew Slider Hot",
+      "originalLength": 24,
+      "maxLength": 74,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_37",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Creative Text Slider",
+      "originalLength": 20,
+      "maxLength": 70,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_38",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Parallax Slider",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_39",
+      "selector": "ul > li:nth-child(7)",
+      "originalContent": "Paspective Showcase Hot",
+      "originalLength": 23,
+      "maxLength": 73,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_40",
+      "selector": "ul > li:nth-child(8)",
+      "originalContent": "Horizontal Showcase",
+      "originalLength": 19,
+      "maxLength": 69,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_41",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Wrapper Slider Hot",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_42",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Portfolio slicer Hot",
+      "originalLength": 20,
+      "maxLength": 70,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_43",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Portfolio Showcase",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749537_44",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Brand Showcase",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749538_45",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Interactive with hover Hot",
+      "originalLength": 26,
+      "maxLength": 76,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749538_46",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Interactive with Scroll",
+      "originalLength": 23,
+      "maxLength": 73,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749538_47",
+      "selector": "ul > li:nth-child(7)",
+      "originalContent": "Slider Elegant",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749538_49",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "About Me",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749538_50",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "About Us",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749538_51",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Modern About",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749538_52",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Creative About",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749539_53",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Startup About",
+      "originalLength": 13,
+      "maxLength": 63,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749539_54",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Carrer",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749539_55",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "About Me",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749539_56",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "About Us",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749539_57",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Modern About",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749539_58",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Creative About",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749539_59",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Startup About",
+      "originalLength": 13,
+      "maxLength": 63,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749539_60",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Carrer",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749539_61",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Services",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749539_62",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Corporate Services",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749539_63",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Startup Services",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749539_64",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Modern Services",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749539_65",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Services Details",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749539_66",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Services Details 02",
+      "originalLength": 19,
+      "maxLength": 69,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_67",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Services",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_68",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Corporate Services",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_69",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Startup Services",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_70",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Modern Services",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_71",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Services Details",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_72",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Services Details 02",
+      "originalLength": 19,
+      "maxLength": 69,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_73",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Careers Details",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_74",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Pricing",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_75",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Team",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_76",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Team Details",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_77",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "FAQ’s",
+      "originalLength": 5,
+      "maxLength": 55,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_78",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "404 Page",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_79",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Careers Details",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_80",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Pricing",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_81",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Team",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_82",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Team Details",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_83",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "FAQ’s",
+      "originalLength": 5,
+      "maxLength": 55,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749540_84",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "404 Page",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749541_86",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Two Columns",
+      "originalLength": 11,
+      "maxLength": 61,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749541_87",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Three Columns",
+      "originalLength": 13,
+      "maxLength": 63,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749541_88",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Four Columns Wide",
+      "originalLength": 17,
+      "maxLength": 67,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749541_89",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Masonry",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749541_90",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Portfolio Metro",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749541_91",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Portfolio Pinterest",
+      "originalLength": 19,
+      "maxLength": 69,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749541_92",
+      "selector": "ul > li:nth-child(7)",
+      "originalContent": "Horizontal Showcase",
+      "originalLength": 19,
+      "maxLength": 69,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749541_93",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Webgl Showcase",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749541_94",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Coverflow Slider",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_95",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Creative Thumb Slider",
+      "originalLength": 21,
+      "maxLength": 71,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_96",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Creative Skew Slider",
+      "originalLength": 20,
+      "maxLength": 70,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_97",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Creative Text Slider",
+      "originalLength": 20,
+      "maxLength": 70,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_98",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Parallax Slider",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_99",
+      "selector": "ul > li:nth-child(7)",
+      "originalContent": "Paspective Showcase",
+      "originalLength": 19,
+      "maxLength": 69,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_100",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Wrapper Slider",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_101",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Portfolio slicer",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_102",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Portfolio Showcase",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_103",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Brand Showcase",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_104",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Interactive with hover",
+      "originalLength": 22,
+      "maxLength": 72,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_105",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Interactive with Scroll",
+      "originalLength": 23,
+      "maxLength": 73,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_106",
+      "selector": "ul > li:nth-child(7)",
+      "originalContent": "Slider Elegant",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_107",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Classic Stack",
+      "originalLength": 13,
+      "maxLength": 63,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_108",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Creative Slider",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_109",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Gallery",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_110",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Modern",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_111",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Video",
+      "originalLength": 5,
+      "maxLength": 55,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_112",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Image Comparison",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_113",
+      "selector": "ul > li:nth-child(7)",
+      "originalContent": "Custom Light",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749542_114",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Blog\n                                        \n                                            Blog Classic\n                                            Blog Classic Light\n                                            Blog Listing\n                                            Blog Listing Light\n                                            \n                                                Grid Layout\n                                                \n                                                    2 Columns\n                                                    2 Columns Light\n                                                    3 Columns\n                                                    3 Columns Light\n                                                    2 Col + sidebar\n                                                    2 Col + sidebar Light\n                                                \n                                            \n                                            Masonry Grid\n                                            Masonry Grid Light\n                                            Single Layouts\n                                                \n                                                    Blog Single Post\n                                                    Blog Single Post Light\n                                                    Blog No Sidebar\n                                                    Blog No Sidebar Light",
+      "originalLength": 1449,
+      "maxLength": 1499,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749543_115",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Blog Classic",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749543_116",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Blog Classic Light",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749543_117",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Blog Listing",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749543_118",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Blog Listing Light",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749543_119",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Grid Layout\n                                                \n                                                    2 Columns\n                                                    2 Columns Light\n                                                    3 Columns\n                                                    3 Columns Light\n                                                    2 Col + sidebar\n                                                    2 Col + sidebar Light",
+      "originalLength": 462,
+      "maxLength": 512,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749544_120",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "2 Columns",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749544_121",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "2 Columns Light",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749544_122",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "3 Columns",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749544_123",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "3 Columns Light",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749544_124",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "2 Col + sidebar",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749544_125",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "2 Col + sidebar Light",
+      "originalLength": 21,
+      "maxLength": 71,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749544_126",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Masonry Grid",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749544_127",
+      "selector": "ul > li:nth-child(7)",
+      "originalContent": "Masonry Grid Light",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749544_128",
+      "selector": "ul > li:nth-child(8)",
+      "originalContent": "Single Layouts\n                                                \n                                                    Blog Single Post\n                                                    Blog Single Post Light\n                                                    Blog No Sidebar\n                                                    Blog No Sidebar Light",
+      "originalLength": 349,
+      "maxLength": 399,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749544_129",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Blog Single Post",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749544_130",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Blog Single Post Light",
+      "originalLength": 22,
+      "maxLength": 72,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749544_131",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Blog No Sidebar",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749544_132",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Blog No Sidebar Light",
+      "originalLength": 21,
+      "maxLength": 71,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749544_133",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Shop\n                                        \n                                            Shop Modern\n                                            Shop Modern Dark\n                                            Shop With Slider\n                                            Shop With Slider Dark\n                                            Shop Page\n                                                \n                                                    Shop Page\n                                                    Shop Page Dark\n                                                    Shop Details\n                                                    Shop Details Dark\n                                                \n                                            \n                                            My Account\n                                                \n                                                    My Account\n                                                    Cart\n                                                    Checkout\n                                                    Wishlist\n                                                    LogIn\n                                                    Register",
+      "originalLength": 1215,
+      "maxLength": 1265,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749545_134",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Shop Modern",
+      "originalLength": 11,
+      "maxLength": 61,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749545_135",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Shop Modern Dark",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749545_136",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Shop With Slider",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749545_137",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Shop With Slider Dark",
+      "originalLength": 21,
+      "maxLength": 71,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749545_138",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Shop Page\n                                                \n                                                    Shop Page\n                                                    Shop Page Dark\n                                                    Shop Details\n                                                    Shop Details Dark",
+      "originalLength": 322,
+      "maxLength": 372,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749545_139",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Shop Page",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749545_140",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Shop Page Dark",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749545_141",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Shop Details",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749545_142",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Shop Details Dark",
+      "originalLength": 17,
+      "maxLength": 67,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749545_143",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "My Account\n                                                \n                                                    My Account\n                                                    Cart\n                                                    Checkout\n                                                    Wishlist\n                                                    LogIn\n                                                    Register",
+      "originalLength": 420,
+      "maxLength": 470,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_144",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "My Account",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_145",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Cart",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_146",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Checkout",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_147",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Wishlist",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_148",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "LogIn",
+      "originalLength": 5,
+      "maxLength": 55,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_149",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Register",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_150",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Contact\n                                        \n                                            Contact Me\n                                            Contact Me Dark\n                                            Contact Us\n                                            Contact Us Dark\n                                            Get In Touch\n                                            Get In Touch Dark",
+      "originalLength": 397,
+      "maxLength": 447,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_151",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Contact Me",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_152",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Contact Me Dark",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_153",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Contact Us",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_154",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Contact Us Dark",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_155",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Get In Touch",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_156",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Get In Touch Dark",
+      "originalLength": 17,
+      "maxLength": 67,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_157",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "+ 4 20 7700 1007",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_158",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "hello@diego.com",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_159",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Avenue de Roma 158b, Lisboa",
+      "originalLength": 27,
+      "maxLength": 77,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_164",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "About",
+      "originalLength": 5,
+      "maxLength": 55,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_165",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Who we are",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_166",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Services",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_167",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Projects",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_168",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Blog",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749546_169",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Pricing",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749547_170",
+      "selector": "ul > li:nth-child(7)",
+      "originalContent": "Contact Us",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "global",
+      "context": "global 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749517_29",
+      "selector": ".tp-section-subtitle.pre.tp_fade_anim",
+      "originalContent": "WHO WE ARE",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "tp-section-subtitle",
+      "context": "tp-section-subtitle 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749521_43",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Services",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "tp-section-subtitle",
+      "context": "tp-section-subtitle 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749525_84",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Featured Projects",
+      "originalLength": 17,
+      "maxLength": 67,
+      "section": "tp-section-subtitle",
+      "context": "tp-section-subtitle 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752237749528_116",
+      "selector": ".tp-section-subtitle.pre.mb-20",
+      "originalContent": "How we Work",
+      "originalLength": 11,
+      "maxLength": 61,
+      "section": "tp-section-subtitle",
+      "context": "tp-section-subtitle 섹션의 텍스트"
+    }
+  ],
+  "images": [
+    {
+      "id": "image_image_1752237749549_9",
+      "selector": ".tp-hero-video.d-none.d-xl-inline-block",
+      "originalPath": "assets/img/home-01/hero/hero-video-1.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749549_10",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/hero/hero-avater.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749549_11",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/about/about-shape-1.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749549_12",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/about/about-1.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749549_13",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/about/about-avater.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749550_14",
+      "selector": ".w-100",
+      "originalPath": "assets/img/home-01/banner/banner-1.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749550_15",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/service/service-1.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749550_16",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/service/service-2.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749551_17",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/service/service-3.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749551_18",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/service/service-4.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749551_19",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/video/video-1.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749551_20",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/video/video-3.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749551_21",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/video/video-4.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749551_22",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/video/video-5.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749551_23",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/video/video-6.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749551_24",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/project/project-1.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749551_25",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/project/project-2.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749551_26",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/project/project-3.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749551_27",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/project/project-4.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749551_28",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/project/project-5.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749551_29",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/project/project-6.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749551_30",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-1.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749551_31",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_32",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_33",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_34",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_35",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-2.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_36",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-3.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_37",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_38",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_39",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-4.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_40",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-5.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_41",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_42",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-6.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_43",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-1.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_44",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-8.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_45",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-9.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_46",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_47",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_48",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-2.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_49",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_50",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_51",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_52",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-4.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_53",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_54",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-5.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_55",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-7.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_56",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-1.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_57",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-2.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_58",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-3.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_59",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-4.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_60",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_61",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749552_62",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749553_63",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/funfact/funfact-placeholder.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749553_64",
+      "selector": ".global-img",
+      "originalPath": "assets/img/home-01/testimonial/global.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749553_65",
+      "selector": ".overlay-img",
+      "originalPath": "assets/img/home-01/testimonial/overlay.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749553_66",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/testimonial/testi-logo.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749553_67",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/avater/avater-1.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749553_68",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/avater/avater-2.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749553_69",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/avater/avater-3.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749553_70",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/avater/avater-4.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749553_71",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/avater/avater-5.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749553_72",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/avater/avater-6.jpg",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749554_73",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/award/award-1.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749554_74",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/award/award-2.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749554_75",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/home-01/award/award-3.png",
+      "section": "unknown",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749548_0",
+      "selector": ".logo-white",
+      "originalPath": "assets/img/logo/logo-white.png",
+      "section": "global",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749548_1",
+      "selector": ".logo-black.d-none",
+      "originalPath": "assets/img/logo/logo-black.png",
+      "section": "global",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749548_2",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "assets/img/menu/menu-1.png",
+      "section": "global",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749548_3",
+      "selector": ".logo-1",
+      "originalPath": "assets/img/logo/logo-black.png",
+      "section": "global",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749549_4",
+      "selector": ".logo-2",
+      "originalPath": "assets/img/logo/logo-white.png",
+      "section": "global",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752237749549_5",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "assets/img/offcanvas/offcanvas-1.jpg",
+      "section": "global",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749549_6",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "assets/img/offcanvas/offcanvas-2.jpg",
+      "section": "global",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749549_7",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "assets/img/offcanvas/offcanvas-3.jpg",
+      "section": "global",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749549_8",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "assets/img/offcanvas/offcanvas-4.jpg",
+      "section": "global",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752237749554_76",
+      "selector": ".tp-copyright-img.d-none.d-md-block",
+      "originalPath": "assets/img/home-01/footer/footer-shape-1.png",
+      "section": "global",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    }
+  ],
+  "statistics": {
+    "totalTexts": 366,
+    "totalImages": 77,
+    "analysisTime": "3.5s"
+  }
+}

@@ -1,6 +1,6 @@
 // 컬러 프리셋 API 엔드포인트 - Phase 3
 import { json, type ActionFunctionArgs, type LoaderFunctionArgs } from "@remix-run/node";
-import { PresetManager } from '~/utils/preset-manager';
+import { PresetManager } from '~/utils/preset-manager.server';
 import type { ColorPreset } from '~/types/color-system';
 
 // 전역 프리셋 관리자 인스턴스

@@ -1,555 +1,290 @@
-import { json, type LoaderFunctionArgs, type ActionFunctionArgs } from "@remix-run/node";
-import { useLoaderData, Link, useFetcher, useRevalidator } from "@remix-run/react";
-import * as path from "path";
-import { ThemeScanner } from "~/utils/theme-scanner";
-// import { getTemplateWatcher } from "~/utils/template-watcher";
-import { initializeServer } from "~/utils/server-init";
+import { json, type LoaderFunctionArgs, type MetaFunction } from "@remix-run/node";
+import { useLoaderData, Link } from "@remix-run/react";
 import { useState, useEffect } from "react";
-import { analyzeTemplate } from "./api.template-status.$id";
 
-const THEMES_PATH = path.join(process.cwd(), "../themes");
-const DATA_PATH = path.join(process.cwd(), "app/data/themes");
-
-interface TemplateStatus {
-  id: string;
-  status: 'new' | 'analyzing' | 'completed' | 'error';
-  progress?: number;
-  message?: string;
-  analyzedAt?: string;
-  totalTexts?: number;
-  totalImages?: number;
-}
+export const meta: MetaFunction = () => {
+  return [
+    { title: "템플릿 선택 - CodeB WebCraft Studio" },
+    { name: "description", content: "편집할 템플릿을 선택하세요" },
+  ];
+};
 
 interface Template {
   id: string;
   name: string;
-  path: string;
+  status: 'ready' | 'analyzing' | 'error' | 'new';
   hasIndex: boolean;
-  hasConfig: boolean;
-  preview?: string;
-  indexPath?: string;
-  metadata?: any;
-  status: TemplateStatus;
-  hasAnalysis?: boolean;
-  hasPreview?: boolean;
+  fileCount?: number;
+  totalSize?: string;
+  lastScanned?: string;
+  totalTexts?: number;
+  totalImages?: number;
+  analyzedAt?: string;
+  thumbnail?: string;
 }
 
-// 템플릿 분석 상태 저장 (실제로는 DB나 파일 시스템 사용)
-const analysisStatus = new Map<string, TemplateStatus>();
-
-export async function loader({ request }: LoaderFunctionArgs) {
-  try {
-    // 서버 초기화 (템플릿 감시 시작)
-    await initializeServer();
-    
-    const scanner = new ThemeScanner(THEMES_PATH, DATA_PATH);
-    const scannedThemes = await scanner.scanThemes();
-    
-    const templates: Template[] = await Promise.all(
-      scannedThemes.map(async (theme) => {
-        // 분석 데이터 존재 여부 확인
-        const hasAnalysis = await scanner.isThemeAnalyzed(theme.id);
-        let analysisData = null;
-        
-        if (hasAnalysis) {
-          analysisData = await scanner.loadAnalysisData(theme.id);
-        }
-        
-        // 상태 확인
-        let status = analysisStatus.get(theme.id) || {
-          id: theme.id,
-          status: hasAnalysis ? 'completed' : 'new'
-        };
-        
-        if (hasAnalysis && analysisData) {
-          status = {
-            ...status,
-            status: 'completed',
-            analyzedAt: analysisData.analyzedAt,
-            totalTexts: Object.keys(analysisData.elements).reduce((acc, section) => 
-              acc + Object.keys(analysisData.elements[section]).filter(key => 
-                analysisData.elements[section][key].type === 'text'
-              ).length, 0
-            ),
-            totalImages: Object.keys(analysisData.elements).reduce((acc, section) => 
-              acc + Object.keys(analysisData.elements[section]).filter(key => 
-                analysisData.elements[section][key].type === 'image'
-              ).length, 0
-            )
-          };
-        }
-        
-        return {
-          id: theme.id,
-          name: theme.metadata?.name || theme.id,
-          path: theme.path,
-          hasIndex: theme.hasIndex,
-          hasConfig: theme.hasConfig,
-          hasPreview: theme.hasPreview,
-          preview: theme.hasPreview ? `/themes/${theme.id}/preview.png` : undefined,
-          indexPath: theme.indexPath,
-          metadata: theme.metadata,
-          status,
-          hasAnalysis
-        };
-      })
-    );
-    
-    return json({ templates });
-  } catch (error) {
-    console.error("Error loading templates:", error);
-    return json({ templates: [] });
-  }
+interface RecentProject {
+  templateId: string;
+  templateName: string;
+  lastEdited: string;
+  status: 'editing' | 'completed';
+  thumbnail?: string;
 }
 
-export async function action({ request }: ActionFunctionArgs) {
-  const formData = await request.formData();
-  const action = formData.get("action");
-  const templateId = formData.get("templateId") as string;
+export const loader: LoaderFunctionArgs = async () => {
+  const { promises: fs } = await import("fs");
+  const { join } = await import("path");
   
-  if (action === "scan") {
-    // 전체 스캔 시작
-    const scanner = new ThemeScanner(THEMES_PATH, DATA_PATH);
-    await scanner.scanThemes();
-    return json({ success: true, message: "스캔이 완료되었습니다." });
+  // 템플릿 디렉토리 경로
+  const TEMPLATES_DIR = join(process.cwd(), 'public', 'templates');
+  const SCAN_RESULTS_PATH = join(process.cwd(), 'app', 'data', 'scan-results.json');
+  
+  // 스캔 결과 불러오기
+  async function loadScanResults() {
+    try {
+      const data = await fs.readFile(SCAN_RESULTS_PATH, 'utf-8');
+      const scanResults = JSON.parse(data);
+      return Object.values(scanResults.templates || {}) as Template[];
+    } catch {
+      return [];
+    }
   }
   
-  if (action === "analyze" && templateId) {
-    // 개별 템플릿 분석 시작
-    analysisStatus.set(templateId, {
-      id: templateId,
-      status: 'analyzing',
-      progress: 0,
-      message: 'HTML 파일을 읽는 중...'
-    });
-    
-    // 실제 분석 작업 (비동기로 처리)
-    analyzeTemplate(templateId).catch(console.error);
-    
-    return json({ success: true, message: "분석을 시작했습니다." });
-  }
-  
-  return json({ success: false, message: "알 수 없는 액션입니다." });
-}
+  const templates = await loadScanResults();
+  return json({ templates });
+};
 
 export default function Templates() {
   const { templates } = useLoaderData<typeof loader>();
-  const fetcher = useFetcher();
-  const revalidator = useRevalidator();
-  const [isScanning, setIsScanning] = useState(false);
-  const [templateProgress, setTemplateProgress] = useState<Record<string, any>>({});
-  const [notifications, setNotifications] = useState<Array<{ id: string; message: string; type: 'info' | 'success' | 'warning' | 'error'; timestamp: Date }>>([]);
+  const [filter, setFilter] = useState<'all' | 'ready'>('all');
+  const [recentProjects, setRecentProjects] = useState<RecentProject[]>([]);
   
-  // SSE를 통한 실시간 진행률 업데이트
   useEffect(() => {
-    const analyzingTemplates = templates.filter(t => t.status.status === 'analyzing');
-    const eventSources: EventSource[] = [];
-    
-    analyzingTemplates.forEach(template => {
-      const eventSource = new EventSource(`/api/template-status/${template.id}`);
-      
-      eventSource.addEventListener('progress', (event) => {
-        const data = JSON.parse(event.data);
-        setTemplateProgress(prev => ({
-          ...prev,
-          [template.id]: data
-        }));
-        
-        if (data.status === 'completed' || data.status === 'error') {
-          eventSource.close();
-          setTimeout(() => {
-            revalidator.revalidate();
-          }, 1000);
-        }
-      });
-      
-      eventSources.push(eventSource);
-    });
-    
-    return () => {
-      eventSources.forEach(es => es.close());
-    };
-  }, [templates, revalidator]);
+    // localStorage에서 최근 프로젝트 불러오기
+    if (typeof window !== 'undefined') {
+      const recent = localStorage.getItem('recentProjects');
+      if (recent) {
+        const projects = JSON.parse(recent);
+        const sortedProjects = projects
+          .sort((a: RecentProject, b: RecentProject) => 
+            new Date(b.lastEdited).getTime() - new Date(a.lastEdited).getTime()
+          )
+          .slice(0, 3);
+        setRecentProjects(sortedProjects);
+      }
+    }
+  }, []);
 
-  // SSE를 통한 실시간 템플릿 변경사항 감지
-  useEffect(() => {
-    const eventSource = new EventSource('/api/template-events');
-    
-    eventSource.addEventListener('connected', (event) => {
-      const data = JSON.parse(event.data);
-      console.log('[Templates] Connected to template events:', data.message);
-    });
-    
-    eventSource.addEventListener('templateChange', (event) => {
-      const changeEvent = JSON.parse(event.data);
-      console.log('[Templates] Template change detected:', changeEvent);
-      
-      // 알림 추가
-      const notification = {
-        id: Date.now().toString(),
-        message: getChangeMessage(changeEvent),
-        type: getChangeType(changeEvent.type),
-        timestamp: new Date(changeEvent.timestamp)
-      };
-      
-      setNotifications(prev => [notification, ...prev.slice(0, 4)]); // 최대 5개 알림 유지
-      
-      // 템플릿 목록 새로고침
-      setTimeout(() => {
-        revalidator.revalidate();
-      }, 1000);
-    });
-    
-    eventSource.addEventListener('watchingStarted', (event) => {
-      const data = JSON.parse(event.data);
-      console.log('[Templates] Template watching started:', data);
-      
-      const notification = {
-        id: Date.now().toString(),
-        message: `폴더 감시가 시작되었습니다 (${data.knownTemplates.length}개 템플릿)`,
-        type: 'info' as const,
-        timestamp: new Date()
-      };
-      
-      setNotifications(prev => [notification, ...prev.slice(0, 4)]);
-    });
-    
-    return () => {
-      eventSource.close();
-    };
-  }, [revalidator]);
+  // 필터된 템플릿
+  const filteredTemplates = templates.filter(template => {
+    if (filter === 'ready') {
+      return template.status === 'ready';
+    }
+    return true;
+  });
 
-  const getChangeMessage = (changeEvent: any) => {
-    switch (changeEvent.type) {
-      case 'added':
-        return `새 템플릿이 감지되었습니다: ${changeEvent.templateId}`;
-      case 'removed':
-        return `템플릿이 제거되었습니다: ${changeEvent.templateId}`;
-      case 'modified':
-        return `템플릿이 수정되었습니다: ${changeEvent.templateId}`;
-      default:
-        return `템플릿 변경: ${changeEvent.templateId}`;
+  const getTimeAgo = (dateString: string) => {
+    const date = new Date(dateString);
+    const now = new Date();
+    const diffInMinutes = Math.floor((now.getTime() - date.getTime()) / (1000 * 60));
+    
+    if (diffInMinutes < 60) {
+      return `${diffInMinutes}분 전`;
+    } else if (diffInMinutes < 1440) {
+      return `${Math.floor(diffInMinutes / 60)}시간 전`;
+    } else {
+      return `${Math.floor(diffInMinutes / 1440)}일 전`;
     }
   };
 
-  const getChangeType = (type: string) => {
-    switch (type) {
-      case 'added':
-        return 'success' as const;
-      case 'removed':
-        return 'warning' as const;
-      case 'modified':
-        return 'info' as const;
-      default:
-        return 'info' as const;
+  const handleTemplateClick = (template: Template) => {
+    if (template.status !== 'ready') {
+      alert('이 템플릿은 아직 분석이 완료되지 않았습니다.\n대시보드에서 분석을 완료해주세요.');
+      return;
     }
   };
 
-  const dismissNotification = (id: string) => {
-    setNotifications(prev => prev.filter(n => n.id !== id));
-  };
-  
-  const handleScan = () => {
-    setIsScanning(true);
-    fetcher.submit({ action: "scan" }, { method: "post" });
-    setTimeout(() => {
-      setIsScanning(false);
-      revalidator.revalidate();
-    }, 2000);
-  };
-  
-  const handleAnalyze = (templateId: string) => {
-    fetcher.submit({ action: "analyze", templateId }, { method: "post" });
-  };
-  
-  // 통계 계산
-  const stats = {
-    total: templates.length,
-    completed: templates.filter(t => t.status.status === 'completed').length,
-    analyzing: templates.filter(t => t.status.status === 'analyzing').length,
-    error: templates.filter(t => t.status.status === 'error').length,
-    new: templates.filter(t => t.status.status === 'new').length
-  };
-  
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
-      {/* 실시간 알림 */}
-      {notifications.length > 0 && (
-        <div className="fixed top-4 right-4 z-50 space-y-2">
-          {notifications.map((notification) => (
-            <div
-              key={notification.id}
-              className={`max-w-sm p-4 rounded-lg shadow-lg border-l-4 bg-white ${
-                notification.type === 'success' ? 'border-green-500' :
-                notification.type === 'warning' ? 'border-yellow-500' :
-                notification.type === 'error' ? 'border-red-500' :
-                'border-blue-500'
-              } animate-pulse`}
-            >
-              <div className="flex items-start justify-between">
-                <div className="flex-1">
-                  <p className={`text-sm font-medium ${
-                    notification.type === 'success' ? 'text-green-800' :
-                    notification.type === 'warning' ? 'text-yellow-800' :
-                    notification.type === 'error' ? 'text-red-800' :
-                    'text-blue-800'
-                  }`}>
-                    {notification.message}
-                  </p>
-                  <p className="text-xs text-gray-500 mt-1">
-                    {notification.timestamp.toLocaleTimeString('ko-KR')}
-                  </p>
-                </div>
-                <button
-                  onClick={() => dismissNotification(notification.id)}
-                  className="ml-3 text-gray-400 hover:text-gray-600"
-                >
-                  ✕
-                </button>
-              </div>
+    <div className="min-h-screen bg-gray-50">
+      {/* 헤더 */}
+      <header className="bg-white shadow-sm border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center">
+              <Link to="/" className="text-gray-600 hover:text-gray-900 mr-4">
+                ← Home
+              </Link>
+              <h1 className="text-xl font-semibold">템플릿 선택</h1>
             </div>
-          ))}
-        </div>
-      )}
-      
-      <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold">Template Dashboard</h1>
-          <div className="flex gap-4">
-            <button
-              onClick={handleScan}
-              disabled={isScanning}
-              className={`px-6 py-2 rounded-md font-medium transition-colors ${
-                isScanning 
-                  ? 'bg-gray-300 text-gray-500 cursor-not-allowed' 
-                  : 'bg-blue-500 text-white hover:bg-blue-600'
-              }`}
-            >
-              {isScanning ? (
-                <span className="flex items-center gap-2">
-                  <span className="animate-spin">🔄</span> 스캔 중...
-                </span>
-              ) : (
-                '🔄 폴더 스캔'
-              )}
-            </button>
-            <Link
-              to="/debug-logs"
-              target="_blank"
-              className="px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600"
-            >
-              디버그 로그
-            </Link>
-            <Link
-              to="/"
-              className="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300"
-            >
-              홈으로
-            </Link>
+            <nav className="flex space-x-4">
+              <Link to="/dashboard" className="text-gray-600 hover:text-gray-900">
+                ← Template Dashboard
+              </Link>
+            </nav>
           </div>
         </div>
+      </header>
 
-        {/* 요약 정보 */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-          <h2 className="text-lg font-semibold mb-4">📊 요약 정보</h2>
-          <div className="grid grid-cols-5 gap-4">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-gray-700">{stats.total}</div>
-              <div className="text-sm text-gray-500">총 템플릿</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-green-600">{stats.completed}</div>
-              <div className="text-sm text-gray-500">분석 완료</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-blue-600">{stats.analyzing}</div>
-              <div className="text-sm text-gray-500">분석 중</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-yellow-600">{stats.new}</div>
-              <div className="text-sm text-gray-500">대기 중</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-red-600">{stats.error}</div>
-              <div className="text-sm text-gray-500">오류</div>
-            </div>
-          </div>
-        </div>
-
-        {/* 템플릿 목록 */}
-        <div className="bg-white rounded-lg shadow-sm p-6">
-          <h2 className="text-lg font-semibold mb-4">📁 templates/ 폴더 내용</h2>
-          
-          {templates.length === 0 ? (
-            <div className="text-center py-8">
-              <p className="text-gray-500">사용 가능한 템플릿이 없습니다.</p>
-              <p className="text-sm text-gray-400 mt-2">
-                themes 폴더에 템플릿을 추가해주세요.
-              </p>
-            </div>
-          ) : (
-            <div className="space-y-4">
-              {templates.map((template) => (
-                <div
-                  key={template.id}
-                  className="border rounded-lg p-4 hover:bg-gray-50 transition-colors"
+      {/* 메인 컨텐츠 */}
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* 최근 프로젝트 */}
+        {recentProjects.length > 0 && (
+          <div className="mb-8">
+            <h2 className="text-lg font-semibold mb-4">최근 작업</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {recentProjects.map((project) => (
+                <Link
+                  key={project.templateId}
+                  to={`/editor/${project.templateId}`}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 hover:shadow-md transition-shadow"
                 >
-                  <div className="flex items-start justify-between">
-                    {/* 미리보기 이미지 */}
-                    {template.hasPreview && (
-                      <div className="w-32 h-20 mr-4 flex-shrink-0 bg-gray-100 rounded overflow-hidden">
-                        <img 
-                          src={`/themes/${template.id}/preview.png`}
-                          alt={`${template.name} preview`}
-                          className="w-full h-full object-cover"
-                          onError={(e) => {
-                            e.currentTarget.style.display = 'none';
-                          }}
-                        />
-                      </div>
-                    )}
-                    
-                    <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-2">
-                        {/* 상태 아이콘 */}
-                        {template.status.status === 'completed' && (
-                          <span className="text-green-500 text-xl">✅</span>
-                        )}
-                        {template.status.status === 'analyzing' && (
-                          <span className="text-blue-500 text-xl animate-spin">🔄</span>
-                        )}
-                        {template.status.status === 'new' && (
-                          <span className="text-yellow-500 text-xl">🆕</span>
-                        )}
-                        {template.status.status === 'error' && (
-                          <span className="text-red-500 text-xl">❌</span>
-                        )}
-                        
-                        <h3 className="text-lg font-semibold">{template.name}</h3>
-                      </div>
-                      
-                      {/* 상태별 정보 표시 */}
-                      {template.status.status === 'completed' && (
-                        <div className="text-sm text-gray-600 ml-9">
-                          📝 {template.status.totalTexts || 0}개 텍스트 | 
-                          🖼️ {template.status.totalImages || 0}개 이미지 | 
-                          📅 분석완료: {template.status.analyzedAt ? 
-                            new Date(template.status.analyzedAt).toLocaleString('ko-KR') : 
-                            '알 수 없음'}
-                        </div>
-                      )}
-                      
-                      {template.status.status === 'analyzing' && (
-                        <div className="ml-9">
-                          <div className="text-sm text-blue-600 mb-1">
-                            {templateProgress[template.id]?.message || template.status.message || '분석 중...'} 
-                            {templateProgress[template.id]?.progress || template.status.progress || 0}%
-                          </div>
-                          <div className="w-full bg-gray-200 rounded-full h-2">
-                            <div 
-                              className="bg-blue-500 h-2 rounded-full transition-all duration-300"
-                              style={{ width: `${templateProgress[template.id]?.progress || template.status.progress || 0}%` }}
-                            />
-                          </div>
-                        </div>
-                      )}
-                      
-                      {template.status.status === 'new' && (
-                        <div className="text-sm text-gray-500 ml-9">
-                          새로 감지된 템플릿 - 분석 대기 중
-                        </div>
-                      )}
-                      
-                      {template.status.status === 'error' && (
-                        <div className="ml-9">
-                          <div className="text-sm text-red-600 font-medium mb-2">
-                            오류: {template.status.message || 'index.html을 찾을 수 없습니다'}
-                          </div>
-                          {(template.status as any).data?.suggestions && (
-                            <div className="text-xs text-gray-600 bg-red-50 p-2 rounded border-l-2 border-red-200">
-                              <div className="font-medium mb-1">해결 방법:</div>
-                              <ul className="list-disc list-inside space-y-1">
-                                {(template.status as any).data.suggestions.slice(0, 2).map((suggestion: string, index: number) => (
-                                  <li key={index}>{suggestion}</li>
-                                ))}
-                              </ul>
-                              {(template.status as any).data?.errorCode && (
-                                <div className="mt-2 text-xs text-gray-500">
-                                  오류 코드: {(template.status as any).data.errorCode}
-                                </div>
-                              )}
-                            </div>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                    
-                    {/* 액션 버튼 */}
-                    <div className="flex gap-2 ml-4">
-                      {template.status.status === 'completed' && template.hasIndex && (
-                        <>
-                          <Link
-                            to={`/editor?theme=${template.id}`}
-                            className="px-4 py-2 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600"
-                          >
-                            편집하기
-                          </Link>
-                          <button
-                            onClick={() => handleAnalyze(template.id)}
-                            className="px-4 py-2 bg-gray-200 text-sm rounded-md hover:bg-gray-300"
-                          >
-                            재분석
-                          </button>
-                        </>
-                      )}
-                      
-                      {template.status.status === 'new' && template.hasIndex && (
-                        <button
-                          onClick={() => handleAnalyze(template.id)}
-                          className="px-4 py-2 bg-green-500 text-white text-sm rounded-md hover:bg-green-600"
-                        >
-                          분석 시작
-                        </button>
-                      )}
-                      
-                      {template.status.status === 'error' && (
-                        <button
-                          onClick={() => handleAnalyze(template.id)}
-                          className="px-4 py-2 bg-yellow-500 text-white text-sm rounded-md hover:bg-yellow-600"
-                        >
-                          분석 재시도
-                        </button>
-                      )}
-                    </div>
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-medium text-gray-900">{project.templateName}</h3>
+                    <span className="text-xs text-blue-600 font-medium">Continue →</span>
                   </div>
-                </div>
+                  <p className="text-sm text-gray-500">{getTimeAgo(project.lastEdited)}</p>
+                </Link>
               ))}
             </div>
+          </div>
+        )}
+
+        {/* 필터 옵션 */}
+        <div className="mb-6 flex items-center justify-between">
+          <h2 className="text-2xl font-bold text-gray-900">템플릿 목록</h2>
+          <div className="flex items-center space-x-2">
+            <button
+              onClick={() => setFilter('all')}
+              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                filter === 'all'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              }`}
+            >
+              전체 보기
+            </button>
+            <button
+              onClick={() => setFilter('ready')}
+              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                filter === 'ready'
+                  ? 'bg-green-600 text-white'
+                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              }`}
+            >
+              분석 완료만 보기
+            </button>
+          </div>
+        </div>
+
+        {/* 템플릿 그리드 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredTemplates.length === 0 ? (
+            <div className="col-span-full text-center py-8">
+              <p className="text-gray-500">표시할 템플릿이 없습니다.</p>
+              {filter === 'ready' && (
+                <p className="text-sm text-gray-400 mt-2">
+                  분석이 완료된 템플릿이 없습니다. 전체 보기를 선택하세요.
+                </p>
+              )}
+            </div>
+          ) : (
+            filteredTemplates.map((template) => (
+              <div
+                key={template.id}
+                className={`relative bg-white rounded-lg shadow-sm border ${
+                  template.status === 'ready' 
+                    ? 'border-gray-200 hover:shadow-md cursor-pointer' 
+                    : 'border-gray-300 opacity-60 cursor-not-allowed'
+                } transition-all`}
+                onClick={() => handleTemplateClick(template)}
+              >
+                {/* 썸네일 영역 */}
+                <div className="h-48 bg-gray-100 rounded-t-lg overflow-hidden">
+                  {template.thumbnail ? (
+                    <img
+                      src={template.thumbnail}
+                      alt={template.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-gray-400">
+                      <span className="text-6xl">📄</span>
+                    </div>
+                  )}
+                </div>
+
+                {/* 정보 영역 */}
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{template.name}</h3>
+                  
+                  {/* 상태 표시 */}
+                  <div className="flex items-center space-x-2 mb-3">
+                    {template.status === 'ready' && (
+                      <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                        ✅ 분석 완료
+                      </span>
+                    )}
+                    {template.status === 'analyzing' && (
+                      <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                        🔄 분석 중
+                      </span>
+                    )}
+                    {template.status === 'new' && (
+                      <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                        🆕 미분석
+                      </span>
+                    )}
+                    {template.status === 'error' && (
+                      <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                        ❌ 오류
+                      </span>
+                    )}
+                  </div>
+
+                  {/* 상세 정보 */}
+                  {template.status === 'ready' && (
+                    <div className="text-sm text-gray-600 space-y-1">
+                      {template.totalTexts !== undefined && (
+                        <p>📝 텍스트: {template.totalTexts}개</p>
+                      )}
+                      {template.totalImages !== undefined && (
+                        <p>🖼️ 이미지: {template.totalImages}개</p>
+                      )}
+                    </div>
+                  )}
+
+                  {/* 액션 버튼 */}
+                  {template.status === 'ready' && (
+                    <Link
+                      to={`/editor/${template.id}`}
+                      className="mt-4 block w-full text-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      편집하기
+                    </Link>
+                  )}
+                  
+                  {template.status !== 'ready' && (
+                    <div className="mt-4 text-center text-sm text-gray-500">
+                      대시보드에서 분석을 완료해주세요
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))
           )}
         </div>
 
-        {/* 템플릿 추가 가이드 */}
+        {/* 도움말 */}
         <div className="mt-12 bg-blue-50 rounded-lg p-6">
-          <h3 className="text-lg font-semibold mb-3">새 템플릿 추가하기</h3>
-          <ol className="list-decimal list-inside space-y-2 text-sm text-gray-700">
-            <li>themes 폴더에 새 폴더를 생성합니다</li>
-            <li>index.html 파일을 추가합니다</li>
-            <li>필요한 CSS, JS, 이미지 파일을 추가합니다</li>
-            <li>선택적으로 theme.json 파일을 추가하여 메타데이터를 정의합니다</li>
-            <li>폴더 스캔 버튼을 클릭하여 템플릿을 감지합니다</li>
-          </ol>
-          <div className="mt-4 p-3 bg-gray-100 rounded">
-            <code className="text-xs">
-              {`{
-  "name": "템플릿 이름",
-  "version": "1.0.0",
-  "description": "템플릿 설명",
-  "author": "작성자"
-}`}
-            </code>
-          </div>
+          <h3 className="text-lg font-semibold mb-3">💡 사용 안내</h3>
+          <ul className="space-y-2 text-sm text-gray-700">
+            <li>• 분석이 완료된 템플릿만 편집할 수 있습니다.</li>
+            <li>• 새 템플릿을 추가하려면 <Link to="/dashboard" className="text-blue-600 hover:underline">대시보드</Link>에서 스캔하세요.</li>
+            <li>• 템플릿 분석은 대시보드에서 진행할 수 있습니다.</li>
+          </ul>
         </div>
-      </div>
+      </main>
     </div>
   );
 }

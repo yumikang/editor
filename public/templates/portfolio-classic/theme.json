@@ -1,0 +1,59 @@
+{
+  "id": "portfolio-classic",
+  "name": "Portfolio Classic",
+  "version": "1.0.0",
+  "description": "깔끔하고 모던한 포트폴리오 테마",
+  "author": "CodeB",
+  "category": "portfolio",
+  "preview": "preview.png",
+  "features": [
+    "responsive",
+    "smooth-scroll",
+    "portfolio-grid",
+    "contact-form"
+  ],
+  "editableElements": {
+    "texts": {
+      "selector": "[data-editable='text']",
+      "types": ["heading", "paragraph", "button"]
+    },
+    "images": {
+      "selector": "[data-editable='image']",
+      "types": ["hero", "portfolio", "team", "background"]
+    },
+    "colors": {
+      "primary": "#3498db",
+      "secondary": "#2c3e50",
+      "accent": "#e74c3c"
+    },
+    "fonts": {
+      "heading": "ClashDisplay",
+      "body": "Platform"
+    }
+  },
+  "templates": [
+    {
+      "id": "home",
+      "name": "홈페이지",
+      "file": "index.html",
+      "sections": ["hero", "portfolio", "about", "contact"]
+    },
+    {
+      "id": "about",
+      "name": "소개 페이지",
+      "file": "about.html",
+      "sections": ["hero", "team", "skills"]
+    },
+    {
+      "id": "portfolio-grid",
+      "name": "포트폴리오 그리드",
+      "file": "portfolio-grid.html",
+      "sections": ["portfolio-items"]
+    }
+  ],
+  "assets": {
+    "css": ["css/all.min.css", "css/assets.css", "css/content.css"],
+    "js": ["js/jquery.min.js", "js/plugins.js", "js/scripts.js"],
+    "fonts": ["webfonts/"]
+  }
+}

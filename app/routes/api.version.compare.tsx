@@ -1,6 +1,6 @@
 import { json, type LoaderFunctionArgs } from "@remix-run/node";
 import * as path from "path";
-import { VersionManager } from "~/utils/version-manager";
+import { VersionManager } from "~/utils/version-manager.server";
 
 const DATA_PATH = path.join(process.cwd(), "app/data/themes");
 

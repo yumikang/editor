@@ -1,0 +1,41 @@
+{
+  "lastScan": "2025-07-20T07:20:58.999Z",
+  "templates": {
+    "agency-redox-dark": {
+      "id": "agency-redox-dark",
+      "name": "Agency Redox Dark",
+      "status": "ready",
+      "hasIndex": true,
+      "fileCount": 399,
+      "totalSize": "5.8 MB",
+      "lastScanned": "2025-07-20T07:20:59.014Z"
+    },
+    "agency-redox-light": {
+      "id": "agency-redox-light",
+      "name": "Agency Redox Light",
+      "status": "ready",
+      "hasIndex": true,
+      "fileCount": 399,
+      "totalSize": "5.9 MB",
+      "lastScanned": "2025-07-20T07:20:59.027Z"
+    },
+    "multipurpose-agntix": {
+      "id": "multipurpose-agntix",
+      "name": "Multipurpose Agntix",
+      "status": "ready",
+      "hasIndex": true,
+      "fileCount": 1545,
+      "totalSize": "37.2 MB",
+      "lastScanned": "2025-07-20T07:20:59.078Z"
+    },
+    "portfolio-classic": {
+      "id": "portfolio-classic",
+      "name": "Portfolio Classic",
+      "status": "ready",
+      "hasIndex": true,
+      "fileCount": 145,
+      "totalSize": "4.9 MB",
+      "lastScanned": "2025-07-20T07:20:59.082Z"
+    }
+  }
+}

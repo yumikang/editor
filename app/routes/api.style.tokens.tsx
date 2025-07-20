@@ -94,7 +94,7 @@ export async function action({ request }: ActionFunctionArgs) {
         );
         
         // 🆕 버전 관리 시스템에도 업데이트
-        const versionManager = new (await import('~/utils/version-manager')).VersionManager(
+        const versionManager = new (await import('~/utils/version-manager.server')).VersionManager(
           templateId,
           path.join(process.cwd(), 'app/data/themes')
         );

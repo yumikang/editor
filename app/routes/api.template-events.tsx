@@ -1,6 +1,6 @@
 import { type LoaderFunctionArgs } from "@remix-run/node";
 import * as path from "path";
-import { getTemplateWatcher, type TemplateChangeEvent } from "~/utils/template-watcher";
+import { getTemplateWatcher, type TemplateChangeEvent } from "~/utils/template-watcher.server";
 
 const THEMES_PATH = path.join(process.cwd(), "../themes");
 const DATA_PATH = path.join(process.cwd(), "app/data/themes");

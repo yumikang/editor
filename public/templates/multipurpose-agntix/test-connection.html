@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연동 테스트 도구</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .test-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        .test-section h3 {
+            margin-bottom: 15px;
+            color: #34495e;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .status.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .status.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .status.info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .data-preview {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 300px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+        .link-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+        }
+        .link-section a {
+            color: #2196F3;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .link-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔗 연동 테스트 도구</h1>
+        
+        <div class="test-section">
+            <h3>1. localStorage 상태 확인</h3>
+            <button onclick="checkLocalStorage()">localStorage 확인</button>
+            <button onclick="clearLocalStorage()">localStorage 초기화</button>
+            <div id="localStorage-status"></div>
+        </div>
+
+        <div class="test-section">
+            <h3>2. BroadcastChannel 테스트</h3>
+            <button onclick="testBroadcast()">테스트 메시지 전송</button>
+            <div id="broadcast-status"></div>
+        </div>
+
+        <div class="test-section">
+            <h3>3. 실시간 업데이트 테스트</h3>
+            <button onclick="testRealtimeUpdate()">테스트 텍스트 업데이트</button>
+            <div id="realtime-status"></div>
+        </div>
+
+        <div class="test-section">
+            <h3>4. 현재 데이터 미리보기</h3>
+            <button onclick="showCurrentData()">데이터 확인</button>
+            <div id="data-preview" class="data-preview" style="display: none;"></div>
+        </div>
+
+        <div class="link-section">
+            <h3>📚 관련 페이지 링크</h3>
+            <a href="index.html" target="_blank">🏠 메인 홈페이지</a>
+            <a href="json-editor-v2.html" target="_blank">✏️ JSON 에디터</a>
+            <a href="instant-update.html" target="_blank">⚡ 즉시 업데이트</a>
+            <a href="auto-copy.html" target="_blank">🔄 자동 복사</a>
+        </div>
+    </div>
+
+    <script>
+        // BroadcastChannel 설정
+        let channel;
+        if (typeof BroadcastChannel !== 'undefined') {
+            channel = new BroadcastChannel('website-updates');
+            channel.addEventListener('message', (e) => {
+                showStatus('broadcast-status', 'info', `BroadcastChannel 메시지 수신: ${e.data.type} at ${new Date(e.data.timestamp).toLocaleString('ko-KR')}`);
+            });
+        }
+
+        function showStatus(elementId, type, message) {
+            const statusEl = document.getElementById(elementId);
+            statusEl.innerHTML = `<div class="status ${type}">${message}</div>`;
+        }
+
+        function checkLocalStorage() {
+            const texts = localStorage.getItem('websiteTexts');
+            const timestamp = localStorage.getItem('websiteTextsTimestamp');
+            
+            if (texts) {
+                try {
+                    const data = JSON.parse(texts);
+                    const itemCount = countItems(data);
+                    const time = timestamp ? new Date(timestamp).toLocaleString('ko-KR') : '알 수 없음';
+                    showStatus('localStorage-status', 'success', 
+                        `✅ localStorage에 데이터가 있습니다!<br>` +
+                        `총 ${itemCount}개 항목<br>` +
+                        `마지막 업데이트: ${time}`
+                    );
+                } catch (error) {
+                    showStatus('localStorage-status', 'error', '❌ localStorage 데이터 파싱 오류');
+                }
+            } else {
+                showStatus('localStorage-status', 'error', '❌ localStorage에 데이터가 없습니다.');
+            }
+        }
+
+        function clearLocalStorage() {
+            if (confirm('정말로 localStorage를 초기화하시겠습니까?')) {
+                localStorage.removeItem('websiteTexts');
+                localStorage.removeItem('websiteTextsTimestamp');
+                showStatus('localStorage-status', 'info', '🗑️ localStorage가 초기화되었습니다.');
+            }
+        }
+
+        function testBroadcast() {
+            if (channel) {
+                const testData = {
+                    type: 'test-message',
+                    timestamp: new Date().toISOString(),
+                    message: 'BroadcastChannel 테스트 메시지'
+                };
+                channel.postMessage(testData);
+                showStatus('broadcast-status', 'success', '✅ 테스트 메시지를 전송했습니다. 다른 탭을 확인하세요.');
+            } else {
+                showStatus('broadcast-status', 'error', '❌ BroadcastChannel이 지원되지 않습니다.');
+            }
+        }
+
+        function testRealtimeUpdate() {
+            const testData = {
+                "meta": {
+                    "title": { "korean": "테스트 제목 - " + new Date().toLocaleTimeString('ko-KR') }
+                },
+                "hero_section": {
+                    "main_title": { "korean": "테스트 업데이트 - " + new Date().toLocaleTimeString('ko-KR') }
+                }
+            };
+
+            // localStorage 업데이트
+            localStorage.setItem('websiteTexts', JSON.stringify(testData));
+            localStorage.setItem('websiteTextsTimestamp', new Date().toISOString());
+
+            // BroadcastChannel로 알림
+            if (channel) {
+                channel.postMessage({
+                    type: 'update-texts',
+                    data: testData,
+                    timestamp: new Date().toISOString()
+                });
+            }
+
+            showStatus('realtime-status', 'success', 
+                '✅ 테스트 업데이트를 전송했습니다.<br>' +
+                '홈페이지 탭에서 제목이 변경되었는지 확인하세요.'
+            );
+        }
+
+        function showCurrentData() {
+            const texts = localStorage.getItem('websiteTexts');
+            const preview = document.getElementById('data-preview');
+            
+            if (texts) {
+                try {
+                    const data = JSON.parse(texts);
+                    preview.textContent = JSON.stringify(data, null, 2);
+                    preview.style.display = 'block';
+                } catch (error) {
+                    preview.textContent = '데이터 파싱 오류: ' + error.message;
+                    preview.style.display = 'block';
+                }
+            } else {
+                preview.textContent = 'localStorage에 데이터가 없습니다.';
+                preview.style.display = 'block';
+            }
+        }
+
+        function countItems(obj) {
+            let count = 0;
+            for (const key in obj) {
+                if (typeof obj[key] === 'object' && obj[key] !== null) {
+                    if (obj[key].korean || obj[key].english) {
+                        count++;
+                    } else {
+                        count += countItems(obj[key]);
+                    }
+                }
+            }
+            return count;
+        }
+
+        // 페이지 로드 시 자동 체크
+        window.addEventListener('load', () => {
+            checkLocalStorage();
+        });
+
+        // storage 이벤트 리스너
+        window.addEventListener('storage', (e) => {
+            if (e.key === 'websiteTexts') {
+                showStatus('localStorage-status', 'info', '📡 다른 탭에서 localStorage가 업데이트되었습니다!');
+                checkLocalStorage();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1235 @@
+{
+  "templateId": "portfolio-classic",
+  "analyzedAt": "2025-07-11T12:22:21.721Z",
+  "htmlFile": "index.html",
+  "texts": [
+    {
+      "id": "text_text_1752236541687_0",
+      "selector": ".marquee-text.big-title.bw",
+      "originalContent": "Make brands attractive and connect them to their audiences.",
+      "originalLength": 59,
+      "maxLength": 109,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541690_1",
+      "selector": "div > h1:nth-child(2)",
+      "originalContent": "We've shipped hundreds of successful projects and features for our clients.",
+      "originalLength": 75,
+      "maxLength": 125,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541690_2",
+      "selector": "div > h1:nth-child(1)",
+      "originalContent": "News",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541691_3",
+      "selector": "div > h1:nth-child(2)",
+      "originalContent": "Featured",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541691_0",
+      "selector": "div > h3:nth-child(1)",
+      "originalContent": "Still Not",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541692_1",
+      "selector": "div > h3:nth-child(2)",
+      "originalContent": "Convinced?",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541692_2",
+      "selector": "div > h3:nth-child(1)",
+      "originalContent": "Read",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541692_3",
+      "selector": "div > h3:nth-child(2)",
+      "originalContent": "All Stories",
+      "originalLength": 11,
+      "maxLength": 61,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541692_0",
+      "selector": "div > h4:nth-child(1)",
+      "originalContent": "Projects",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541693_0",
+      "selector": "div > p:nth-child(2)",
+      "originalContent": "The driving force of all speeches, we believe that creation should be the point around which any communication strategy revolves.",
+      "originalLength": 129,
+      "maxLength": 179,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541693_1",
+      "selector": "div > p:nth-child(4)",
+      "originalContent": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.",
+      "originalLength": 138,
+      "maxLength": 188,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541696_13",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "The",
+      "originalLength": 3,
+      "maxLength": 53,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541696_14",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Beautiful",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541696_15",
+      "selector": "div > span:nth-child(3)",
+      "originalContent": "Ladies",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541696_16",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Design",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541696_17",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Experience",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541698_18",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Eames",
+      "originalLength": 5,
+      "maxLength": 55,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541698_19",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Chair",
+      "originalLength": 5,
+      "maxLength": 55,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541698_20",
+      "selector": "div > span:nth-child(3)",
+      "originalContent": "Design",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541698_21",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Heart",
+      "originalLength": 5,
+      "maxLength": 55,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541698_22",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Of Ocean",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541698_23",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "View all Works",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541698_24",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Insights",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541698_25",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Nature",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541698_26",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "We are thrilled to be nominated for the Agency of the Year",
+      "originalLength": 58,
+      "maxLength": 108,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541698_27",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Insights",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541699_28",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Work",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541699_29",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "How we approached our own website redesign",
+      "originalLength": 42,
+      "maxLength": 92,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541699_30",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Insights",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541699_31",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Work",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541699_32",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "We are thrilled to be nominated for the Agency of the Year",
+      "originalLength": 58,
+      "maxLength": 108,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541699_33",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Insights",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541699_34",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Work",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541700_35",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "How we approached our own website redesign",
+      "originalLength": 42,
+      "maxLength": 92,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541700_36",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Insights",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541700_37",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Work",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541700_38",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "We are thrilled to be nominated for the Agency of the Year",
+      "originalLength": 58,
+      "maxLength": 108,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541700_39",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Insights",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541700_40",
+      "selector": "a > span:nth-child(1)",
+      "originalContent": "Work",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541700_41",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "How we approached our own website redesign",
+      "originalLength": 42,
+      "maxLength": 92,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541700_42",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Go To Blog",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541703_18",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Insights",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541703_19",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Nature",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541703_20",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Insights",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541703_21",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Work",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541704_22",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Insights",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541704_23",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Work",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541704_24",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Insights",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541704_25",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Work",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541704_26",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Insights",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541704_27",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Work",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541705_28",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Insights",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541705_29",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Work",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "content-row",
+      "context": "content-row 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541694_0",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Portfolio",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "classic-menu",
+      "context": "classic-menu 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541694_1",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "About",
+      "originalLength": 5,
+      "maxLength": 55,
+      "section": "classic-menu",
+      "context": "classic-menu 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541694_2",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Contact",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "classic-menu",
+      "context": "classic-menu 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541694_3",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "More",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "classic-menu",
+      "context": "classic-menu 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541695_4",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Menu",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "classic-menu",
+      "context": "classic-menu 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541702_6",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Landing Page",
+      "originalLength": 12,
+      "maxLength": 62,
+      "section": "classic-menu",
+      "context": "classic-menu 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541702_7",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Showcase WebGL",
+      "originalLength": 14,
+      "maxLength": 64,
+      "section": "classic-menu",
+      "context": "classic-menu 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541702_8",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Showcase Carousel",
+      "originalLength": 17,
+      "maxLength": 67,
+      "section": "classic-menu",
+      "context": "classic-menu 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541702_9",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Overlapping Portfolio",
+      "originalLength": 21,
+      "maxLength": 71,
+      "section": "classic-menu",
+      "context": "classic-menu 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541702_10",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "Parallax Portfolio",
+      "originalLength": 18,
+      "maxLength": 68,
+      "section": "classic-menu",
+      "context": "classic-menu 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541703_11",
+      "selector": "ul > li:nth-child(6)",
+      "originalContent": "Random Portfolio",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "classic-menu",
+      "context": "classic-menu 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541703_15",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Typography",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "classic-menu",
+      "context": "classic-menu 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541703_16",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Multimedia",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "classic-menu",
+      "context": "classic-menu 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541703_17",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Shortcodes",
+      "originalLength": 10,
+      "maxLength": 60,
+      "section": "classic-menu",
+      "context": "classic-menu 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541695_5",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Digital",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541695_6",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Creative Agency",
+      "originalLength": 15,
+      "maxLength": 65,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541695_7",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Inspire",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541695_8",
+      "selector": "div > span:nth-child(2)",
+      "originalContent": "Through",
+      "originalLength": 7,
+      "maxLength": 57,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541695_9",
+      "selector": "div > span:nth-child(3)",
+      "originalContent": "Design",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541695_10",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Scroll Down",
+      "originalLength": 11,
+      "maxLength": 61,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541696_11",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Humpton develops, designs and delivers websites and creative campaigns that drive results, build awareness and win awards.  Our work never brags, but it sure loves to speak for itself.",
+      "originalLength": 184,
+      "maxLength": 234,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541696_12",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Read More",
+      "originalLength": 9,
+      "maxLength": 59,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541700_43",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "About our Agency",
+      "originalLength": 16,
+      "maxLength": 66,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541700_44",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Creative Studio Desgin -",
+      "originalLength": 24,
+      "maxLength": 74,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541701_0",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "bold",
+      "originalLength": 4,
+      "maxLength": 54,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541701_1",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "brave",
+      "originalLength": 5,
+      "maxLength": 55,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541702_2",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "iconic",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541702_3",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "simple",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541702_4",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "louder",
+      "originalLength": 6,
+      "maxLength": 56,
+      "section": "unknown",
+      "context": "unknown 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541700_45",
+      "selector": "div > span:nth-child(1)",
+      "originalContent": "Back Top",
+      "originalLength": 8,
+      "maxLength": 58,
+      "section": "hidden",
+      "context": "hidden 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541700_46",
+      "selector": "li > span:nth-child(1)",
+      "originalContent": "Db",
+      "originalLength": 2,
+      "maxLength": 52,
+      "section": "hidden",
+      "context": "hidden 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541701_47",
+      "selector": "li > span:nth-child(1)",
+      "originalContent": "Tw",
+      "originalLength": 2,
+      "maxLength": 52,
+      "section": "hidden",
+      "context": "hidden 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541701_48",
+      "selector": "li > span:nth-child(1)",
+      "originalContent": "Be",
+      "originalLength": 2,
+      "maxLength": 52,
+      "section": "hidden",
+      "context": "hidden 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541701_49",
+      "selector": "li > span:nth-child(1)",
+      "originalContent": "Fb",
+      "originalLength": 2,
+      "maxLength": 52,
+      "section": "hidden",
+      "context": "hidden 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541701_50",
+      "selector": "li > span:nth-child(1)",
+      "originalContent": "In",
+      "originalLength": 2,
+      "maxLength": 52,
+      "section": "hidden",
+      "context": "hidden 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541705_30",
+      "selector": "ul > li:nth-child(1)",
+      "originalContent": "Db",
+      "originalLength": 2,
+      "maxLength": 52,
+      "section": "hidden",
+      "context": "hidden 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541705_31",
+      "selector": "ul > li:nth-child(2)",
+      "originalContent": "Tw",
+      "originalLength": 2,
+      "maxLength": 52,
+      "section": "hidden",
+      "context": "hidden 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541705_32",
+      "selector": "ul > li:nth-child(3)",
+      "originalContent": "Be",
+      "originalLength": 2,
+      "maxLength": 52,
+      "section": "hidden",
+      "context": "hidden 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541705_33",
+      "selector": "ul > li:nth-child(4)",
+      "originalContent": "Fb",
+      "originalLength": 2,
+      "maxLength": 52,
+      "section": "hidden",
+      "context": "hidden 섹션의 텍스트"
+    },
+    {
+      "id": "text_text_1752236541705_34",
+      "selector": "ul > li:nth-child(5)",
+      "originalContent": "In",
+      "originalLength": 2,
+      "maxLength": 52,
+      "section": "hidden",
+      "context": "hidden 섹션의 텍스트"
+    }
+  ],
+  "images": [
+    {
+      "id": "image_image_1752236541706_2",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "images/01hero.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541707_3",
+      "selector": "div > img:nth-child(3)",
+      "originalPath": "images/01hero.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541707_4",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "images/02hero.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541707_5",
+      "selector": "div > img:nth-child(3)",
+      "originalPath": "images/02hero.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541707_6",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "images/03hero.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541708_7",
+      "selector": "div > img:nth-child(3)",
+      "originalPath": "images/03hero.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541708_8",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "images/04hero.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541708_9",
+      "selector": "div > img:nth-child(3)",
+      "originalPath": "images/04hero.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541708_10",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "images/studio01.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "Image",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541708_11",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "images/studio02.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "Image",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541708_12",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "images/studio03.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "Image",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541709_13",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "images/studio04.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "Image",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541709_14",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "images/studio01.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "Image",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541709_15",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "images/studio02.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "Image",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541709_16",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "images/studio03.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "Image",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541709_17",
+      "selector": "div > img:nth-child(1)",
+      "originalPath": "images/studio04.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "Image",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541709_18",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "images/news01.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541710_19",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "images/news02.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541710_20",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "images/news03.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541710_21",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "images/news04.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541710_22",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "images/news05.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541710_23",
+      "selector": "a > img:nth-child(1)",
+      "originalPath": "images/news06.jpg",
+      "section": "content-row",
+      "attributes": {
+        "alt": "",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "JPG"
+    },
+    {
+      "id": "image_image_1752236541706_0",
+      "selector": ".black-logo",
+      "originalPath": "images/logo.png",
+      "section": "classic-menu",
+      "attributes": {
+        "alt": "ClaPat Logo",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    },
+    {
+      "id": "image_image_1752236541706_1",
+      "selector": ".white-logo",
+      "originalPath": "images/logo-white.png",
+      "section": "classic-menu",
+      "attributes": {
+        "alt": "ClaPat Logo",
+        "width": "",
+        "height": ""
+      },
+      "originalSize": {
+        "width": 0,
+        "height": 0
+      },
+      "format": "PNG"
+    }
+  ],
+  "statistics": {
+    "totalTexts": 93,
+    "totalImages": 24,
+    "analysisTime": "3.5s"
+  }
+}

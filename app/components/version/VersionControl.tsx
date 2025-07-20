@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useFetcher } from "@remix-run/react";
-import type { VersionMetadata, VersionHistory } from "~/utils/version-manager";
+import type { VersionMetadata, VersionHistory } from "~/utils/version-manager.server";
 
 interface VersionControlProps {
   templateId: string;
