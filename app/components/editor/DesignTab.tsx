@@ -2,6 +2,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useFetcher } from '@remix-run/react';
 import { ColorPalette } from './ColorPalette';
+import { TypographyPalette } from './TypographyPalette';
 import { ColorSystemPanel } from '~/components/color/ColorSystemPanel';
 import { ComponentMappingPanel } from '~/components/color/ComponentMappingPanel';
 import { LivePreview } from '~/components/preview/LivePreview';
@@ -35,7 +36,7 @@ export function DesignTab({
   const [lastSaveTime, setLastSaveTime] = useState<Date | null>(null);
   const [componentMappings, setComponentMappings] = useState<Record<string, any>>({});
   const [selectedColor, setSelectedColor] = useState<string>();
-  const [activePanel, setActivePanel] = useState<'palette' | 'system'>('palette');
+  const [activePanel, setActivePanel] = useState<'palette' | 'typography' | 'system'>('palette');
   
   const colorFetcher = useFetcher();
   const styleFetcher = useFetcher();
@@ -158,26 +159,48 @@ export function DesignTab({
     setHasUnsavedChanges(true);
   };
 
+  // 타이포그래피 변경 핸들러
+  const handleTypographyChange = (original: any, updates: any) => {
+    // 미리보기에 타이포그래피 변경 전송
+    window.postMessage({
+      type: 'UPDATE_TYPOGRAPHY',
+      original,
+      updates
+    }, '*');
+    
+    setHasUnsavedChanges(true);
+  };
+
   return (
     <div className="h-full flex">
-      {/* 좌측 패널: 색상 팔레트 또는 컬러 시스템 (350px) */}
+      {/* 좌측 패널: 색상 팔레트, 타이포그래피 또는 컬러 시스템 (350px) */}
       <div className="w-[350px] border-r bg-white flex flex-col">
         {/* 패널 헤더 */}
         <div className="border-b border-gray-200 bg-gray-50">
           <div className="flex">
             <button
               onClick={() => setActivePanel('palette')}
-              className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
+              className={`flex-1 px-3 py-3 text-sm font-medium transition-colors ${
                 activePanel === 'palette'
                   ? 'bg-white text-blue-600 border-b-2 border-blue-600'
                   : 'text-gray-600 hover:text-gray-900'
               }`}
             >
-              🎨 색상 팔레트
+              🎨 색상
+            </button>
+            <button
+              onClick={() => setActivePanel('typography')}
+              className={`flex-1 px-3 py-3 text-sm font-medium transition-colors ${
+                activePanel === 'typography'
+                  ? 'bg-white text-blue-600 border-b-2 border-blue-600'
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              ✏️ 타이포
             </button>
             <button
               onClick={() => setActivePanel('system')}
-              className={`flex-1 px-4 py-3 text-sm font-medium transition-colors ${
+              className={`flex-1 px-3 py-3 text-sm font-medium transition-colors ${
                 activePanel === 'system'
                   ? 'bg-white text-blue-600 border-b-2 border-blue-600'
                   : 'text-gray-600 hover:text-gray-900'
@@ -194,8 +217,19 @@ export function DesignTab({
             designAnalysis?.colors ? (
               <ColorPalette
                 colors={designAnalysis.colors}
-                onColorChange={handleColorChange}
                 selectedColor={selectedColor}
+              />
+            ) : (
+              <div className="p-6 text-center text-gray-500">
+                <div className="text-4xl mb-2">🔍</div>
+                <p className="mb-2">디자인 분석이 필요합니다</p>
+                <p className="text-sm">대시보드에서 템플릿을 분석해주세요.</p>
+              </div>
+            )
+          ) : activePanel === 'typography' ? (
+            designAnalysis?.typography ? (
+              <TypographyPalette
+                typography={designAnalysis.typography}
               />
             ) : (
               <div className="p-6 text-center text-gray-500">

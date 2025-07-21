@@ -1,16 +1,27 @@
 import { useState, useRef, useEffect } from "react";
 import type { ColorInfo } from "~/utils/design-scanner.server";
+import { useEditor } from "~/contexts/EditorContext";
 
 interface ColorPaletteProps {
   colors: ColorInfo[];
-  onColorChange: (originalColor: string, newColor: string, usage: string) => void;
+  onColorChange?: (originalColor: string, newColor: string, usage: string) => void;
   selectedColor?: string;
 }
 
 export function ColorPalette({ colors, onColorChange, selectedColor }: ColorPaletteProps) {
+  const { updateColor } = useEditor();
   const [expandedUsage, setExpandedUsage] = useState<string>("all");
   const [showColorPicker, setShowColorPicker] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
+  
+  // 색상 변경 핸들러 - EditorContext의 updateColor 사용
+  const handleColorChange = (originalColor: string, newColor: string, usage: string) => {
+    if (onColorChange) {
+      onColorChange(originalColor, newColor, usage);
+    } else {
+      updateColor(originalColor, newColor, usage);
+    }
+  };
   
   // 용도별로 색상 그룹화
   const groupedColors = colors.reduce((acc, color) => {
@@ -97,7 +108,7 @@ export function ColorPalette({ colors, onColorChange, selectedColor }: ColorPale
                   key={`${color.normalizedHex}-${color.usage}-${index}`}
                   color={color}
                   isSelected={selectedColor === color.value}
-                  onColorChange={onColorChange}
+                  onColorChange={handleColorChange}
                   showPicker={showColorPicker === `${color.normalizedHex}-${color.usage}-${index}`}
                   onTogglePicker={(show) => 
                     setShowColorPicker(show ? `${color.normalizedHex}-${color.usage}-${index}` : null)

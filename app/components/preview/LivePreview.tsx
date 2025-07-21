@@ -2,6 +2,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { useFetcher } from '@remix-run/react';
 import type { ColorSystem } from '~/types/color-system';
+import { useEditor } from '~/contexts/EditorContext';
 
 interface LivePreviewProps {
   templateId: string;
@@ -27,6 +28,7 @@ export function LivePreview({
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [updateKey, setUpdateKey] = useState(0);
+  const { editedDesign } = useEditor();
   
   // 프리뷰 너비 계산
   const getPreviewWidth = () => {
@@ -137,6 +139,25 @@ export function LivePreview({
   useEffect(() => {
     setUpdateKey(prev => prev + 1);
   }, [previewSize, customWidth]);
+
+  // EditorContext에서 보낸 메시지 수신 및 전달
+  useEffect(() => {
+    const handleMessage = (event: MessageEvent) => {
+      if (!iframeRef.current?.contentWindow || !isLoaded) return;
+      
+      // UPDATE_COLOR, UPDATE_TYPOGRAPHY 등의 메시지를 iframe으로 전달
+      if (event.data.type === 'UPDATE_COLOR' || 
+          event.data.type === 'UPDATE_TYPOGRAPHY' ||
+          event.data.type === 'INIT_PREVIEW' ||
+          event.data.type === 'UPDATE_CONTENT' ||
+          event.data.type === 'HIGHLIGHT_ELEMENT') {
+        iframeRef.current.contentWindow.postMessage(event.data, '*');
+      }
+    };
+
+    window.addEventListener('message', handleMessage);
+    return () => window.removeEventListener('message', handleMessage);
+  }, [isLoaded]);
 
   return (
     <div className={`relative bg-gray-100 ${className}`}>

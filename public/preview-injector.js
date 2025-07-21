@@ -51,6 +51,11 @@
         // 색상 변경
         updateColor(message.originalColor, message.newColor, message.usage);
         break;
+        
+      case 'UPDATE_TYPOGRAPHY':
+        // 타이포그래피 변경
+        updateTypography(message.original, message.updates);
+        break;
     }
   });
   
@@ -270,6 +275,22 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0.8; transform: scale(1.02); }
     }
+    
+    /* 타이포그래피 변경 애니메이션 */
+    .typography-changing {
+      transition: all 0.5s ease !important;
+      animation: typography-pulse 1s ease-in-out;
+    }
+    
+    @keyframes typography-pulse {
+      0%, 100% { 
+        background-color: transparent;
+      }
+      50% { 
+        background-color: rgba(59, 130, 246, 0.1);
+        transform: translateX(2px);
+      }
+    }
   `;
   document.head.appendChild(style);
   
@@ -288,6 +309,43 @@
       event.preventDefault();
     }
   });
+  
+  // 타이포그래피 업데이트 함수
+  function updateTypography(original, updates) {
+    const elements = document.querySelectorAll('*');
+    
+    elements.forEach(element => {
+      const computedStyle = window.getComputedStyle(element);
+      let shouldUpdate = false;
+      
+      // 폰트 패밀리 매칭
+      if (original.fontFamily && computedStyle.fontFamily.includes(original.fontFamily.split(',')[0].trim().replace(/['"]/g, ''))) {
+        // 폰트 크기 매칭
+        if (computedStyle.fontSize === original.fontSize) {
+          // 폰트 굵기 매칭
+          const weight = computedStyle.fontWeight;
+          if (weight === original.fontWeight || 
+              (original.fontWeight === '400' && weight === 'normal') ||
+              (original.fontWeight === '700' && weight === 'bold')) {
+            shouldUpdate = true;
+          }
+        }
+      }
+      
+      if (shouldUpdate) {
+        // 타이포그래피 속성 업데이트
+        if (updates.fontFamily) element.style.fontFamily = updates.fontFamily;
+        if (updates.fontSize) element.style.fontSize = updates.fontSize;
+        if (updates.fontWeight) element.style.fontWeight = updates.fontWeight;
+        if (updates.lineHeight) element.style.lineHeight = updates.lineHeight;
+        if (updates.letterSpacing) element.style.letterSpacing = updates.letterSpacing;
+        
+        // 변경 애니메이션
+        element.classList.add('typography-changing');
+        setTimeout(() => element.classList.remove('typography-changing'), 1000);
+      }
+    });
+  }
   
   // 초기 로드 시 부모에게 준비 완료 알림
   window.parent.postMessage({

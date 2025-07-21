@@ -6,6 +6,8 @@ import * as fs from "fs/promises";
 import { DesignTab } from "~/components/editor/DesignTab";
 import { MediaTab } from "~/components/editor/MediaTab";
 import type { ColorSystem } from "~/types/color-system";
+import { EditorProvider } from "~/contexts/EditorContext";
+import type { EditedDesign } from "~/contexts/EditorContext";
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
   return [
@@ -182,6 +184,7 @@ function getElementLabel(element: any): string {
 // 템플릿 경로
 const TEMPLATES_DIR = path.join(process.cwd(), 'public', 'templates');
 const EDITED_DATA_PATH = path.join(process.cwd(), 'app', 'data', 'edited');
+const EDITED_DESIGN_PATH = path.join(process.cwd(), 'app', 'data', 'themes');
 
 // 편집된 데이터 불러오기
 async function loadEditedData(templateId: string): Promise<EditedData | null> {
@@ -199,6 +202,17 @@ async function saveEditedData(templateId: string, data: EditedData): Promise<voi
   const filePath = path.join(EDITED_DATA_PATH, `${templateId}.json`);
   await fs.mkdir(EDITED_DATA_PATH, { recursive: true });
   await fs.writeFile(filePath, JSON.stringify(data, null, 2));
+}
+
+// 편집된 디자인 데이터 불러오기
+async function loadEditedDesign(templateId: string): Promise<EditedDesign | null> {
+  try {
+    const filePath = path.join(EDITED_DESIGN_PATH, templateId, 'working', 'edited-design.json');
+    const data = await fs.readFile(filePath, 'utf-8');
+    return JSON.parse(data);
+  } catch {
+    return null;
+  }
 }
 
 export const loader = async ({ params }: LoaderFunctionArgs) => {
@@ -230,6 +244,9 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
   
   // 편집된 데이터 불러오기
   const editedData = await loadEditedData(templateId);
+  
+  // 편집된 디자인 데이터 불러오기
+  const editedDesign = await loadEditedDesign(templateId);
   
   // 분석 데이터 불러오기 (있다면)
   let analyzedData = null;
@@ -271,6 +288,7 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
   return json({ 
     template, 
     editedData,
+    editedDesign,
     recentProject
   });
 };
@@ -301,7 +319,28 @@ export const action = async ({ request, params }: ActionFunctionArgs) => {
 };
 
 export default function EditorPage() {
-  const { template, editedData, recentProject } = useLoaderData<typeof loader>();
+  const { template, editedData, editedDesign, recentProject } = useLoaderData<typeof loader>();
+  
+  return (
+    <EditorProvider 
+      templateId={template.id}
+      initialDesignAnalysis={template.designAnalysis}
+      initialEditedDesign={editedDesign}
+    >
+      <EditorPageContent 
+        template={template}
+        editedData={editedData}
+        recentProject={recentProject}
+      />
+    </EditorProvider>
+  );
+}
+
+function EditorPageContent({ template, editedData, recentProject }: { 
+  template: Template;
+  editedData: EditedData | null;
+  recentProject: any;
+}) {
   const fetcher = useFetcher();
   const [activeTab, setActiveTab] = useState<'text' | 'design' | 'media'>('text');
   const [currentData, setCurrentData] = useState<EditedData>(editedData || {});
