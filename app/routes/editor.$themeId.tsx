@@ -8,6 +8,7 @@ import { MediaTab } from "~/components/editor/MediaTab";
 import type { ColorSystem } from "~/types/color-system";
 import { EditorProvider } from "~/contexts/EditorContext";
 import type { EditedDesign } from "~/contexts/EditorContext";
+import { FontProvider } from "~/contexts/FontContext";
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
   return [
@@ -322,17 +323,19 @@ export default function EditorPage() {
   const { template, editedData, editedDesign, recentProject } = useLoaderData<typeof loader>();
   
   return (
-    <EditorProvider 
-      templateId={template.id}
-      initialDesignAnalysis={template.designAnalysis}
-      initialEditedDesign={editedDesign}
-    >
-      <EditorPageContent 
-        template={template}
-        editedData={editedData}
-        recentProject={recentProject}
-      />
-    </EditorProvider>
+    <FontProvider>
+      <EditorProvider 
+        templateId={template.id}
+        initialDesignAnalysis={template.designAnalysis}
+        initialEditedDesign={editedDesign}
+      >
+        <EditorPageContent 
+          template={template}
+          editedData={editedData}
+          recentProject={recentProject}
+        />
+      </EditorProvider>
+    </FontProvider>
   );
 }
 

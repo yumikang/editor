@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import type { TypographyInfo } from "~/utils/design-scanner.server";
 import { useEditor } from "~/contexts/EditorContext";
+import { useFont } from "~/contexts/FontContext";
+import { FontManager } from "./FontManager";
 
 interface TypographyPaletteProps {
   typography: TypographyInfo[];
@@ -10,9 +12,11 @@ interface TypographyPaletteProps {
 
 export function TypographyPalette({ typography, onTypographyChange, selectedFont }: TypographyPaletteProps) {
   const { updateTypography } = useEditor();
+  const { activeFonts } = useFont();
   const [expandedElement, setExpandedElement] = useState<string>("all");
   const [searchTerm, setSearchTerm] = useState("");
   const [editingId, setEditingId] = useState<string | null>(null);
+  const [showFontManager, setShowFontManager] = useState(false);
   
   // 타이포그래피 변경 핸들러 - EditorContext의 updateTypography 사용
   const handleTypographyChange = (original: TypographyInfo, updates: Partial<TypographyInfo>) => {
@@ -59,7 +63,10 @@ export function TypographyPalette({ typography, onTypographyChange, selectedFont
             ✏️ 타이포그래피
             <span className="text-sm text-gray-500">({searchedTypography.length}개)</span>
           </h3>
-          <button className="text-xs text-gray-500 hover:text-gray-700">
+          <button 
+            onClick={() => setShowFontManager(true)}
+            className="text-xs text-gray-500 hover:text-gray-700"
+          >
             폰트 관리
           </button>
         </div>
@@ -116,6 +123,34 @@ export function TypographyPalette({ typography, onTypographyChange, selectedFont
           <p>검색 결과가 없습니다.</p>
         </div>
       )}
+      
+      {/* 폰트 관리 모달 */}
+      {showFontManager && (
+        <div className="fixed inset-0 z-50">
+          <div 
+            className="absolute inset-0 bg-black bg-opacity-50"
+            onClick={() => setShowFontManager(false)}
+          />
+          <div className="absolute inset-0 flex items-center justify-center p-4">
+            <div className="relative bg-white rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden">
+              <div className="flex items-center justify-between p-4 border-b">
+                <h2 className="text-lg font-semibold">폰트 관리</h2>
+                <button
+                  onClick={() => setShowFontManager(false)}
+                  className="p-2 text-gray-400 hover:text-gray-600"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <div className="overflow-y-auto max-h-[calc(90vh-80px)]">
+                <FontManager />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -156,6 +191,7 @@ function TypographyItem({
   onEdit: (editing: boolean) => void;
   onChange: (original: TypographyInfo, updates: Partial<TypographyInfo>) => void;
 }) {
+  const { activeFonts } = useFont();
   const [tempValues, setTempValues] = useState({
     fontFamily: typography.fontFamily,
     fontSize: typography.fontSize,
@@ -164,8 +200,8 @@ function TypographyItem({
     letterSpacing: typography.letterSpacing
   });
   
-  // 폰트 패밀리 목록 (실제로는 시스템 폰트나 Google Fonts API에서 가져올 수 있음)
-  const fontFamilies = [
+  // 시스템 폰트와 커스텀 폰트 결합
+  const systemFonts = [
     "Arial, sans-serif",
     "Helvetica, sans-serif", 
     "Georgia, serif",
@@ -177,6 +213,10 @@ function TypographyItem({
     "Lato, sans-serif",
     "Montserrat, sans-serif"
   ];
+  
+  // 활성화된 커스텀 폰트 추가
+  const customFontFamilies = activeFonts.map(font => font.parsedData.fontFamily);
+  const fontFamilies = [...customFontFamilies, ...systemFonts];
   
   const handleSave = () => {
     onChange(typography, tempValues);
@@ -262,9 +302,22 @@ function TypographyItem({
                 className="w-full px-2 py-1 text-sm border border-gray-200 rounded focus:ring-1 focus:ring-blue-500"
               >
                 <option value={typography.fontFamily}>{typography.fontFamily}</option>
-                {fontFamilies.map(font => (
-                  <option key={font} value={font}>{font}</option>
-                ))}
+                
+                {customFontFamilies.length > 0 && (
+                  <optgroup label="커스텀 폰트">
+                    {activeFonts.map(font => (
+                      <option key={font.id} value={font.parsedData.fontFamily}>
+                        {font.displayName}
+                      </option>
+                    ))}
+                  </optgroup>
+                )}
+                
+                <optgroup label="시스템 폰트">
+                  {systemFonts.map(font => (
+                    <option key={font} value={font}>{font}</option>
+                  ))}
+                </optgroup>
               </select>
             </div>
             

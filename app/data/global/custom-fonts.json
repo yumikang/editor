@@ -1,0 +1,87 @@
+{
+  "fonts": [
+    {
+      "id": "font-1",
+      "fontFamily": "Pretendard",
+      "displayName": "프리텐다드",
+      "cssUrl": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css",
+      "parsedData": {
+        "fontFamily": "\"Pretendard Variable\", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto",
+        "weights": ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+        "styles": ["normal"],
+        "primaryUrl": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/woff2/PretendardVariable.subset.woff2",
+        "unicode": "U+AC00-D7A3",
+        "display": "swap"
+      },
+      "metadata": {
+        "source": "CDN",
+        "license": "OFL",
+        "description": "깔끔하고 현대적인 한글 폰트",
+        "tags": ["sans-serif", "korean", "variable"],
+        "popularity": 95
+      },
+      "loadStrategy": "immediate",
+      "isActive": true,
+      "usageCount": 0,
+      "lastUsedAt": null,
+      "createdAt": "2025-01-21T12:00:00Z"
+    },
+    {
+      "id": "font-2", 
+      "fontFamily": "GmarketSans",
+      "displayName": "지마켓 산스",
+      "cssUrl": "https://webfontworld.github.io/gmarket/GmarketSans.css",
+      "parsedData": {
+        "fontFamily": "GmarketSans",
+        "weights": ["300", "500", "700"],
+        "styles": ["normal"],
+        "primaryUrl": "https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2",
+        "unicode": null,
+        "display": "swap"
+      },
+      "metadata": {
+        "source": "눈누",
+        "license": "Free",
+        "description": "지마켓 브랜드 폰트",
+        "tags": ["sans-serif", "korean", "brand"],
+        "popularity": 85
+      },
+      "loadStrategy": "lazy",
+      "isActive": false,
+      "usageCount": 5,
+      "lastUsedAt": "2025-01-20T10:30:00Z",
+      "createdAt": "2025-01-21T12:00:00Z"
+    },
+    {
+      "id": "font-3",
+      "fontFamily": "NanumSquareNeo",
+      "displayName": "나눔스퀘어 네오",
+      "cssUrl": "https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css",
+      "parsedData": {
+        "fontFamily": "NanumSquareNeo",
+        "weights": ["300", "400", "700", "800", "900"],
+        "styles": ["normal"],
+        "primaryUrl": "https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff2",
+        "unicode": null,
+        "display": "swap"
+      },
+      "metadata": {
+        "source": "Naver",
+        "license": "OFL",
+        "description": "네이버 나눔스퀘어의 업그레이드 버전",
+        "tags": ["sans-serif", "korean", "naver"],
+        "popularity": 78
+      },
+      "loadStrategy": "inactive",
+      "isActive": false,
+      "usageCount": 12,
+      "lastUsedAt": "2025-01-15T14:22:00Z",
+      "createdAt": "2025-01-21T12:00:00Z"
+    }
+  ],
+  "metadata": {
+    "version": 1,
+    "lastUpdated": "2025-01-21T12:00:00Z",
+    "totalFonts": 3
+  }
+}

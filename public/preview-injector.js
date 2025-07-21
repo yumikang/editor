@@ -56,6 +56,11 @@
         // 타이포그래피 변경
         updateTypography(message.original, message.updates);
         break;
+        
+      case 'UPDATE_FONTS':
+        // 폰트 업데이트
+        updateFonts(message.fonts);
+        break;
     }
   });
   
@@ -345,6 +350,34 @@
         setTimeout(() => element.classList.remove('typography-changing'), 1000);
       }
     });
+  }
+  
+  // 폰트 업데이트 함수
+  function updateFonts(fonts) {
+    // 기존 커스텀 폰트 스타일 제거
+    document.querySelectorAll('style[data-custom-font]').forEach(el => el.remove());
+    
+    // 활성화된 폰트만 필터링
+    const activeFonts = fonts.filter(font => font.loadStrategy !== 'inactive');
+    
+    // 각 폰트에 대해 스타일 추가
+    activeFonts.forEach(font => {
+      const style = document.createElement('style');
+      style.setAttribute('data-custom-font', font.id);
+      style.textContent = `@import url('${font.cssUrl}');`;
+      document.head.appendChild(style);
+    });
+    
+    // 폰트 로드 완료 대기
+    if (activeFonts.length > 0) {
+      document.fonts.ready.then(() => {
+        // 폰트 로드 완료 알림
+        window.parent.postMessage({
+          type: 'FONTS_LOADED',
+          fonts: activeFonts.map(f => f.fontFamily)
+        }, '*');
+      });
+    }
   }
   
   // 초기 로드 시 부모에게 준비 완료 알림
